@@ -63,7 +63,7 @@ export default class Qabul extends Component {
               <Col className="forInfo">
                 <div>
                   <ul className="hujjat">
-                    <li>Shaxisni tasdiqlovchi hujjat nusxasi</li>
+                    <li>Shaxsni tasdiqlovchi hujjat nusxasi</li>
                     <li>Ota-ona ish joyidan ma'lumotnoma</li>
                     <li>3x4 rasm 4 ta</li>
                   </ul>

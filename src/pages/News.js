@@ -37,109 +37,104 @@ export default class Educators extends Component {
                </div>
              </header>
 
+        
              <Container>
-             <body>
-               <div className={styles.body}>
-                   <div data-aos="fade-up" className={styles.title}><h1>Yangiliklar</h1></div>
-                   <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage 
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-              <p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-              <Link to='/yangilik/uz'><p>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText><p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-            <Link to='/yangilik/uz'><p>Batafsil</p></Link></MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-            <Link to='/yangilik/uz'><p>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-              <p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-              <Link to='/yangilik/uz'><p>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-            <Link to='/yangilik/uz'><p>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-              <p><i class="fas fa-calendar-alt"></i> 14/08/2020</p>
-              <Link to='/yangilik/uz'><p>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-    </MDBRow><br/><br/><br/>
-               </div>
-             </body>
+             <ul className={styles.cards}>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>            
+            <span className={styles.card__status}>Batafsil</span>
+          </div>
+        </div>
+       <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>        
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>
+        </div>
+        <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+        <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+        <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+        <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+        <p style={{position:'relative',top:'-10px',marginLeft:'22px',color:'black'}}><i style={{color:'#FF865E'}} class="fas fa-calendar-alt"></i> 14/08/2020</p>
+      </div>
+    </a>
+  </li>    
+</ul>
              </Container>
+
+
+
              <Footer/>
                 </div>
               }

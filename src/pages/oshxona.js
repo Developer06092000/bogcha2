@@ -58,7 +58,7 @@ componentDidMount() {
                           showDots={false}
                         >
                        <div>
-                       <img src={kinder1} className={styles.sliderImage}/>                   
+                           <img src={kinder1} className={styles.sliderImage}/>                   
                        </div>
                        <div>
                            <img src={kinder2} className={styles.sliderImage}/>                         

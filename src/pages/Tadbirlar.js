@@ -39,116 +39,106 @@ export default class Tadbirlar extends Component {
              </header>
 
              <Container>
-             <body>
-               <div className={styles.body}>
-                   <div data-aos="fade-up" className={styles.title}><h1>Tadbirlar</h1></div>
-                   <MDBRow className='row-cols-1 row-cols-md-3 g-4'>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage 
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-              <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-              </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-      <MDBCol>
-        <MDBCard className='h-100' className={styles.card}>
-          <MDBCardImage
-            src={news1} className={styles.img}
-            alt='...'
-            position='top'
-          />
-          <MDBCardBody>
-            <MDBCardTitle>Bog'chamizga Prezident tashrif buyirdi</MDBCardTitle>
-            <MDBCardText>
-            <p><FaCalendarAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>14/08/2020</span></p>
-              <p><BsGeoAlt style={{fontSize:'17px',color:'#FF8080'}}/> <span>133-bog'cha</span></p>
-              <Link to='/tadbir/uz'><p style={{color:'rgba(0,0,0,0.6)'}}>Batafsil</p></Link>
-            </MDBCardText>
-          </MDBCardBody>
-        </MDBCard>
-      </MDBCol>
-    </MDBRow><br/><br/><br/>
-               </div>
-             </body>
+             <ul className={styles.cards}>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>  
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>            
+            <span className={styles.card__status}>Batafsil</span>
+          </div>
+        </div>
+        <p style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>      
+  </li>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>        
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>
+        </div>
+         <p  style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>
+  </li>
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+         <p  style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+         <p  style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+         <p  style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{marginBottom:'20px',color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>
+  </li>    
+  <li>
+    <a href="" className={styles.card}>
+      <img src={news1} className={styles.card__image} alt="" />
+      <div className={styles.card__overlay}>
+        <div className={styles.card__header}>
+          <svg className={styles.card__arc} xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+          <div className={styles.card__header_text}>
+            <h3 className={styles.card__title}>Bog'chamizga prezident tashrif buyirdi.</h3>
+            <span className={styles.card__status}>Batafsil</span>
+          </div>          
+        </div>
+         <p  style={{display:'inline'}}><FaCalendarAlt style={{marginBottom:'20px',fontSize:'17px',color:'#FF865E',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{color:'black',position:'relative',top:'-18px'}}>14/08/2020</span></p>
+              <p  style={{display:'inline'}}><BsGeoAlt style={{marginBottom:'20px',fontSize:'17px',color:'#1597E5',marginLeft:'22px',position:'relative',top:'-10px'}}/> <span style={{color:'black',position:'relative',top:'-18px'}}>133-bog'cha</span></p>
+      </div>
+    </a>
+  </li>    
+</ul>
              </Container>
+
              <Footer/>
                 </div>
               }
