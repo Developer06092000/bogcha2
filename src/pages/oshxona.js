@@ -21,6 +21,7 @@ export default class Oshxona extends Component {
       });
     }, 2000);
   }
+
   render() {
     const responsive = {
       superLargeDesktop: {
@@ -109,7 +110,7 @@ export default class Oshxona extends Component {
                     yoshdan 5 yoshgacha
                   </h2>
                   <h2 className={styles.heading}>Namuna menyusi 1</h2>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
+                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
                   <div className={styles.cardchalar}>
                     <div>Nonushta</div>
                     <div style={{ marginLeft: "200px" }}>
@@ -117,14 +118,14 @@ export default class Oshxona extends Component {
                       Qulupnay va banan bo'laklari Sut
                     </div>
                   </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
+                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
                   <div className={styles.cardchalar}>
                     <div>Ertalabki tamaddi</div>
                     <div style={{ marginLeft: "150px" }}>
                       Quark va reza mevalari, Suv
                     </div>
                   </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
+                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
                   <div className={styles.cardchalar}>
                     <div>Tushlik</div>
                     <div style={{ marginLeft: "210px" }}>
@@ -134,14 +135,14 @@ export default class Oshxona extends Component {
                       tayoqchalari, qizil qalampir bo'laklari) Sut
                     </div>
                   </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
+                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
                   <div className={styles.cardchalar}>
                     <div>Peshindan keyin tamaddi</div>
                     <div style={{ marginLeft: "100px" }}>
                       Yong'oq moyi yoki keddar pishloqli olma bo'laklari Suv
                     </div>
                   </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
+                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
 
                   <h2 className={styles.heading}>Namuna menyusi 2</h2>
                   <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
