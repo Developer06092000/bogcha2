@@ -95,7 +95,7 @@ export default class Location extends Component {
                     <span>
                       <Link to="/dashboard/uz">
                         <FaHome
-                          style={{ color: "#FF8080", fontSize: "23px" }}
+                          style={{ color: "#4587EB", fontSize: "23px" }}
                         />
                       </Link>
                     </span>
@@ -162,28 +162,28 @@ export default class Location extends Component {
                     <span style={{ marginLeft: "40px" }}>
                       <a href="tel:+998335093874">
                         <FaPhoneAlt
-                          style={{ color: "#FF8080", fontSize: "18px" }}
+                          style={{ color: "#4587EB", fontSize: "18px" }}
                         />
                       </a>
                     </span>
                     <span>
                       <a href="http://t.me/Karshiyeva_N">
                         <FaTelegramPlane
-                          style={{ color: "#FF8080", fontSize: "23px" }}
+                          style={{ color: "#4587EB", fontSize: "23px" }}
                         />
                       </a>
                     </span>
                     <span>
                       <a href="http://t.me/Karshiyeva_N">
                         <FaInstagram
-                          style={{ color: "#FF8080", fontSize: "23px" }}
+                          style={{ color: "#4587EB", fontSize: "23px" }}
                         />
                       </a>
                     </span>
                     <span>
                       <a href="http://t.me/Karshiyeva_N">
                         <FaFacebook
-                          style={{ color: "#FF8080", fontSize: "23px" }}
+                          style={{ color: "#4587EB", fontSize: "23px" }}
                         />
                       </a>
                     </span>

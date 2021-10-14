@@ -70,26 +70,59 @@ export default class Dashboardtadbir extends Component {
                         <MDBCardText>
                           <p>
                             <FaCalendarAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#FF865F" }}
                             />{" "}
                             <span>14/08/2020</span>
                           </p>
                           <p>
                             <BsGeoAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#A2D2FF" }}
                             />{" "}
                             <span>133-bog'cha</span>
                           </p>
                           <Link to="/tadbir/uz">
                             <p
-                              style={{
-                                color: "white",
-                                backgroundColor: "#f76b6a",
-                                width: "70px",
-                                padding: "3px 10px",
-                                border: "1px solid #f76b6a",
-                                borderRadius: "10px",
-                              }}
+                               className={styles.ButtonInfoForText}
+                               style={{color:"white"}}
+                             >
+                               Batafsil
+                            </p>
+                          </Link>
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCol>
+                </div>
+                <div>
+                  <MDBCol style={{ margin: "10px" }}>
+                    <MDBCard className="h-100" className={styles.card}>
+                      <MDBCardImage
+                        src={news1}
+                        className={styles.img}
+                        alt="..."
+                        position="top"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>
+                          Bog'chamizga Prezident tashrif buyirdi
+                        </MDBCardTitle>
+                        <MDBCardText>
+                          <p>
+                            <FaCalendarAlt
+                              style={{ fontSize: "17px", color: "#FF865F" }}
+                            />{" "}
+                            <span>14/08/2020</span>
+                          </p>
+                          <p>
+                            <BsGeoAlt
+                              style={{ fontSize: "17px", color: "#A2D2FF" }}
+                            />{" "}
+                            <span>133-bog'cha</span>
+                          </p>
+                          <Link to="/tadbir/uz">
+                            <p
+                              className={styles.ButtonInfoForText}
+                              style={{color:"white"}}
                             >
                               Batafsil
                             </p>
@@ -115,28 +148,22 @@ export default class Dashboardtadbir extends Component {
                         <MDBCardText>
                           <p>
                             <FaCalendarAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#FF865F" }}
                             />{" "}
                             <span>14/08/2020</span>
                           </p>
                           <p>
                             <BsGeoAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#A2D2FF" }}
                             />{" "}
                             <span>133-bog'cha</span>
                           </p>
                           <Link to="/tadbir/uz">
                             <p
-                              style={{
-                                color: "white",
-                                backgroundColor: "#f76b6a",
-                                width: "70px",
-                                padding: "3px 10px",
-                                border: "1px solid #f76b6a",
-                                borderRadius: "10px",
-                              }}
-                            >
-                              Batafsil
+                               className={styles.ButtonInfoForText}
+                               style={{color:"white"}}
+                             >
+                               Batafsil
                             </p>
                           </Link>
                         </MDBCardText>
@@ -160,73 +187,22 @@ export default class Dashboardtadbir extends Component {
                         <MDBCardText>
                           <p>
                             <FaCalendarAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#FF865F" }}
                             />{" "}
                             <span>14/08/2020</span>
                           </p>
                           <p>
                             <BsGeoAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
+                              style={{ fontSize: "17px", color: "#A2D2FF" }}
                             />{" "}
                             <span>133-bog'cha</span>
                           </p>
                           <Link to="/tadbir/uz">
                             <p
-                              style={{
-                                color: "white",
-                                backgroundColor: "#f76b6a",
-                                width: "70px",
-                                padding: "3px 10px",
-                                border: "1px solid #f76b6a",
-                                borderRadius: "10px",
-                              }}
-                            >
-                              Batafsil
-                            </p>
-                          </Link>
-                        </MDBCardText>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBCol>
-                </div>
-                <div>
-                  <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
-                      <MDBCardImage
-                        src={news1}
-                        className={styles.img}
-                        alt="..."
-                        position="top"
-                      />
-                      <MDBCardBody>
-                        <MDBCardTitle>
-                          Bog'chamizga Prezident tashrif buyirdi
-                        </MDBCardTitle>
-                        <MDBCardText>
-                          <p>
-                            <FaCalendarAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
-                            />{" "}
-                            <span>14/08/2020</span>
-                          </p>
-                          <p>
-                            <BsGeoAlt
-                              style={{ fontSize: "17px", color: "#FF8080" }}
-                            />{" "}
-                            <span>133-bog'cha</span>
-                          </p>
-                          <Link to="/tadbir/uz">
-                            <p
-                              style={{
-                                color: "white",
-                                backgroundColor: "#f76b6a",
-                                width: "70px",
-                                padding: "3px 10px",
-                                border: "1px solid #f76b6a",
-                                borderRadius: "10px",
-                              }}
-                            >
-                              Batafsil
+                               className={styles.ButtonInfoForText}
+                               style={{color:"white"}}
+                             >
+                               Batafsil
                             </p>
                           </Link>
                         </MDBCardText>

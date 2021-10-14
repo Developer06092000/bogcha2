@@ -14,8 +14,8 @@
 body{
     font-family: helvetica neue,Helvetica,Arial,sans-serif;
 }
-.title{
-    border-bottom: 2px solid #FF8080;
+.title {
+    border-bottom: 2px solid #FF865F;
     width: 285px;
     margin: auto;
     margin-top:40px ;
@@ -41,6 +41,7 @@ body{
     background-attachment: fixed;
 }
 .card{
+    cursor: pointer;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
@@ -53,7 +54,7 @@ body{
 }
 
 .newtitle{
-    border-bottom: 2px solid #FF8080;
+    border-bottom: 2px solid #FF865F;
     width: 285px;
     margin: auto;
    padding-top: 130px;
@@ -80,4 +81,43 @@ body{
     margin: 0 auto;
     padding: 10px 0;
     line-height: 200%;
+}
+.ButtonInfoForText {
+
+    transform: translate(-50%, -50%) scale(1);
+    width: 75px;
+    height: auto;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-left: 11%;
+    margin-top: 10%;
+    font-size: 13px;
+    color: #ffffff;
+    background: hsl(52, 99%, 62%);
+    border-radius: 10px;
+    box-shadow: 0 0 1px hsl(52, 99%, 62%), 0 0 5px hsl(52, 99%, 62%);
+    transition: .8s;
+
+}
+
+.ButtonInfoForText:hover {
+    transform: translate(-50%, -50%) scale(1);
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 2px hsl(51, 81%, 86%), 0 0 8px hsl(51, 53%, 79%);
+    }
+
+    50% {
+        box-shadow: 0 0 0 1px hsl(52, 95%, 78%), 0 0 0 5px hsl(52, 81%, 79%);
+        filter: blur(.5px);
+    }
+
+    100% {
+        box-shadow: 0 0 0 5px hsl(52, 74%, 79%), 0 0 0 10px hsl(52, 73%, 88%);
+    }
 }

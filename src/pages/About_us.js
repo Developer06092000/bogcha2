@@ -8,7 +8,7 @@ import "react-multi-carousel/lib/styles.css";
 import styles from '../css/about_us.module.css'
 import about1 from '../img/about1.jpg'
 import about2 from '../img/about2.jpg'
-import about3 from '../img/about3.jpg'
+import about3 from "../img/about3.jpg"; 
 import Navbar from './Navbar'
 import Footer from './Footer'
 import PacmanLoader from "react-spinners/PacmanLoader";

@@ -72,7 +72,7 @@ export default class Bosqich3 extends Component {
                     </Carousel>
                 <div className={style.matn}>
                     <h1>3-BOSQICH</h1>
-                    <div style={{ width: "200px", height: "3px", margin: "auto", backgroundColor: "#FF8080" }}></div>
+                    <div style={{ width: "200px", height: "3px", margin: "auto", backgroundColor: "#FF865F" }}></div>
                     <br />
                     <h5>A GREAT BIG WORLD</h5>
                     <p>

@@ -7,9 +7,9 @@
   box-sizing: border-box;
   font-size: 60px;
   font-weight: bolder;
-  color: #ff8080;
+  color: #A2D2FF;
   font-family: "Calibri";
-  border-bottom: 2px solid #ff8080;
+  border-bottom: 2px solid #FEE440;
 }
 .info {
   margin-top: 50px;
@@ -24,7 +24,7 @@
   height: 300px;
   padding: 60px;
   box-sizing: border-box;
-  background-color: #ff8080;
+  background-color: #A2D2FF;
   border-radius: 30px 0px 0px 30px;
   /* opacity: 0.4; */
 }
@@ -48,9 +48,10 @@
 .anima {
   height: 35px;
   width: 100%;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 5s ease infinite;
   /* height: 100vh; */
 }
 

@@ -38,6 +38,8 @@ import her4 from "../img/h4.jpg";
 import her5 from "../img/h5.png";
 import her6 from "../img/h6.png";
 import YouTube from "@u-wave/react-youtube";
+import HeadOne from "../img/bogcha2/HeadImg.jpg";
+import { Button } from "antd";
 
 export default class Dashboard extends Component {
   state = {
@@ -77,7 +79,7 @@ export default class Dashboard extends Component {
           <div className={styles.loader}>
             <PacmanLoader
               size={20}
-              color={"#FF8080"}
+              color={"#000000"}
               loading={this.state.loader}
             />
           </div>
@@ -86,7 +88,8 @@ export default class Dashboard extends Component {
             <div className={styles.header}>
               <Navbar />
               <div className={styles.youtube}>
-                <YouTube
+                <img className={styles.video} src={HeadOne} />
+                {/* <YouTube
                   video="Vjkedan2rxA"
                   autoplay
                   muted
@@ -101,14 +104,13 @@ export default class Dashboard extends Component {
                   width="100%"
                   height="100%"
                   style={{ zIndex: "-7" }}
-                />
+                /> */}
               </div>
               {/* <video autoPlay="autoplay" loop="loop" muted>
                 <source src={kinder} type="video/mp4" />
               </video> */}
               <div className={styles.btnHeader}>
-                <img alt="" src={rasm2} />
-                <button>Hoziroq qo'ng'iroq qiling!</button>
+                <Button className={styles.ButtonMenuHeadFor}>Hoziroq qo'ng'iroq qiling!</Button>
               </div>
             </div>
             <div className={styles.second}>
@@ -136,7 +138,7 @@ export default class Dashboard extends Component {
                     lg={2}
                     md={4}
                     sm={4}
-                    style={{ backgroundColor: "#F76B6A" }}
+                    style={{ backgroundColor: "#35BDBB" }}
                     className={styles.card}
                   >
                     <img alt="" src={icon2} />
@@ -151,9 +153,10 @@ export default class Dashboard extends Component {
                     md={4}
                     sm={4}
                     style={{
-                      background: "rgb(247,107,106)",
-                      background:
-                        "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
+                      backgroundColor: "#F4C204",
+                      // background: "rgb(247,107,106)",
+                      // background:
+                      //   "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
                     }}
                     className={styles.card1}
                   >
@@ -168,7 +171,7 @@ export default class Dashboard extends Component {
                     lg={2}
                     md={4}
                     sm={4}
-                    style={{ backgroundColor: "#F76B6A" }}
+                    style={{ backgroundColor: "#EE7CC3" }}
                     className={styles.card}
                   >
                     <img alt="" src={icon4} />
@@ -183,9 +186,10 @@ export default class Dashboard extends Component {
                     md={4}
                     sm={4}
                     style={{
-                      background: "rgb(247,107,106)",
-                      background:
-                        "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
+                      backgroundColor: "#4587EB",
+                      // background: "rgb(247,107,106)",
+                      // background:
+                      //   "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
                     }}
                     className={styles.card1}
                   >
@@ -200,7 +204,7 @@ export default class Dashboard extends Component {
                     lg={2}
                     md={4}
                     sm={4}
-                    style={{ backgroundColor: "#F76B6A" }}
+                    style={{ backgroundColor: "#33BEB9" }}
                     className={styles.card}
                   >
                     <img alt="" src={icon6} />
@@ -211,7 +215,10 @@ export default class Dashboard extends Component {
                     </p>
                   </Col>
                   <Col lg={12} className={styles.tourCard}>
-                    <button>Turni rejalashtirish</button>
+                    {/* <button>Turni rejalashtirish</button> */}
+                    <Button className={styles.ButtonMenuHeadUnder} danger>
+                      Turni rejalashtirish
+                    </Button>
                   </Col>
                   <Col
                     lg={12}
@@ -240,12 +247,8 @@ export default class Dashboard extends Component {
                         <span>
                           <Link
                             to="/loving/uz"
-                            style={{
-                              padding: "10px 15px",
-                              color: "white",
-                              backgroundColor: "#f76b6a",
-                              borderRadius: "7px",
-                            }}
+                            className={styles.ButtonInfoForText}
+                           style={{color:"white"}}
                           >
                             Batafsil
                           </Link>
@@ -279,12 +282,8 @@ export default class Dashboard extends Component {
                         <span>
                           <Link
                             to="/wonder/uz"
-                            style={{
-                              padding: "10px 15px",
-                              color: "white",
-                              backgroundColor: "#f76b6a",
-                              borderRadius: "7px",
-                            }}
+                            className={styles.ButtonInfoForText}
+                            style={{color:"white"}}
                           >
                             Batafsil
                           </Link>
@@ -327,12 +326,8 @@ export default class Dashboard extends Component {
                         <span>
                           <Link
                             to="/leadership/uz"
-                            style={{
-                              padding: "10px 15px",
-                              color: "white",
-                              backgroundColor: "#f76b6a",
-                              borderRadius: "7px",
-                            }}
+                            className={styles.ButtonInfoForText}
+                            style={{color:"white"}}
                           >
                             Batafsil
                           </Link>
@@ -373,12 +368,8 @@ export default class Dashboard extends Component {
                         <span>
                           <Link
                             to="/changing/uz"
-                            style={{
-                              padding: "10px 15px",
-                              color: "white",
-                              backgroundColor: "#f76b6a",
-                              borderRadius: "7px",
-                            }}
+                            className={styles.ButtonInfoForText}
+                           style={{color:"white"}}
                           >
                             Batafsil
                           </Link>
