@@ -226,7 +226,7 @@ body{
           display: block;
           width: 100vw;
           height: 100vh;
-          background-color: #F76B6A;
+          background-color: #A2D2FF;
           overflow-y: scroll;
           transition: all 0.3s;
           z-index:1111111111111111111 !important;
@@ -238,7 +238,7 @@ body{
             display: block;
             width: 110vw;
             height: 100vh;
-            background-color: #F76B6A;
+            background-color: #A2D2FF;
             overflow-y: scroll;
             transition: all 0.3s;
              z-index:111111111111111112111111 !important;
@@ -303,9 +303,11 @@ body{
       display: block;
       width: 100vw;
       height: 100vh;
-      background-color: #F76B6A;
+      background-color: #A2D2FF;
       overflow-y: scroll;
       transition: all 0.3s;
+      opacity: .1;
+
       z-index:11111111111111111 !important;
     }
     .navWrapper1{
@@ -315,7 +317,8 @@ body{
         display: block;
         width: 110vw;
         height: 100vh;
-        background-color: #F76B6A;
+        background-color: #A2D2FF;
+        opacity: .9;
         overflow-y: scroll;
         transition: all 0.3s;
          z-index:111111111111111112111111 !important;
@@ -338,10 +341,10 @@ body{
 
     }
     .nav1{
-        background-color:white !important;
+        background-color:#FEF9EF !important;
     }
     .nav1_active{
-            background-color: white !important;
+            background-color: #FEF9EF !important;
     }
 .navbar{
     display: none;
@@ -379,7 +382,7 @@ body{
       display: block;
       width: 100vw;
       height: 100vh;
-      background-color: #F76B6A;
+      background-color: #A2D2FF;
       overflow-y: scroll;
       transition: all 0.3s;
       z-index:11111111111111111 !important;
@@ -391,7 +394,7 @@ body{
         display: block;
         width: 110vw;
         height: 100vh;
-        background-color: #F76B6A !important;
+        background-color: #A2D2FF !important;
         overflow-y: scroll;
         transition: all 0.3s;
          z-index:111111111111111112111111 !important;

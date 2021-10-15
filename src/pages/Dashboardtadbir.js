@@ -47,6 +47,8 @@ export default class Dashboardtadbir extends Component {
             <div className={styles.body}>
               <div data-aos="fade-up" className={styles.title}>
                 <h1>Tadbirlar</h1>
+                <div className={styles.AnimationUnderTadbir1}></div>
+                <div className={styles.AnimationUnderTadbir2}></div>
               </div>
               <Carousel
                 responsive={responsive}
@@ -55,46 +57,7 @@ export default class Dashboardtadbir extends Component {
                 infinite={true}
               >
                 <div>
-                  <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
-                      <MDBCardImage
-                        src={news1}
-                        className={styles.img}
-                        alt="..."
-                        position="top"
-                      />
-                      <MDBCardBody>
-                        <MDBCardTitle>
-                          Bog'chamizga Prezident tashrif buyirdi
-                        </MDBCardTitle>
-                        <MDBCardText>
-                          <p>
-                            <FaCalendarAlt
-                              style={{ fontSize: "17px", color: "#FF865F" }}
-                            />{" "}
-                            <span>14/08/2020</span>
-                          </p>
-                          <p>
-                            <BsGeoAlt
-                              style={{ fontSize: "17px", color: "#A2D2FF" }}
-                            />{" "}
-                            <span>133-bog'cha</span>
-                          </p>
-                          <Link to="/tadbir/uz">
-                            <p
-                               className={styles.ButtonInfoForText}
-                               style={{color:"white"}}
-                             >
-                               Batafsil
-                            </p>
-                          </Link>
-                        </MDBCardText>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBCol>
-                </div>
-                <div>
-                  <MDBCol style={{ margin: "10px" }}>
+                  <MDBCol style={{ margin: "10px", height: "auto" }}>
                     <MDBCard className="h-100" className={styles.card}>
                       <MDBCardImage
                         src={news1}
@@ -122,7 +85,7 @@ export default class Dashboardtadbir extends Component {
                           <Link to="/tadbir/uz">
                             <p
                               className={styles.ButtonInfoForText}
-                              style={{color:"white"}}
+                              style={{ color: "white" }}
                             >
                               Batafsil
                             </p>
@@ -160,10 +123,10 @@ export default class Dashboardtadbir extends Component {
                           </p>
                           <Link to="/tadbir/uz">
                             <p
-                               className={styles.ButtonInfoForText}
-                               style={{color:"white"}}
-                             >
-                               Batafsil
+                              className={styles.ButtonInfoForText}
+                              style={{ color: "white" }}
+                            >
+                              Batafsil
                             </p>
                           </Link>
                         </MDBCardText>
@@ -199,10 +162,49 @@ export default class Dashboardtadbir extends Component {
                           </p>
                           <Link to="/tadbir/uz">
                             <p
-                               className={styles.ButtonInfoForText}
-                               style={{color:"white"}}
-                             >
-                               Batafsil
+                              className={styles.ButtonInfoForText}
+                              style={{ color: "white" }}
+                            >
+                              Batafsil
+                            </p>
+                          </Link>
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCol>
+                </div>
+                <div>
+                  <MDBCol style={{ margin: "10px" }}>
+                    <MDBCard className="h-100" className={styles.card}>
+                      <MDBCardImage
+                        src={news1}
+                        className={styles.img}
+                        alt="..."
+                        position="top"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>
+                          Bog'chamizga Prezident tashrif buyirdi
+                        </MDBCardTitle>
+                        <MDBCardText>
+                          <p>
+                            <FaCalendarAlt
+                              style={{ fontSize: "17px", color: "#FF865F" }}
+                            />{" "}
+                            <span>14/08/2020</span>
+                          </p>
+                          <p>
+                            <BsGeoAlt
+                              style={{ fontSize: "17px", color: "#A2D2FF" }}
+                            />{" "}
+                            <span>133-bog'cha</span>
+                          </p>
+                          <Link to="/tadbir/uz">
+                            <p
+                              className={styles.ButtonInfoForText}
+                              style={{ color: "white" }}
+                            >
+                              Batafsil
                             </p>
                           </Link>
                         </MDBCardText>

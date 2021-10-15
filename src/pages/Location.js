@@ -72,7 +72,7 @@ export default class Location extends Component {
   }
   render() {
     const { SubMenu } = Menu;
-
+ 
     return (
       <div>
         {this.state.loader ? (
@@ -205,7 +205,7 @@ export default class Location extends Component {
                   >
                     <FaBars
                       onClick={this.openNav}
-                      style={{ color: "#FF8080", fontSize: "30px" }}
+                      style={{ color: "#A2D2FF", fontSize: "30px" }}
                     />
                   </div>
                   <div
@@ -218,7 +218,7 @@ export default class Location extends Component {
                         onClick={this.handleClick}
                         style={{
                           width: 256,
-                          backgroundColor: "#F76B6A",
+                          backgroundColor: "#A2D2FF",
                           border: "none",
                           textAlign: "center",
                           fontSize: "18px",
@@ -230,7 +230,7 @@ export default class Location extends Component {
                       >
                         <Menu.Item
                           key="1"
-                          style={{ backgroundColor: "#F76B6A" }}
+                          style={{ backgroundColor: "#A2D2FF" }}
                         >
                           <span>
                             <Link to="/dashboard/uz">
@@ -243,7 +243,7 @@ export default class Location extends Component {
                         <SubMenu
                           key="sub1"
                           title="Biz haqimizda"
-                          style={{ backgroundColor: "#F76B6A", color: "white" }}
+                          style={{ backgroundColor: "#A2D2FF", color: "white" }}
                         >
                           <Menu.ItemGroup
                             key="g1"
@@ -290,7 +290,7 @@ export default class Location extends Component {
                         </SubMenu>
                         <Menu.Item
                           key="10"
-                          style={{ color: "white", backgroundColor: "#F76B6A" }}
+                          style={{ color: "white", backgroundColor: "#A2D2FF" }}
                         >
                           <Link to="/curriculm/uz" style={{ color: "white" }}>
                             Qabul
@@ -298,7 +298,7 @@ export default class Location extends Component {
                         </Menu.Item>
                         <Menu.Item
                           key="11"
-                          style={{ color: "white", backgroundColor: "#F76B6A" }}
+                          style={{ color: "white", backgroundColor: "#A2D2FF" }}
                         >
                           <Link style={{ color: "white" }} to="/yangiliklar/uz">
                             Yangiliklar
@@ -306,7 +306,7 @@ export default class Location extends Component {
                         </Menu.Item>
                         <Menu.Item
                           key="12"
-                          style={{ color: "white", backgroundColor: "#F76B6A" }}
+                          style={{ color: "white", backgroundColor: "#A2D2FF" }}
                         >
                           <Link style={{ color: "white" }} to="/tadbirlar/uz">
                             Tadbirlar
@@ -314,19 +314,19 @@ export default class Location extends Component {
                         </Menu.Item>
                         <Menu.Item
                           key="12"
-                          style={{ color: "white", backgroundColor: "#F76B6A" }}
+                          style={{ color: "white", backgroundColor: "#A2D2FF" }}
                         >
                           <button
                             style={{
                               border: "none",
                               backgroundColor: "white",
-                              color: "#F76B6A",
+                              color: "#A2D2FF",
                               borderRadius: "25px",
                               padding: "10px 30px",
                             }}
                           >
                             <Link
-                              style={{ color: "#F76B6A", fontWeight: "800" }}
+                              style={{ color: "#A2D2FF", fontWeight: "800" }}
                               to="/login"
                             >
                               Kirish

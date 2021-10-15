@@ -91,6 +91,8 @@ export default class Educators extends Component {
                 <div className={styles.body}>
                   <div data-aos="fade-up" className={styles.title}>
                     <h1>Tarbiyachilar</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <Row>
                     <Col lg={12}>

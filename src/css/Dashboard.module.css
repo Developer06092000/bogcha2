@@ -35,7 +35,7 @@ body {
 .btnHeader img {
   width: 130px !important;
 }
-.btnHeader .ButtonMenuHeadFor {
+ #ButtonMenuHeadFor {
   background-color: #FEE440;
   color: white;
   height:auto;
@@ -43,12 +43,13 @@ body {
   border-radius: 10px;
   padding: 10px 20px;
   font-size: 20px;
-  font-weight: 900;
-  margin-left: 20px;
+  font-weight: 800;
   cursor: pointer;
   }
 
-  .ButtonMenuHeadFor:hover {
+  #btnHeader.ButtonMenuHeadFor:hover {
+    color: white;
+    background-color: #FEE440;
     transition: .2s;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
@@ -119,6 +120,8 @@ body {
   }
 
   .tourCard .ButtonMenuHeadUnder:hover {
+    color: white;
+    background-color: #FEE440;
     transition: .2s;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
@@ -185,7 +188,24 @@ body {
   left: 0;
   width: 100px;
   height: 3px;
-  background-color: #FF865F;
+   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+   background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+   background-size: 400% 400%;
+   animation: HeadingH1 3s ease infinite;
+   }
+
+   @keyframes HeadingH1 {
+     0% {
+       background-position: 0% 50%;
+     }
+
+     50% {
+       background-position: 100% 50%;
+     }
+
+     100% {
+       background-position: 0% 50%;
+     }
 }
 .heading p {
   margin-top: 30px;
@@ -237,7 +257,24 @@ body {
   left: 0;
   width: 100px;
   height: 3px;
-  background-color: #FF865F;
+   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+   background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+   background-size: 400% 400%;
+   animation: Heading1H1 3s ease infinite;
+   }
+
+   @keyframes Heading1H1 {
+     0% {
+       background-position: 0% 50%;
+     }
+
+     50% {
+       background-position: 100% 50%;
+     }
+
+     100% {
+       background-position: 0% 50%;
+     }
 }
 .heading1 p {
   margin-top: 30px;
@@ -321,13 +358,35 @@ body {
 .sarlavha {
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 4px solid #FF865F;
   color: rgba(0, 0, 0, 0.85) !important;
   margin-bottom: 20px;
   font-size: 2.1rem;
   margin-left: 30px;
   margin-right: 30px;
 }
+.AnimationPartnerOn {
+  height: 4px;
+  width: 100%;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 
 .sliderHomiy {
   width: 100%;

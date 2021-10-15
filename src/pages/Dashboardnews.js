@@ -46,6 +46,8 @@ export default class Dashboardnews extends Component {
             <div className={styles.body}>
               <div data-aos="fade-up" className={styles.title}>
                 <h1>Yangiliklar</h1>
+                <div className={styles.AnimationUnderTadbir1}></div>
+                <div className={styles.AnimationUnderTadbir2}></div>
               </div>
               <Carousel
                 responsive={responsive}
@@ -68,43 +70,16 @@ export default class Dashboardnews extends Component {
                         </MDBCardTitle>
                         <MDBCardText>
                           <p>
-                            <i  style={{ color: "#FF865F"}} class="fas fa-calendar-alt"></i> 14/08/2020
-                          </p>
-                          <Link to="/yangilik/uz">
-                            <p
-                             className={styles.ButtonInfoForText}
-                             style={{color:"white"}}
-                           >
-                             
-                              Batafsil
-                            </p>
-                          </Link>
-                        </MDBCardText>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBCol>
-                </div>
-                <div>
-                  <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
-                      <MDBCardImage
-                        src={news1}
-                        className={styles.img}
-                        alt="..."
-                        position="top"
-                      />
-                      <MDBCardBody>
-                        <MDBCardTitle>
-                          Bog'chamizga Prezident tashrif buyirdi
-                        </MDBCardTitle>
-                        <MDBCardText>
-                          <p>
-                            <i  style={{ color: "#FF865F"}} class="fas fa-calendar-alt"></i> 14/08/2020
+                            <i
+                              style={{ color: "#FF865F" }}
+                              class="fas fa-calendar-alt"
+                            ></i>{" "}
+                            14/08/2020
                           </p>
                           <Link to="/yangilik/uz">
                             <p
                               className={styles.ButtonInfoForText}
-                              style={{color:"white"}}
+                              style={{ color: "white" }}
                             >
                               Batafsil
                             </p>
@@ -129,7 +104,45 @@ export default class Dashboardnews extends Component {
                         </MDBCardTitle>
                         <MDBCardText>
                           <p>
-                            <i  style={{ color: "#FF865F"}} class="fas fa-calendar-alt"></i> 14/08/2020
+                            <i
+                              style={{ color: "#FF865F" }}
+                              class="fas fa-calendar-alt"
+                            ></i>{" "}
+                            14/08/2020
+                          </p>
+                          <Link to="/yangilik/uz">
+                            <p
+                              className={styles.ButtonInfoForText}
+                              style={{ color: "white" }}
+                            >
+                              Batafsil
+                            </p>
+                          </Link>
+                        </MDBCardText>
+                      </MDBCardBody>
+                    </MDBCard>
+                  </MDBCol>
+                </div>
+                <div>
+                  <MDBCol style={{ margin: "10px" }}>
+                    <MDBCard className="h-100" className={styles.card}>
+                      <MDBCardImage
+                        src={news1}
+                        className={styles.img}
+                        alt="..."
+                        position="top"
+                      />
+                      <MDBCardBody>
+                        <MDBCardTitle>
+                          Bog'chamizga Prezident tashrif buyirdi
+                        </MDBCardTitle>
+                        <MDBCardText>
+                          <p>
+                            <i
+                              style={{ color: "#FF865F" }}
+                              class="fas fa-calendar-alt"
+                            ></i>{" "}
+                            14/08/2020
                           </p>
                           <Link
                             to="/yangilik/uz"
@@ -139,7 +152,7 @@ export default class Dashboardnews extends Component {
                           >
                             <p
                               className={styles.ButtonInfoForText}
-                              style={{color:"white"}}
+                              style={{ color: "white" }}
                             >
                               Batafsil
                             </p>
@@ -164,12 +177,16 @@ export default class Dashboardnews extends Component {
                         </MDBCardTitle>
                         <MDBCardText>
                           <p>
-                            <i style={{ color: "#FF865F"}} class="fas fa-calendar-alt"></i> 14/08/2020
+                            <i
+                              style={{ color: "#FF865F" }}
+                              class="fas fa-calendar-alt"
+                            ></i>{" "}
+                            14/08/2020
                           </p>
                           <Link to="/yangilik/uz">
                             <p
                               className={styles.ButtonInfoForText}
-                              style={{color:"white"}}
+                              style={{ color: "white" }}
                             >
                               Batafsil
                             </p>

@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.FooterMenu {
+    width: 100%;
+    height: auto;
+    background-image: url("../img//bogcha2//footer-bg.png");
+    background-color: #fff !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+    background-clip: border-box !important;
+    background-origin: padding-box !important;
+    background-position: 0 0 !important;
+    background-size: auto auto !important;
+}
+
+.FooterHeadMenu {
+    z-index: 120;
+    padding: 0px 0px;
+
+}
+
+.FooterMenuIn {
+    width: 100%;
+    height: 310px;
+    margin: auto;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-around;
+
+}
+
+.FooterMenuItem {
+    width: 45%;
+
+}
+
+
+
+.FooterMenuItem:nth-child(1) {
+    padding: 4% 0%;
+    color: #353535;
+    align-content: space-around;
+}
+
+.FooterMenuItem:nth-child(1) b {
+    font-size: 25px;
+    font: 18px "Exo 2", sans-serif;
+    text-transform: uppercase;
+    font-family: inherit;
+
+}
+
+.FooterMenuItem:nth-child(1) p {
+    width: 80%;
+    margin-top: 5%;
+    color: #353535;
+}
+
+.FooterMenuItem:nth-child(1) p b {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.iconsfroup {
+    margin-left: 3px;
+    margin-right: 5px;
+    color: #0C8744;
+    font-size: 18px;
+}
+
+.FooterMenuItem:nth-child(2) {
+    display: block;
+    padding: 4% 0%;
+
+}
+
+.FooterMenuItem:nth-child(2) p a {
+    color: #353535;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.FooterMenuItem:nth-child(2) p {
+    margin: auto;
+    line-height: 40px;
+    text-align: center;
+
+}
+
+.Imkoniyat {
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    color: white;
+    background-color: #A2D2FF;
+    align-content: space-between;
+    align-content: center;
+
+}
+
+.Imkoniyat1 {
+    width: auto;
+    height: auto;
+    margin: auto;
+    justify-content: space-around;
+    display: flex;
+}
+
+.Imkoniyat1 p:nth-child(1) {
+    align-content: center;
+    font-size: 23px;
+    margin-top: auto;
+    margin-top: 20px;
+
+}
+
+
+
+#ConnectButton {
+    height: 45px;
+    color: white;
+    padding: .8% 15px;
+    border: 1px solid #4587EB;
+    background-color: #4587EB;
+    margin-left: 5%;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 20px;
+
+}
+
+#ConnectButton:hover {
+    background-color: #ffffff;
+    color: #4587EB;
+    transition: .17s;
+}
+
+.ConnectTelgramIcon {
+    margin-right: 5px;
+    font-size: 18px;
+}
+
+.FooterToFooter {
+    width: 100%;
+    background-color: #353535;
+
+}
+
+.FooterToFooter p {
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-family: "Andale Mono",
+        monospace;
+
+}
+
+@media (max-width:767px) {
+    .FooterMenuItem:nth-child(1) p {
+        width: 100%;
+    }
+
+    .FooterMenuItem:nth-child(1) {
+        height: auto;
+        padding: 10px 0px;
+    }
+
+    .FooterMenuItem {
+        width: 100%;
+    }
+
+    .FooterMenuIn {
+        height: auto;
+        padding: 15px 0px;
+        display: block;
+    }
+
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 3vh;
+    }
+
+    .FooterMenuItem:nth-child(2) p {
+        text-align: start;
+        font-size: 19px;
+    }
+
+    .FooterMenuItem:nth-child(2) p a {
+        font-size: 19px;
+    }
+}
+
+@media(max-width:690px) {
+
+
+    .Imkoniyat1 p:nth-child(1) {
+        width: 60%;
+    }
+
+    .Imkoniyat1 p:nth-child(2) {
+        width: 30%;
+    }
+}
+
+@media(max-width:550px) {
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 16px;
+    }
+
+    .Imkoniyat1 p:nth-child(2) {
+        padding: 0;
+
+    }
+
+    #ConnectButton {
+        margin-left: 0px;
+        font-size: 16px;
+        padding: 4px;
+    }
+}
+
+@media(max-width:450px) {
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .Imkoniyat2 b {
+        font-size: 18px;
+    }
+
+    .Imkoniyat1 {
+        justify-content: space-around;
+    }
+
+    .ConnectButton {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:400px) {
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 14px;
+        width: 50%;
+    }
+
+    .Imkoniyat1 p:nth-child(1) b {
+        font-size: 16px;
+        width: 50%;
+    }
+
+    .Imkoniyat {
+        height: 80px;
+        padding: 0px 0px;
+    }
+
+    .Imkoniyat1 p:nth-child(1) {
+        margin-top: 15px;
+    }
+
+    .Imkoniyat1 p:nth-child(2) {
+        margin-top: -1px;
+    }
+
+    #ConnectButton {
+        font-size: 14px;
+    }
+
+    .ConnectTelgramIcon {
+        font-size: 15px;
+    }
+
+    .FooterToFooter p {
+        font-size: 13px;
+    }
+}
+
+@media(max-width:350px) {
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 13px;
+        width: 50%;
+    }
+
+    .Imkoniyat1 p:nth-child(1) b {
+        font-size: 14px;
+    }
+
+    #ConnectButton {
+        font-size: 13px;
+        padding: 1px 3px;
+    }
+
+    .ConnectTelgramIcon {
+        font-size: 14px;
+    }
+
+    .FooterToFooter p {
+        font-size: 11px;
+    }
+}
+
+@media(max-width:320px) {
+    .Imkoniyat1 p:nth-child(1) {
+        font-size: 12px;
+        width: 50%;
+    }
+
+    .Imkoniyat1 p:nth-child(1) b {
+        font-size: 13px;
+    }
+
+    #ConnectButton {
+        height: auto;
+        font-size: 10px;
+        padding: 5px 6px;
+    }
+}

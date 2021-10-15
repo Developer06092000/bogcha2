@@ -92,6 +92,8 @@ export default class Rahbariyat extends Component {
                 <div className={styles.body}>
                   <div data-aos="fade-up" className={styles.title}>
                     <h1>Rahbariyat</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <Row>
                     <Col lg={12}>
@@ -135,6 +137,9 @@ export default class Rahbariyat extends Component {
                             <MDBCardBody>
                               <MDBCardTitle>
                                 <h1 className={styles.title1}>Direktor</h1>
+                                <div
+                                  className={styles.AnimationUnderNews1}
+                                ></div>
                               </MDBCardTitle>
                               <MDBCardText>
                                 <p>
@@ -193,6 +198,8 @@ export default class Rahbariyat extends Component {
                                 <h1 className={styles.title1}>
                                   Direktor o'rin bosari
                                 </h1>
+                                                    <div className={styles.AnimationUnderNews1}></div>
+
                               </MDBCardTitle>
                               <MDBCardText>
                                 <p>
@@ -310,11 +317,13 @@ export default class Rahbariyat extends Component {
                             </div>
                           </MDBCol>
                           <MDBCol md="6" style={{ paddingLeft: "20px" }}>
-                            <MDBCardBody>
+                            <MDBCardBody style={{backgrundColor:"#FEF9EF"}}>
                               <MDBCardTitle>
                                 <h1 className={styles.title1}>
                                   Bosh buxgalter
                                 </h1>
+                                <div className={styles.AnimationUnderNews1}></div>
+
                               </MDBCardTitle>
                               <MDBCardText>
                                 <p>

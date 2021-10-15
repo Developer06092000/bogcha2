@@ -22,8 +22,7 @@ body{
     width: 100%;
     height: auto;
 }
-.title{
-    border-bottom: 2px solid #FF865F;
+.title {
     width: 285px;
     margin: auto;
     margin-top:40px ;
@@ -38,7 +37,6 @@ body{
     font-size: 36px;
     color: #585959;
     margin: 0;
-    margin-bottom: 10px;
     padding: 10px 0;
     font-weight: 400;
     text-align: center;
@@ -60,4 +58,56 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.AnimationUnderNews1 {
+    height: 3px;
+    width: 285px;
+    margin: auto;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    border-radius: 20%;
+
+    animation: AnimationUnderNews1 2s ease infinite;
+}
+
+@keyframes AnimationUnderNews1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.AnimationUnderNews2 {
+    height: 3px;
+    width: 200px;
+    margin: auto;
+    border-radius: 8px;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    margin-top: 5px;
+
+    animation: AnimationUnderNews2 2s ease infinite;
+}
+
+@keyframes AnimationUnderNews2 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }

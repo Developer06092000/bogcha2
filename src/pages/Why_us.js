@@ -45,50 +45,71 @@ componentDidMount() {
         }
       }
         return (
-           <div> 
-             {
-        this.state.loader ?
-        <div className={styles.loader}><PacmanLoader  size={20} color={'#FF8080'}  loading={this.state.loader} /></div>
-         :
-         <div>
-<header>
-               <div className={styles.header}>
-                 <Navbar/>
-               <Carousel
-                       className={styles.sliderHeader}
-                      responsive={responsive} infinite={true}
-                      autoPlay={this.props.deviceType !== "mobile" ? true : false}
+          <div>
+            {this.state.loader ? (
+              <div className={styles.loader}>
+                <PacmanLoader
+                  size={20}
+                  color={"#FF8080"}
+                  loading={this.state.loader}
+                />
+              </div>
+            ) : (
+              <div>
+                <header>
+                  <div className={styles.header}>
+                    <Navbar />
+                    <Carousel
+                      className={styles.sliderHeader}
+                      responsive={responsive}
+                      infinite={true}
+                      autoPlay={
+                        this.props.deviceType !== "mobile" ? true : false
+                      }
                       autoPlaySpeed={3000}
                       keyBoardControl={false}
-                        showDots={false}
-                        >
-                       <div>
-                       <img src={why1} className={styles.headerImage}/>                   
-                       </div>
-                       <div>
-                           <img src={why2} className={styles.headerImage}/>                         
-                       </div>
-                      
-                      
+                      showDots={false}
+                    >
+                      <div>
+                        <img src={why1} className={styles.headerImage} />
+                      </div>
+                      <div>
+                        <img src={why2} className={styles.headerImage} />
+                      </div>
                     </Carousel>
-               </div>
-             </header>
-             <Container>
-             <body>
-               <div className={styles.body}>
-                   <div className={styles.title}><h1>Nega biz</h1></div>
-                   <div className={styles.text}>
-                        <p>Flamingoning talabalari juda yaxshi ko'rishadi. Biz o'zimizni bolalar, o'qituvchilar va ma'murlardan iborat g'amxo'r o'quv jamoasini yaratishga bag'ishlaymiz. Bizning ajoyib o'qituvchilar jamoasi sizning kichkintoyingiz bilan abadiy aloqada bo'ladi va uni yulduzlarga intilishga undaydi. Bizning g'amxo'r ma'murlarimiz mijozlarga ajoyib xizmat ko'rsatishadi, chunki mehmondo'stlik biz uchun juda muhimdir. Biz har kuni ertalab / kechqurun oilangizni maktabimizga qabul qilamiz va sizga yordam kerak bo'lsa, shaxsiy narsalaringiz bilan yordam beramiz.
-                        </p><br />
-                   </div>
-               </div>
-             </body>
-             </Container>
-             <Footer/>
-        </div>                            
-               }
-         
-            </div>
-        )
+                  </div>
+                </header>
+                <Container>
+                  <body>
+                    <div className={styles.body}>
+                      <div className={styles.title}>
+                        <h1>Nega biz</h1>
+                        <div className={styles.AnimationUnderNews1}></div>
+                        <div className={styles.AnimationUnderNews2}></div>
+                      </div>
+                      <div className={styles.text}>
+                        <p>
+                          Flamingoning talabalari juda yaxshi ko'rishadi. Biz
+                          o'zimizni bolalar, o'qituvchilar va ma'murlardan
+                          iborat g'amxo'r o'quv jamoasini yaratishga
+                          bag'ishlaymiz. Bizning ajoyib o'qituvchilar jamoasi
+                          sizning kichkintoyingiz bilan abadiy aloqada bo'ladi
+                          va uni yulduzlarga intilishga undaydi. Bizning
+                          g'amxo'r ma'murlarimiz mijozlarga ajoyib xizmat
+                          ko'rsatishadi, chunki mehmondo'stlik biz uchun juda
+                          muhimdir. Biz har kuni ertalab / kechqurun oilangizni
+                          maktabimizga qabul qilamiz va sizga yordam kerak
+                          bo'lsa, shaxsiy narsalaringiz bilan yordam beramiz.
+                        </p>
+                        <br />
+                      </div>
+                    </div>
+                  </body>
+                </Container>
+                <Footer />
+              </div>
+            )}
+          </div>
+        );
     }
 }

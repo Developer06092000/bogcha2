@@ -252,7 +252,7 @@ body{
     text-decoration: underline;
     }
     .btn1{
-        background-color: #F76B6A;
+        background-color: #A2D2FF;
         color:white;
         border-radius: 5px;
         padding:5px 30px;
@@ -319,7 +319,7 @@ body{
           display: block;
           width: 100vw;
           height: 100vh;
-          background-color: #F76B6A;
+          background-color: #A2D2FF;
           overflow-y: scroll;
           transition: all 0.3s;
           z-index:11111111111111111 !important;
@@ -331,7 +331,7 @@ body{
             display: block;
             width: 110vw;
             height: 100vh;
-            background-color: #F76B6A;
+            background-color: #A2D2FF;
             overflow-y: scroll;
             transition: all 0.3s;
              z-index:111111111111111112111111 !important;
@@ -392,12 +392,15 @@ body{
     .navWrapper{
       position: fixed;
       top: 0;
+      transition: .9s;
       right: -110%;
       display: block;
       width: 100vw;
       height: 100vh;
-      background-color: #F76B6A;
+      background-color: #A2D2FF;
       overflow-y: scroll;
+      opacity: .9;
+
       transition: all 0.3s;
       z-index:11111111111111111 !important;
     }
@@ -408,7 +411,8 @@ body{
         display: block;
         width: 110vw;
         height: 100vh;
-        background-color: #F76B6A;
+        background-color: #A2D2FF;
+        opacity: .9;
         overflow-y: scroll;
         transition: all 0.3s;
          z-index:111111111111111112111111 !important;

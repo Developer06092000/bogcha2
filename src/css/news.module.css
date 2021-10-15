@@ -6,7 +6,6 @@
 .loader{
     width: 100%;
     height: 100vh;
-    background-image: url('../img/loader-bg.png');
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +14,6 @@ body{
     font-family: helvetica neue,Helvetica,Arial,sans-serif;
 }
 .title {
-    border-bottom: 2px solid #FF865F;
     width: 285px;
     margin: auto;
     margin-top:40px ;
@@ -32,29 +30,133 @@ body{
     font-weight: 400;
     text-align: center;
 }
+.AnimationUnderTadbir1 {
+  height: 3px;
+  width: 100%;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+  background-size: 400% 400%;
+  animation: AnimationUnderTadbir1 2s ease infinite;
+}
+
+@keyframes AnimationUnderTadbir1 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.AnimationUnderTadbir2 {
+  height: 3px;
+  width: 60%;
+  margin: auto;
+  margin-top: 5px;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
+  background-size: 400% 400%;
+  animation: AnimationUnderTadbir2 2s ease infinite;
+}
+
+@keyframes AnimationUnderTadbir2 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.AnimationUnderNews1 {
+  height: 3px;
+  width: 100%;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+  background-size: 400% 400%;
+  border-radius: 20%;
+
+  animation: AnimationUnderNews1 2s ease infinite;
+}
+
+@keyframes AnimationUnderNews1 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.AnimationUnderNews2 {
+  height: 3px;
+  width: 60%;
+  margin: auto;
+  border-radius: 8px;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
+  background-size: 400% 400%;
+  margin-top: 5px;
+
+  animation: AnimationUnderNews2 2s ease infinite;
+}
+
+@keyframes AnimationUnderNews2 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .header{
     width: 100%;
     height: 100vh;
-    background-image: url(../img/about1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 .card{
     cursor: pointer;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-}
+    box-shadow: rgba(99, 99, 99, 0.15) 0px 2px 8px 0px;
+    }
+
+    .card:hover {
+      cursor: pointer;
+      transition: .1s;
+      box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;
+    }
 
 /* New-------------------------- */
 .newbg{
     width: 100%;
-    height: 40vh;
- background-image: url(../img/loader-bg.png);
+    height: 20vh;
+    /* background-image: url(../img/loader-bg.png); */
  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.newtitle{
-    border-bottom: 2px solid #FF865F;
+.newtitle {
     width: 285px;
     margin: auto;
    padding-top: 130px;
@@ -75,11 +177,19 @@ body{
     height: auto;
 
 }
-.text p{
-    font-size: 18px;
+.text p:nth-child(1) {
+  font-size: 18px;
+  color: #444;
+  margin: 0 auto;
+  padding: 5px 0;
+  line-height: 200%;
+  }
+
+  .text p:nth-child(2) {
+    font-size: 17px;
     color: #444;
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 5px 0;
     line-height: 200%;
 }
 .ButtonInfoForText {
@@ -121,26 +231,6 @@ body{
         box-shadow: 0 0 0 5px hsl(52, 74%, 79%), 0 0 0 10px hsl(52, 73%, 88%);
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :root {
     --surface-color: #fff;
     --curve: 40;
@@ -167,8 +257,8 @@ body{
   .card {
     position: relative;
     display: block;
-    height: 302px;  
-    border-radius: calc(var(--curve) * 1px);
+    height: auto;
+    border-radius: calc(var(--curve) * .4px);
     overflow: hidden;
     text-decoration: none;
   }
@@ -260,3 +350,8 @@ body{
     -webkit-line-clamp: 3;
     overflow: hidden;
   }    
+@media(max-width:767px) {
+  .ButtonInfoForText {
+    margin-left: 35px;
+  }
+}

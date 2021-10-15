@@ -77,8 +77,13 @@ export default class Oshxona extends Component {
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>
-                  <div style={{ display: "flex", justifyContent: "center" }}>
+                  <div
+                    className={styles.text1}
+                    style={{ justifyContent: "center" }}
+                  >
                     <h1>Bog'chamiz oshxonasi</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <h2>
                     Maktabgacha yoshdagi bolalarni nima bilan boqish kerak?

@@ -11,7 +11,7 @@ import icon4 from "../img/icon4.png";
 import icon5 from "../img/icon5.png";
 import icon6 from "../img/icon6.png";
 import rasm3 from "../img/1.jpg";
-import border from "../img/border.png";
+import border from "../img/Sunrise.jpg";
 import "bootstrap/dist/css/bootstrap.min.css";
 import {
   FaHome,
@@ -110,7 +110,9 @@ export default class Dashboard extends Component {
                 <source src={kinder} type="video/mp4" />
               </video> */}
               <div className={styles.btnHeader}>
-                <Button className={styles.ButtonMenuHeadFor}>Hoziroq qo'ng'iroq qiling!</Button>
+                <Button id={styles.ButtonMenuHeadFor}>
+                  Hoziroq qo'ng'iroq qiling!
+                </Button>
               </div>
             </div>
             <div className={styles.second}>
@@ -248,7 +250,7 @@ export default class Dashboard extends Component {
                           <Link
                             to="/loving/uz"
                             className={styles.ButtonInfoForText}
-                           style={{color:"white"}}
+                            style={{ color: "white" }}
                           >
                             Batafsil
                           </Link>
@@ -283,7 +285,7 @@ export default class Dashboard extends Component {
                           <Link
                             to="/wonder/uz"
                             className={styles.ButtonInfoForText}
-                            style={{color:"white"}}
+                            style={{ color: "white" }}
                           >
                             Batafsil
                           </Link>
@@ -327,7 +329,7 @@ export default class Dashboard extends Component {
                           <Link
                             to="/leadership/uz"
                             className={styles.ButtonInfoForText}
-                            style={{color:"white"}}
+                            style={{ color: "white" }}
                           >
                             Batafsil
                           </Link>
@@ -369,7 +371,7 @@ export default class Dashboard extends Component {
                           <Link
                             to="/changing/uz"
                             className={styles.ButtonInfoForText}
-                           style={{color:"white"}}
+                            style={{ color: "white" }}
                           >
                             Batafsil
                           </Link>
@@ -386,7 +388,7 @@ export default class Dashboard extends Component {
             </div>
             <div style={{ padding: "10px 0 30px" }}>
               <h1 className={styles.sarlavha}> Bizning hamkorlarimiz</h1>
-
+              <div className={styles.AnimationPartnerOn}></div>
               <div
                 className={styles.sliderHomiy}
                 style={{ backgroundColor: "white" }}

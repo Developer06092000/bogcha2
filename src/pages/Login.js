@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../css/Login.module.css";
+import "../css/login.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import rasm5 from "../img/logo-dark.png";
 import { Link } from "react-router-dom";
@@ -24,6 +25,67 @@ export default function Login() {
   const [nav, setNav] = useState(false);
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
+
+  const [In, setIn] = React.useState(false);
+  const [item, setLog] = React.useState(true);
+  const [password, setPassword] = React.useState("");
+  const [username, setUsername] = React.useState("");
+  const [signpassword, setSignPassword] = React.useState("");
+  const [signusername, setSignUsername] = React.useState("");
+  const [signmail, setSignMail] = React.useState("");
+  const [signnumber, setsignnumber] = React.useState("");
+
+  const Ruyhat = () => {
+    setIn(false);
+  };
+  const Kirish = () => {
+    setIn(true);
+  };
+
+  const Registr = () => {
+    setLog(true);
+  };
+  const Enter = () => {
+    setLog(false);
+  };
+
+  const handleChangUser = (event) => {
+    setUsername(event.target.value);
+  };
+  const handleChangePass = (event) => {
+    setPassword(event.target.value);
+  };
+  const handleChangeSignUser = (event) => {
+    setSignUsername(event.target.value);
+  };
+  const handleChangeSignMail = (event) => {
+    setSignMail(event.target.value);
+  };
+  const handleChangeSignPass = (event) => {
+    setSignPassword(event.target.value);
+  };
+  const handleChangeSignNum = (event) => {
+    setsignnumber(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault(event);
+    //Send FullInformation person about
+    console.log(
+      "username=",
+      username,
+      "; password=",
+      password,
+      "; mail=",
+      signmail,
+      "; number=",
+      signnumber,
+      "; parol=",
+      signpassword,
+      "; newname=",
+      signusername
+    );
+  };
   const change = () => {
     if (window.scrollY >= 200) {
       setNav(true);
@@ -70,7 +132,7 @@ export default function Login() {
                 <div className={styles.navbar}>
                   <span>
                     <Link to="/dashboard/uz">
-                      <FaHome style={{ color: "#FF8080", fontSize: "23px" }} />
+                      <FaHome style={{ color: "#4587EB", fontSize: "23px" }} />
                     </Link>
                   </span>
                   <span style={{ fontSize: "25px" }}>|</span>
@@ -136,14 +198,14 @@ export default function Login() {
                   <span style={{ marginLeft: "40px" }}>
                     <a href="tel:+998335093874">
                       <FaPhoneAlt
-                        style={{ color: "#FF8080", fontSize: "18px" }}
+                        style={{ color: "#4587EB", fontSize: "18px" }}
                       />
                     </a>
                   </span>
                   <span>
                     <a href="http://t.me/Karshiyeva_N">
                       <FaTelegramPlane
-                        style={{ color: "#FF8080", fontSize: "23px" }}
+                        style={{ color: "#4587EB", fontSize: "23px" }}
                       />
                     </a>
                   </span>
@@ -164,7 +226,7 @@ export default function Login() {
                 <div className={nav ? styles.openNav1 : styles.openNav}>
                   <FaBars
                     onClick={openNav}
-                    style={{ color: "#FF8080", fontSize: "30px" }}
+                    style={{ color: "#A2D2FF", fontSize: "30px" }}
                   />
                 </div>
                 <div className={open ? styles.navWrapper1 : styles.navWrapper}>
@@ -173,7 +235,7 @@ export default function Login() {
                       onClick={handleClick}
                       style={{
                         width: 256,
-                        backgroundColor: "#F76B6A",
+                        backgroundColor: "#A2D2FF",
                         border: "none",
                         textAlign: "center",
                         fontSize: "18px",
@@ -183,7 +245,7 @@ export default function Login() {
                       defaultOpenKeys={["sub1"]}
                       mode="inline"
                     >
-                      <Menu.Item key="1" style={{ backgroundColor: "#F76B6A" }}>
+                      <Menu.Item key="1" style={{ backgroundColor: "#A2D2FF" }}>
                         <span>
                           <Link to="/dashboard/uz">
                             <FaHome
@@ -195,7 +257,7 @@ export default function Login() {
                       <SubMenu
                         key="sub1"
                         title="Biz haqimizda"
-                        style={{ backgroundColor: "#F76B6A", color: "white" }}
+                        style={{ backgroundColor: "#A2D2FF", color: "white" }}
                       >
                         <Menu.ItemGroup
                           key="g1"
@@ -242,7 +304,7 @@ export default function Login() {
                       </SubMenu>
                       <Menu.Item
                         key="10"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link to="/curriculm/uz" style={{ color: "white" }}>
                           Qabul
@@ -250,7 +312,7 @@ export default function Login() {
                       </Menu.Item>
                       <Menu.Item
                         key="11"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link style={{ color: "white" }} to="/yangiliklar/uz">
                           Yangiliklar
@@ -258,7 +320,7 @@ export default function Login() {
                       </Menu.Item>
                       <Menu.Item
                         key="12"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link style={{ color: "white" }} to="/tadbirlar/uz">
                           Tadbirlar
@@ -266,19 +328,19 @@ export default function Login() {
                       </Menu.Item>
                       <Menu.Item
                         key="12"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <button
                           style={{
                             border: "none",
                             backgroundColor: "white",
-                            color: "#F76B6A",
+                            color: "#4587EB",
                             borderRadius: "25px",
                             padding: "10px 30px",
                           }}
                         >
                           <Link
-                            style={{ color: "#F76B6A", fontWeight: "800" }}
+                            style={{ color: "#4587EB", fontWeight: "800" }}
                             to="/login/uz"
                           >
                             Kirish
@@ -318,7 +380,115 @@ export default function Login() {
             </div>
           </div>
           <Container fluid className={styles.bodyl}>
-            <Row>
+            {/* ----------------------------------- */}
+            <div className="Registratsiya">
+              {item ? (
+                <div className="login">
+                  <h3 className="header">Kirish</h3>
+                  <form onSubmit={handleSubmit}>
+                    <label className="inputPerson">
+                      <input
+                        className="inputtext"
+                        name="Username"
+                        type="text"
+                        value={username}
+                        placeholder="Username"
+                        onChange={handleChangUser}
+                        required
+                      />
+                    </label>
+                    <label className="inputPerson">
+                      <input
+                        className="inputpass"
+                        name="Password"
+                        type="password"
+                        value={password}
+                        placeholder="Password"
+                        onChange={handleChangePass}
+                        required
+                      />
+                    </label>
+
+                    <input
+                      className="LogInPriceLog"
+                      type="submit"
+                      value="Kirish"
+                    />
+                  </form>
+
+                  <div className="footerTitleLog">
+                    <p>Ruyxatdan o'tmadingizmi? </p>
+                    <p>
+                      {" "}
+                      <strong onClick={Enter} className="linkLog">
+                        SignUp
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              ) : (
+                <div className="signup">
+                  <h1 className="header">Ruyxatdan O'tish!</h1>
+                  <form onSubmit={handleSubmit}>
+                    <label className="inputPersonSign">
+                      <input
+                        type="text"
+                        value={signusername}
+                        placeholder="Full Name"
+                        onChange={handleChangeSignUser}
+                        required
+                      />
+                    </label>
+                    <label className="inputPersonSign">
+                      <input
+                        type="email"
+                        value={signmail}
+                        placeholder="Email"
+                        onChange={handleChangeSignMail}
+                        required
+                      />
+                    </label>
+                    <label className="inputPersonSign">
+                      <input
+                        type="password"
+                        value={signpassword}
+                        placeholder="Password"
+                        onChange={handleChangeSignPass}
+                        required
+                      />
+                    </label>
+                    <label className="inputPersonSign">
+                      <input
+                        type="text"
+                        value={signnumber}
+                        placeholder="Number"
+                        onChange={handleChangeSignNum}
+                        required
+                      />
+                    </label>
+
+                    <input
+                      className="LogInPriceSign"
+                      type="submit"
+                      value="Kirish"
+                    />
+                  </form>
+                  <div className="footerTitleSign">
+                    <p>Ruyxatdan o'tkanmisiz ? </p>
+                    <p>
+                      {" "}
+                      <strong onClick={Registr} className="linkLog">
+                        Log in
+                      </strong>
+                    </p>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* ----------------------------------- */}
+
+            {/* <Row>
               <Col lg={12} className={styles.text}>
                 <h1>Kirish</h1>
                 <div className={styles.form}>
@@ -353,7 +523,7 @@ export default function Login() {
                       type="submit"
                       style={{
                         fontWeight: "600",
-                        backgroundColor: "#FF8080",
+                        backgroundColor: "#4587EB",
                         border: "none",
                         marginTop: "30px",
                         width: "100%",
@@ -364,7 +534,7 @@ export default function Login() {
                   </Form>
                 </div>
               </Col>
-            </Row>
+            </Row> */}
           </Container>
           <Footer />
         </div>

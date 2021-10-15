@@ -81,6 +81,8 @@ export default class Our_story extends Component {
                 <div className={styles.body}>
                   <div className={styles.title}>
                     <h1>Bizning tarix</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <div className={styles.text}>
                     <p>

@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.Registratsiya {
+    position: relative;
+    width: 300px;
+    margin: auto;
+    background-color: #FEF9EF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    height: auto;
+    padding: 3% 2%;
+    border-radius: 10px;
+    margin-top: 150px;
+
+
+
+}
+
+.header {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+    margin: auto;
+    color: #B5365A;
+
+}
+
+.inputPerson {
+    margin: auto;
+}
+
+.inputPerson input {
+    display: flex;
+    margin: auto;
+
+    left: 10%;
+    margin-top: 25px;
+    height: 40px;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+}
+
+.inputPersonSign input {
+    display: flex;
+    margin: auto;
+    margin-top: 15px;
+    height: 30px;
+    width: 250px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 1px solid #DFDFDF;
+    outline: none;
+}
+
+.inputPerson input:first-child:hover {
+    background-color: #DFDFDF;
+}
+
+.inputPersonSign input:first-child:hover {
+    background-color: #DFDFDF;
+}
+
+.inputpass:hover {
+    background-color: #DFDFDF;
+}
+
+.Registratsiya .login {
+    margin: auto;
+}
+
+.remember {
+    margin-top: 30px;
+    ;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.remember:hover {
+    text-decoration: underline;
+}
+
+.remembersmall:hover {
+    text-decoration: underline;
+}
+
+.LogInPriceLog {
+    margin-left: 18px;
+    height: 40px;
+    width: 220px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 30px;
+
+    border-radius: 50px;
+
+    outline: none;
+    font-size: 18px;
+    background-color: #D51C4D;
+    color: white;
+
+}
+
+.LogInPriceSign {
+    height: 40px;
+    width: 220px;
+    margin-left: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 18px;
+    background-color: #D51C4D;
+    color: white;
+}
+
+.footerTitleLog {
+    display: flex;
+    font-size: 16px;
+    font-weight: lighter;
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.footerTitleLog p:nth-child(1) {
+    font-size: 15px;
+}
+
+.footerTitleLog p:nth-child(2) {
+    margin-left: 0%;
+    font-weight: bold;
+}
+
+
+.footerTitleSign {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+}
+
+.footerTitleSign p {
+    margin-left: 4%;
+}
+
+
+
+
+.linkLog {
+    margin-left: 5px;
+}
+
+.linkLog:hover {
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.linkSign {
+    margin-left: 5px;
+}
+
+.linkSign:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.content {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: auto
+}
+
+.card {
+    border: 1px solid black;
+    margin-top: 20px;
+    ;
+    margin-bottom: 20px;
+    ;
+    background-color: #F6F7FA;
+    border: none;
+
+}
+
+.card:hover {
+    background-color: white;
+    transition: .3s;
+    box-shadow: 0 5.83px 12.92px rgb(0 0 0 / 34%);
+
+}
+
+.teme1 {
+    font-size: 33px;
+    font-weight: bolder;
+    color: black;
+
+}
+
+.teme1:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.teme2 {
+    font-size: 18px;
+    ;
+}
+
+.Text div {
+    display: flex;
+    margin: auto;
+    margin-left: 60px;
+    ;
+
+}
+
+.teme2 {}
+
+.teme3 {
+    margin-left: 30px;
+    ;
+    cursor: pointer;
+    color: #0982AE;
+}
+
+.teme3:hover {
+    text-decoration: underline;
+}
+
+.Text .Rasm {
+    border: 4px solid white;
+    width: 288px;
+    ;
+    height: 155px;
+    margin: auto;
+    margin-top: 88px;
+    ;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 10.83px 22.92px rgb(0 0 0 / 34%);
+    flex-direction: column;
+    overflow-y: hidden;
+    cursor: pointer;
+
+
+}
+
+.Text .Rasm:hover {
+    margin-top: 80px;
+    transition: .3s;
+
+
+}
+
+@media(max-width:400px) {
+    .Registratsiya {}
+
+}
+
+@media(max-width:360px) {
+    .Registratsiya {
+        padding: 10%;
+    }
+
+    .inputPersonSign input {
+
+        height: 30px;
+        width: 220px;
+    }
+
+    .LogInPriceSign {
+        width: 180px;
+    }
+
+
+}
+
+@media(max-width:340px) {
+    .Registratsiya {
+        padding: 10%;
+    }
+
+}
+
+@media(max-width:320px) {
+    .Registratsiya {
+        width: 280px;
+        padding: 10%;
+    }
+
+}
