@@ -25,7 +25,7 @@ import { Link } from "react-router-dom";
 import rasm4 from "../img/3s-Photo-3.jpg";
 import rasm7 from "../img/engagement.jpg";
 import rasm6 from "../img/love.jpg";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Dashboardnews from "./Dashboardnews";
@@ -77,11 +77,14 @@ export default class Dashboard extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#000000"}
+            <PuffLoader
+
+              className={styles.loader1}
+              size={140}
+              color={"#2C0091"}
               loading={this.state.loader}
             />
+           <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>

@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import news1 from "../img/kinder6.png";
 import styles from "../css/news.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
@@ -26,11 +26,13 @@ export default class New extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
+            <PuffLoader
+              className={styles.loader1}
+              size={140}
+              color={"#2C0091"}
               loading={this.state.loader}
             />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>

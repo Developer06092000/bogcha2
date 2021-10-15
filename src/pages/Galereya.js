@@ -11,7 +11,7 @@ import about2 from "../img/about2.jpg";
 import about3 from "../img/about3.jpg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import Dashboardnews from "./Dashboardnews";
 import Dashboardtadbir from "./Dashboardtadbir";
 export default class Galereya extends Component {
@@ -49,12 +49,14 @@ export default class Galereya extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
-              loading={this.state.loader}
-            />
-          </div>
+          <PuffLoader
+            className={styles.loader1}
+            size={140}
+            color={"#2C0091"}
+            loading={this.state.loader}
+          />
+          <p> Sayt Test Rejimida Ishlamoqda!</p>
+        </div>
         ) : (
           <div>
             <header>
@@ -108,6 +110,8 @@ export default class Galereya extends Component {
                 <div className={styles.body}>
                   <div className={styles.title}>
                     <h1>Biz haqimizda</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <div className={styles.text}>
                     <p>

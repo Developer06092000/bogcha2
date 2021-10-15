@@ -3,7 +3,7 @@ import { Col, Container, Row, Form, Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../css/Login.module.css";
 import "../css/login.css";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import rasm5 from "../img/logo-dark.png";
 import { Link } from "react-router-dom";
 import { BsFillTriangleFill } from "react-icons/bs";
@@ -25,7 +25,6 @@ export default function Login() {
   const [nav, setNav] = useState(false);
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
-
   const [In, setIn] = React.useState(false);
   const [item, setLog] = React.useState(true);
   const [password, setPassword] = React.useState("");
@@ -120,8 +119,14 @@ export default function Login() {
   return (
     <div>
       {loader ? (
-        <div className={styles.loader}>
-          <PacmanLoader size={20} color={"#FF8080"} loading={loader} />
+          <div className={styles.loader}>
+          <PuffLoader
+            className={styles.loader1}
+            size={140}
+            color={"#2C0091"}
+            loading={this.state.loader}
+          />
+          <p> Sayt Test Rejimida Ishlamoqda!</p>
         </div>
       ) : (
         <div>

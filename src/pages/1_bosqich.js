@@ -9,7 +9,7 @@ import img1 from "../img/r1.jpg";
 
 import img4 from "../img/r4.jpeg";
 import img5 from "../img/r5.jpeg";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 export default class Bosqich1 extends Component {
   state = {
@@ -47,11 +47,13 @@ export default class Bosqich1 extends Component {
       <div className={style.mat}>
         {this.state.loader ? (
           <div className={style.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#A2D2FF"}
+            <PuffLoader
+              className={style.loader1}
+              size={140}
+              color={"#2C0091"}
               loading={this.state.loader}
             />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>
@@ -77,14 +79,9 @@ export default class Bosqich1 extends Component {
             </Carousel>
             <div className={style.matn}>
               <h1>1-BOSQICH</h1>
-              <div
-                style={{
-                  width: "200px",
-                  height: "3px",
-                  margin: "auto",
-                  backgroundColor: "#FF865F",
-                }}
-              ></div>
+              <div className={style.AnimationUnderNews1}></div>
+              <div className={style.AnimationUnderNews2}></div>
+
               <br />
               <h5>BUSY BEES</h5>
               <p>

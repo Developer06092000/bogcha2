@@ -15,7 +15,7 @@ import {
   YMaps,
   ZoomControl,
 } from "react-yandex-maps";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import rasm5 from "../img/logo-dark.png";
 import { Link } from "react-router-dom";
 import { BsFillTriangleFill } from "react-icons/bs";
@@ -72,16 +72,18 @@ export default class Location extends Component {
   }
   render() {
     const { SubMenu } = Menu;
- 
+
     return (
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
+            <PuffLoader
+              className={styles.loader1}
+              size={140}
+              color={"#2C0091"}
               loading={this.state.loader}
             />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>
@@ -371,6 +373,8 @@ export default class Location extends Component {
                 <div className={styles.body} style={{ overflowY: "hidden" }}>
                   <div className={styles.title}>
                     <h1>Joylashuv</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
                   <div className={styles.content}>
                     <Row>

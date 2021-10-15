@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import "../App.css";
 import styles from "../css/navbarkids.module.css";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 import { Menu, Button } from "antd";
 import {
@@ -49,12 +49,14 @@ export default class CabinetEducator extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
-              loading={this.state.loader}
-            />
-          </div>
+          <PuffLoader
+            className={styles.loader1}
+            size={140}
+            color={"#2C0091"}
+            loading={this.state.loader}
+          />
+          <p> Sayt Test Rejimida Ishlamoqda!</p>
+        </div>
         ) : (
           <div>
             <div style={{ display: "flex", flexDirection: "row" }}>

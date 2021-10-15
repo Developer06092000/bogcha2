@@ -7,7 +7,7 @@ import educators2 from "../img/educators2.jpg";
 import educators3 from "../img/educators3.jpg";
 import educators4 from "../img/educators4.jpg";
 import educators5 from "../img/educators5.jpg";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import {
@@ -55,13 +55,16 @@ export default class Educators extends Component {
     return (
       <div>
         {this.state.loader ? (
-          <div className={styles.loader}>
-            <PacmanLoader
-              size={30}
-              color={"#FF8080"}
-              loading={this.state.loader}
-            />
-          </div>
+         <div className={styles.loader}>
+         <PuffLoader
+
+           className={styles.loader1}
+           size={140}
+           color={"#2C0091"}
+           loading={this.state.loader}
+         />
+        <p> Sayt Test Rejimida Ishlamoqda!</p>
+       </div>
         ) : (
           <div>
             <header>
@@ -82,7 +85,7 @@ export default class Educators extends Component {
                   <div>
                     <img src={educators2} className={styles.headerImage} />
                   </div>
-                </Carousel>
+                </Carousel> 
               </div>
             </header>
 

@@ -3,7 +3,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import styles from "../css/news.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import news1 from "../img/kinder6.png";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -35,13 +35,15 @@ export default class Educators extends Component {
     return (
       <div>
         {this.state.loader ? (
-          <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
-              loading={this.state.loader}
-            />
-          </div>
+           <div className={styles.loader}>
+           <PuffLoader
+             className={styles.loader1}
+             size={140}
+             color={"#2C0091"}
+             loading={this.state.loader}
+           />
+           <p> Sayt Test Rejimida Ishlamoqda!</p>
+         </div>
         ) : (
           <div>
             <header>

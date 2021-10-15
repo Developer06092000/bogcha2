@@ -8,7 +8,7 @@ import kinder2 from "../img/meal2.jpg";
 import kinder3 from "../img/meal3.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "./Footer";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 
 export default class Oshxona extends Component {
   state = {
@@ -46,11 +46,13 @@ export default class Oshxona extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
+            <PuffLoader
+              className={styles.loader1}
+              size={140}
+              color={"#2C0091"}
               loading={this.state.loader}
             />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>

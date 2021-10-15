@@ -8,7 +8,7 @@ import "react-multi-carousel/lib/styles.css";
 import styles from "../css/about_us.module.css";
 import story1 from "../img/ourstory3.jpg";
 import story2 from "../img/ourstorybanner.jpg";
-import PacmanLoader from "react-spinners/PacmanLoader";
+import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 
@@ -47,12 +47,15 @@ export default class Our_story extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-            <PacmanLoader
-              size={20}
-              color={"#FF8080"}
-              loading={this.state.loader}
-            />
-          </div>
+          <PuffLoader
+    
+            className={styles.loader1}
+            size={140}
+            color={"#2C0091"}
+            loading={this.state.loader}
+          />
+         <p> Sayt Test Rejimida Ishlamoqda!</p>
+        </div>
         ) : (
           <div>
             <header>

@@ -6,7 +6,7 @@ import rasm5 from "../img/logo-dark.png";
 import img1 from "../img/q1.jpg";
 import img2 from "../img/q2.jpg";
 import img3 from "../img/q3.jpg";
-import img from "../img/border.png";
+import img from "../img/Sunrise.jpg";
 import { BsFillTriangleFill } from "react-icons/bs";
 import {
   FaHome,
@@ -322,14 +322,9 @@ export default class Dasturlar extends Component {
             </div>
           </div>
           <h2 className={style.sarlavha}>Dasturlar</h2>
-          <div
-            style={{
-              width: "200px",
-              height: "2px",
-              margin: "auto",
-              backgroundColor: "#FF865F",
-            }}
-          ></div>
+          <div className={style.AnimationUnderNews1}></div>
+          <div className={style.AnimationUnderNews2}></div>
+
           <div className={style.oyna}>
             <div className={style.rasm}>
               <img src={img1} />
@@ -339,14 +334,8 @@ export default class Dasturlar extends Component {
             </div>
             <div className={style.content}>
               <h4>1-bosqich</h4>
-              <div
-                style={{
-                  width: "140px",
-                  height: "1px",
-                  backgroundColor: "#FF865F",
-                  margin: "16px 0px 12px",
-                }}
-              ></div>
+              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+
               <p>
                 The sweetest and youngest of all at Flamingo are approximately
                 12 months- 24 months. At this stage in our learning journey,
@@ -361,14 +350,8 @@ export default class Dasturlar extends Component {
           <div className={(style.oyna, style.oyna1)}>
             <div className={style.content1}>
               <h4>2-bosqich</h4>
-              <div
-                style={{
-                  width: "140px",
-                  height: "1px",
-                  backgroundColor: "#FF865F",
-                  margin: "16px 0px 12px",
-                }}
-              ></div>
+              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+
               <p>
                 Oﬀ like a rocket at 2-years old, our toddler classroom is all
                 about exploration. Sensory activities are a huge part of our
@@ -396,14 +379,8 @@ export default class Dasturlar extends Component {
             </div>
             <div className={style.content}>
               <h4>3-bosqich</h4>
-              <div
-                style={{
-                  width: "140px",
-                  height: "1px",
-                  backgroundColor: "#FF865F",
-                  margin: "16px 0px 12px",
-                }}
-              ></div>
+              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+
               <p>
                 A world of monsters and fairies await when we enter our 3’s
                 class. Pretend play rules this age group from the fearless
