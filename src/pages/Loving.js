@@ -44,15 +44,15 @@ export default class Loving extends Component {
     return (
       <div>
         {this.state.loader ? (
-       <div className={styles.loader}>
-       <PuffLoader
-         className={styles.loader1}
-         size={140}
-         color={"#2C0091"}
-         loading={this.state.loader}
-       />
-       <p> Sayt Test Rejimida Ishlamoqda!</p>
-     </div>
+          <div className={styles.loader}>
+            <PuffLoader
+              className={styles.loader1}
+              color={"#2C0091"}              size={100}
+
+              loading={this.state.loader}
+            />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
+          </div>
         ) : (
           <div>
             <Navbar />
@@ -78,7 +78,9 @@ export default class Loving extends Component {
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>
-                  <div style={{ justifyContent: "center",textAlign:'center' }}>
+                  <div
+                    style={{ justifyContent: "center", textAlign: "center" }}
+                  >
                     <h1>Mehribon va tarbiyalovchi muhit</h1>{" "}
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>

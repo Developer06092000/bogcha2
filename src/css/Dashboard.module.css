@@ -257,7 +257,6 @@ body {
   left: 0;
   width: 100px;
   height: 3px;
-   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
    background-size: 400% 400%;
    animation: Heading1H1 3s ease infinite;
@@ -276,6 +275,8 @@ body {
        background-position: 0% 50%;
      }
 }
+
+
 .heading1 p {
   margin-top: 30px;
 }
@@ -353,11 +354,25 @@ body {
   justify-content: center;
   align-items: center;
 }
+.loader1 {
+  font-size: 140px;
+}
+
 .loader p {
   margin-left: 10px;
   font-size: 18px;
   color: #3d1699;
 
+}
+
+@media(max-width:400px) {
+  .loader1 {
+    size: 100px;
+  }
+
+  .loader p {
+    font-size: 15px;
+  }
 }
 
 .sarlavha {

@@ -61,7 +61,7 @@ export default class NavbarKabinet extends Component {
             <div className={this.state.nav ? styles.openNav1 : styles.openNav}>
               <FaBars
                 onClick={this.openNav}
-                style={{ color: "#FF8080", fontSize: "30px" }}
+                style={{ color: "#A2D2FF", fontSize: "30px" }}
               />
             </div>
             <div
@@ -74,7 +74,7 @@ export default class NavbarKabinet extends Component {
                   onClick={this.handleClick}
                   style={{
                     width: 256,
-                    backgroundColor: "#F76B6A",
+                    backgroundColor: "#A2D2FF",
                     border: "none",
                     textAlign: "center",
                     fontSize: "18px",
@@ -84,7 +84,7 @@ export default class NavbarKabinet extends Component {
                   defaultOpenKeys={["sub1"]}
                   mode="inline"
                 >
-                  <Menu.Item key="1" style={{ backgroundColor: "#F76B6A" }}>
+                  <Menu.Item key="1" style={{ backgroundColor: "#A2D2FF" }}>
                     <span>
                       <Link to="/dashboard/uz">
                         <FaHome style={{ color: "white", fontSize: "23px" }} />
@@ -94,12 +94,14 @@ export default class NavbarKabinet extends Component {
                   <SubMenu
                     key="sub1"
                     title="Biz haqimizda"
-                    style={{ backgroundColor: "#F76B6A", color: "white" }}
+                    style={{ backgroundColor: "#A2D2FF", color: "white" }}
                   >
                     <Menu.ItemGroup
                       key="g1"
-                      style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
-                    >
+                      style={{ borderTop: "3px solid #4587EB)" }}
+                    ><Menu.Item key="2">
+                    <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
+                    </Menu.Item>
                       <Menu.Item key="2">
                         <Link to="/bizningtarix/uz">Bizning tarix</Link>
                       </Menu.Item>
@@ -123,8 +125,10 @@ export default class NavbarKabinet extends Component {
                     style={{ color: "white" }}
                   >
                     <Menu.ItemGroup
-                      style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
-                    >
+                      style={{ borderTop: "3px solid #4587EB" }}
+                    > <Menu.Item key="9">
+                    <Link to="/dasturlar/uz">Dasturlar</Link>
+                    </Menu.Item>
                       <Menu.Item key="7">
                         <Link to="/dastur_1/uz">1-dastur</Link>
                       </Menu.Item>
@@ -138,7 +142,7 @@ export default class NavbarKabinet extends Component {
                   </SubMenu>
                   <Menu.Item
                     key="10"
-                    style={{ color: "white", backgroundColor: "#F76B6A" }}
+                    style={{ color: "white", backgroundColor: "#A2D2FF" }}
                   >
                     <Link to="/curriculm/uz" style={{ color: "white" }}>
                       Qabul
@@ -146,7 +150,7 @@ export default class NavbarKabinet extends Component {
                   </Menu.Item>
                   <Menu.Item
                     key="11"
-                    style={{ color: "white", backgroundColor: "#F76B6A" }}
+                    style={{ color: "white", backgroundColor: "#A2D2FF" }}
                   >
                     <Link style={{ color: "white" }} to="/yangiliklar/uz">
                       Yangiliklar
@@ -154,7 +158,7 @@ export default class NavbarKabinet extends Component {
                   </Menu.Item>
                   <Menu.Item
                     key="12"
-                    style={{ color: "white", backgroundColor: "#F76B6A" }}
+                    style={{ color: "white", backgroundColor: "#A2D2FF" }}
                   >
                     <Link style={{ color: "white" }} to="/tadbirlar/uz">
                       Tadbirlar

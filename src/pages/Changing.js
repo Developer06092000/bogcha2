@@ -44,11 +44,11 @@ export default class Changing extends Component {
     return (
       <div>
         {this.state.loader ? (
-            <div className={styles.loader}>
+          <div className={styles.loader}>
             <PuffLoader
               className={styles.loader1}
-              size={140}
-              color={"#2C0091"}
+              color={"#2C0091"}              size={100}
+
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>
@@ -78,13 +78,21 @@ export default class Changing extends Component {
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>
-                  <div style={{ textAlign:'center', justifyContent: "center" }}>
+                  <div
+                    style={{ textAlign: "center", justifyContent: "center" }}
+                  >
                     <h1>
                       Bizning dunyomizni bir vaqtning o'zida bitta bolani
                       o'zgartirish
                     </h1>
-                    <div style={{width:'70%'}} className={styles.AnimationUnderNews1}></div>
-                    <div style={{width:'45%'}} className={styles.AnimationUnderNews2}></div>
+                    <div
+                      style={{ width: "70%" }}
+                      className={styles.AnimationUnderNews1}
+                    ></div>
+                    <div
+                      style={{ width: "45%" }}
+                      className={styles.AnimationUnderNews2}
+                    ></div>
                   </div>
                   <h2>G'aroyib</h2>
                   <p>

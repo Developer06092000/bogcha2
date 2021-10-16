@@ -24,6 +24,9 @@ import {
   DesktopOutlined,
   ContainerOutlined,
   MailOutlined,
+  FieldBinaryOutlined ,
+  LogoutOutlined 
+
 } from "@ant-design/icons";
 import Rahbariyat from "./Rahbariyat";
 export default class CabinetEducator extends Component {
@@ -49,14 +52,14 @@ export default class CabinetEducator extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-          <PuffLoader
-            className={styles.loader1}
-            size={140}
-            color={"#2C0091"}
-            loading={this.state.loader}
-          />
-          <p> Sayt Test Rejimida Ishlamoqda!</p>
-        </div>
+            <PuffLoader
+              className={styles.loader1}
+              color={"#2C0091"}
+              size={100}
+              loading={this.state.loader}
+            />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
+          </div>
         ) : (
           <div>
             <div style={{ display: "flex", flexDirection: "row" }}>
@@ -72,8 +75,9 @@ export default class CabinetEducator extends Component {
                     style={{
                       marginBottom: 16,
                       marginTop: 10,
+                      marginLeft:"20px",
                       backgroundColor: "transparent",
-                      border: "1px solid white",
+                      border: "1px solid green",
                     }}
                   >
                     {React.createElement(
@@ -90,7 +94,11 @@ export default class CabinetEducator extends Component {
                     theme="dark"
                     inlineCollapsed={this.state.collapsed}
                   >
-                    <Menu.Item key="1" icon={<PieChartOutlined />}>
+                    <Menu.Item
+                      key="1"
+                      icon={<PieChartOutlined style={{fontSize:'18px'}}/>}
+                      style={{ color: "green", backgroundColor: "#A2D2FF" }}
+                    >
                       <Link
                         to="/educator"
                         style={{
@@ -104,22 +112,28 @@ export default class CabinetEducator extends Component {
                     </Menu.Item>
                     <SubMenu
                       key="sub1"
-                      icon={<MailOutlined />}
+                      icon={
+                        <MailOutlined
+                          style={{
+                            color: "green",
+                            fontSize:'18px',
+                          }}
+                        />
+                      }
                       style={{
-                        color: "white",
                         fontWeight: "600",
                         fontSize: "16px",
                       }}
                       title="Xodimlar"
                     >
                       <Menu.Item
-                        style={{ backgroundColor: "white", color: "#FF8080" }}
+                        style={{ backgroundColor: "#A2D2FF", color: "#A2D2FF" }}
                         key="5"
                       >
                         <Link
                           to="/educator/rahbarlar"
                           style={{
-                            color: "white",
+                            color: "green",
                             fontWeight: "600",
                             fontSize: "16px",
                           }}
@@ -128,13 +142,13 @@ export default class CabinetEducator extends Component {
                         </Link>
                       </Menu.Item>
                       <Menu.Item
-                        style={{ backgroundColor: "white", color: "#FF8080" }}
+                        style={{ backgroundColor: "#A2D2FF", color: "#A2D2FF" }}
                         key="6"
                       >
                         <Link
                           to="/educator/tarbiyachilar"
                           style={{
-                            color: "white",
+                            color: "green",
                             fontWeight: "600",
                             fontSize: "16px",
                           }}
@@ -143,7 +157,11 @@ export default class CabinetEducator extends Component {
                         </Link>
                       </Menu.Item>
                     </SubMenu>
-                    <Menu.Item key="2" icon={<DesktopOutlined />}>
+                    <Menu.Item
+                      key="2"
+                      icon={<DesktopOutlined style={{fontSize:'18px'}}/>}
+                      style={{ color: "green", backgroundColor: "#A2D2FF" }}
+                    >
                       <Link
                         to="/educator/kids"
                         style={{
@@ -157,23 +175,23 @@ export default class CabinetEducator extends Component {
                     </Menu.Item>
 
                     <Menu.Item
-                      icon={<MailOutlined />}
+                      icon={<LogoutOutlined style={{fontSize:'18px'}} />}
                       key="12"
-                      style={{ color: "white", backgroundColor: "#FF8080" }}
+                      style={{ color: "green", backgroundColor: "#A2D2FF" }}
                     >
                       <button
                         style={{
                           border: "none",
                           backgroundColor: "white",
-                          color: "#F76B6A",
-                          borderRadius: "5px",
+                          color: "#1A73E8",
+                          borderRadius: "10px",
                           padding: "10px 30px",
                         }}
                       >
                         <Link
                           to="/"
                           target="_parent"
-                          style={{ color: "#F76B6A", fontWeight: "800" }}
+                          style={{ color: "green", fontWeight: "800" }}
                         >
                           Chiqish
                         </Link>

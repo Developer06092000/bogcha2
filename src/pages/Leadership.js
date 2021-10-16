@@ -47,8 +47,8 @@ export default class Leadership extends Component {
           <div className={styles.loader}>
             <PuffLoader
               className={styles.loader1}
-              size={140}
               color={"#2C0091"}
+              size={100}
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>

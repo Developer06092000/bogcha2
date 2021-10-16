@@ -2,16 +2,22 @@ body{
     background-color:white !important
 }
 .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected {
-    background-color: white !important;
-    color:#FF8080 !important;
+    background-color: #A2D2FF !important;
+    color:green !important;
+    border-bottom: 1px solid green;
+
 }
 .ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon + span, .ant-menu-dark .ant-menu-item-selected .anticon + span {
-    color: #FF8080 !important;
+    color: green !important;
+    border-bottom: 1px solid green;
 }
 .ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
-    color: rgba(255, 255, 255, 0.65);
-    background: #FF8080 !important;
+    color: red;
+    background: #A2D2FF !important;
+
 }
 .ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon, .ant-menu-dark .ant-menu-item-selected .anticon {
-    color: #FF8080 !important;
+    color: green !important;
+    border-bottom: 1px solid green;
+
 }

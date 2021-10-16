@@ -55,16 +55,15 @@ export default class Educators extends Component {
     return (
       <div>
         {this.state.loader ? (
-         <div className={styles.loader}>
-         <PuffLoader
+          <div className={styles.loader}>
+            <PuffLoader
+              className={styles.loader1}
+              color={"#2C0091"}              size={100}
 
-           className={styles.loader1}
-           size={140}
-           color={"#2C0091"}
-           loading={this.state.loader}
-         />
-        <p> Sayt Test Rejimida Ishlamoqda!</p>
-       </div>
+              loading={this.state.loader}
+            />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
+          </div>
         ) : (
           <div>
             <header>
@@ -85,7 +84,7 @@ export default class Educators extends Component {
                   <div>
                     <img src={educators2} className={styles.headerImage} />
                   </div>
-                </Carousel> 
+                </Carousel>
               </div>
             </header>
 

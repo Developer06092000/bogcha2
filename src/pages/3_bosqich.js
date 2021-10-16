@@ -50,8 +50,8 @@ export default class Bosqich3 extends Component {
           <div className={style.loader}>
             <PuffLoader
               className={style.loader1}
-              size={140}
               color={"#2C0091"}
+              size={100}
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>

@@ -313,7 +313,7 @@
     text-decoration: none;
 }
 .oyna span:hover{
-    color: #FF8080;
+    color: #A2D2FF;
 }
 @media screen and (max-width:1000px) {
     .oyna{
@@ -331,7 +331,7 @@
         padding: 40px 5% 22px;
     }
     .oyna span{
-        color: #FF8080;
+        color: #A2D2FF;
     }
     .border{
         display: none;
@@ -412,8 +412,9 @@
       display: block;
       width: 100vw;
       height: 100vh;
-      background-color: #F76B6A;
+      background-color: #A2D2FF;
       overflow-y: scroll;
+      opacity: .9;
       transition: all 0.3s;
       z-index:11111111111111111 !important;
     }
@@ -424,7 +425,8 @@
         display: block;
         width: 110vw;
         height: 100vh;
-        background-color: #F76B6A;
+        opacity: .9;
+        background-color: #A2D2FF;
         overflow-y: scroll;
         transition: all 0.3s;
          z-index:111111111111111112111111 !important;
@@ -489,7 +491,8 @@
   display: block;
   width: 100vw;
   height: 100vh;
-  background-color: #F76B6A;
+  background-color: #A2D2FF;
+  opacity: .9;
   overflow-y: scroll;
   transition: all 0.3s;
   z-index:11111111111111111 !important;
@@ -501,7 +504,8 @@
     display: block;
     width: 110vw;
     height: 100vh;
-    background-color: #F76B6A;
+    background-color: #A2D2FF;
+    opacity: .9;
     overflow-y: scroll;
     transition: all 0.3s;
      z-index:111111111111111112111111 !important;

@@ -55,7 +55,7 @@ export default class Dasturlar extends Component {
   };
   render() {
     const { SubMenu } = Menu;
-
+ 
     return (
       <>
         <div className={style.mat}>
@@ -164,7 +164,7 @@ export default class Dasturlar extends Component {
                 >
                   <FaBars
                     onClick={this.openNav}
-                    style={{ color: "#FF865F", fontSize: "30px" }}
+                    style={{ color: "#4587EB", fontSize: "30px" }}
                   />
                 </div>
                 <div
@@ -177,7 +177,7 @@ export default class Dasturlar extends Component {
                       onClick={this.handleClick}
                       style={{
                         width: 256,
-                        backgroundColor: "#FF865F",
+                        backgroundColor: "#A2D2FF",
                         border: "none",
                         textAlign: "center",
                         fontSize: "18px",
@@ -187,7 +187,7 @@ export default class Dasturlar extends Component {
                       defaultOpenKeys={["sub1"]}
                       mode="inline"
                     >
-                      <Menu.Item key="1" style={{ backgroundColor: "#F76B6A" }}>
+                      <Menu.Item key="1" style={{ backgroundColor: "#A2D2FF" }}>
                         <span>
                           <Link to="/dashboard/uz">
                             <FaHome
@@ -199,28 +199,31 @@ export default class Dasturlar extends Component {
                       <SubMenu
                         key="sub1"
                         title="Biz haqimizda"
-                        style={{ backgroundColor: "#F76B6A", color: "white" }}
+                        style={{ backgroundColor: "#A2D2FF", color: "white" }}
                       >
                         <Menu.ItemGroup
                           key="g1"
                           style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                         >
                           <Menu.Item key="2">
-                            <Link to="/bizningtarix/uz">Bizning tarix</Link>
+                          <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
                           </Menu.Item>
                           <Menu.Item key="3">
+                            <Link to="/bizningtarix/uz">Bizning tarix</Link>
+                          </Menu.Item>
+                          <Menu.Item key="4">
                             <Link to="/nimauchunbiz/uz">Nima uchun biz</Link>
                           </Menu.Item>
-                          <Menu.Item key="4">
+                          <Menu.Item key="5">
                             <Link to="/rahbariyat/uz">Rahbariyat</Link>
                           </Menu.Item>
-                          <Menu.Item key="4">
+                          <Menu.Item key="6">
                             <Link to="/tarbiyachilar/uz">Tarbiyachilar</Link>
                           </Menu.Item>
-                          <Menu.Item key="5">
+                          <Menu.Item key="7">
                             <Link to="/galereya/uz">Galereya</Link>
                           </Menu.Item>
-                          <Menu.Item key="6">
+                          <Menu.Item key="8">
                             <Link to="/manzil/uz">Manzil</Link>
                           </Menu.Item>
                         </Menu.ItemGroup>
@@ -233,20 +236,23 @@ export default class Dasturlar extends Component {
                         <Menu.ItemGroup
                           style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                         >
-                          <Menu.Item key="7">
+                          <Menu.Item key="9">
+                          <Link to="/dasturlar/uz">Dasturlar</Link>
+                          </Menu.Item>
+                          <Menu.Item key="10">
                             <Link to="/dastur_1/uz">1-dastur</Link>
                           </Menu.Item>
-                          <Menu.Item key="8">
+                          <Menu.Item key="11">
                             <Link to="/dastur_2/uz">2-dastur</Link>
                           </Menu.Item>
-                          <Menu.Item key="9">
+                          <Menu.Item key="12">
                             <Link to="/dastur_3/uz">3-dastur</Link>
                           </Menu.Item>
                         </Menu.ItemGroup>
                       </SubMenu>
                       <Menu.Item
                         key="10"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link to="/curriculm/uz" style={{ color: "white" }}>
                           Qabul
@@ -254,7 +260,7 @@ export default class Dasturlar extends Component {
                       </Menu.Item>
                       <Menu.Item
                         key="11"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link style={{ color: "white" }} to="/yangiliklar/uz">
                           Yangiliklar
@@ -262,7 +268,7 @@ export default class Dasturlar extends Component {
                       </Menu.Item>
                       <Menu.Item
                         key="12"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <Link style={{ color: "white" }} to="/tadbirlar/uz">
                           Tadbirlar
@@ -270,19 +276,19 @@ export default class Dasturlar extends Component {
                       </Menu.Item>
                       <Menu.Item
                         key="12"
-                        style={{ color: "white", backgroundColor: "#F76B6A" }}
+                        style={{ color: "white", backgroundColor: "#A2D2FF" }}
                       >
                         <button
                           style={{
                             border: "none",
                             backgroundColor: "white",
-                            color: "#F76B6A",
+                            color: "#A2D2FF",
                             borderRadius: "25px",
                             padding: "10px 30px",
                           }}
                         >
                           <Link
-                            style={{ color: "#F76B6A", fontWeight: "800" }}
+                            style={{ color: "#A2D2FF", fontWeight: "800" }}
                             to="/login"
                           >
                             Kirish
@@ -334,7 +340,10 @@ export default class Dasturlar extends Component {
             </div>
             <div className={style.content}>
               <h4>1-bosqich</h4>
-              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+              <div
+                style={{ width: "100%", height: "2px" }}
+                className={style.AnimationUnderNews1}
+              ></div>
 
               <p>
                 The sweetest and youngest of all at Flamingo are approximately
@@ -350,7 +359,10 @@ export default class Dasturlar extends Component {
           <div className={(style.oyna, style.oyna1)}>
             <div className={style.content1}>
               <h4>2-bosqich</h4>
-              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+              <div
+                style={{ width: "100%", height: "2px" }}
+                className={style.AnimationUnderNews1}
+              ></div>
 
               <p>
                 Oﬀ like a rocket at 2-years old, our toddler classroom is all
@@ -379,7 +391,10 @@ export default class Dasturlar extends Component {
             </div>
             <div className={style.content}>
               <h4>3-bosqich</h4>
-              <div style={{width:"100%", height:'2px'}} className={style.AnimationUnderNews1}></div>
+              <div
+                style={{ width: "100%", height: "2px" }}
+                className={style.AnimationUnderNews1}
+              ></div>
 
               <p>
                 A world of monsters and fairies await when we enter our 3’s

@@ -221,21 +221,24 @@ export default class Navbar extends Component {
                         style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                       >
                         <Menu.Item key="2">
-                          <Link to="/bizningtarix/uz">Bizning tarix</Link>
+                        <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
                         </Menu.Item>
                         <Menu.Item key="3">
+                          <Link to="/bizningtarix/uz">Bizning tarix</Link>
+                        </Menu.Item>
+                        <Menu.Item key="4">
                           <Link to="/nimauchunbiz/uz">Nima uchun biz</Link>
                         </Menu.Item>
-                        <Menu.Item key="4">
+                        <Menu.Item key="5">
                           <Link to="/rahbariyat/uz">Rahbariyat</Link>
                         </Menu.Item>
-                        <Menu.Item key="4">
+                        <Menu.Item key="6">
                           <Link to="/tarbiyachilar/uz">Tarbiyalovchilar</Link>
                         </Menu.Item>
-                        <Menu.Item key="5">
+                        <Menu.Item key="7">
                           <Link to="/galereya/uz">Galereya</Link>
                         </Menu.Item>
-                        <Menu.Item key="6">
+                        <Menu.Item key="8">
                           <Link to="/manzil/uz">Manzil</Link>
                         </Menu.Item>
                       </Menu.ItemGroup>
@@ -245,16 +248,20 @@ export default class Navbar extends Component {
                       title="Dasturlar"
                       style={{ color: "white" }}
                     >
+                      {" "}
                       <Menu.ItemGroup
                         style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                       >
-                        <Menu.Item key="7">
+                        <Menu.Item key="9">
+                        <Link to="/dasturlar/uz">Dasturlar</Link>
+                        </Menu.Item>
+                        <Menu.Item key="10">
                           <Link to="/dastur_1/uz">1-dastur</Link>
                         </Menu.Item>
-                        <Menu.Item key="8">
+                        <Menu.Item key="11">
                           <Link to="/dastur_2/uz">2-dastur</Link>
                         </Menu.Item>
-                        <Menu.Item key="9">
+                        <Menu.Item key="12">
                           <Link to="/dastur_3/uz">3-dastur</Link>
                         </Menu.Item>
                       </Menu.ItemGroup>

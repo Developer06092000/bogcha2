@@ -47,15 +47,14 @@ export default class Our_story extends Component {
       <div>
         {this.state.loader ? (
           <div className={styles.loader}>
-          <PuffLoader
-    
-            className={styles.loader1}
-            size={140}
-            color={"#2C0091"}
-            loading={this.state.loader}
-          />
-         <p> Sayt Test Rejimida Ishlamoqda!</p>
-        </div>
+            <PuffLoader
+              className={styles.loader1}
+              color={"#2C0091"}              size={100}
+
+              loading={this.state.loader}
+            />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
+          </div>
         ) : (
           <div>
             <header>

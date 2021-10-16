@@ -70,8 +70,10 @@ export default class teachers1 extends Component {
       <div style={{ padding: "3%" }}>
         <div className={styles.formAdmin}>
           <h4>Tarbiyachini kiritish</h4>
+          <div className={styles.AnimationUnderNews1}></div>
+
           <Form id="formAdmin">
-            <Row>
+            <Row id={styles.formAdmin2}>
               <Col lg={6} md={6} sm={12}>
                 {" "}
                 <Form.Group controlId="name" style={{ marginBottom: "20px" }}>
@@ -253,7 +255,7 @@ export default class teachers1 extends Component {
                   <td>
                     <Button
                       style={{
-                        backgroundColor: "#FF8080",
+                        backgroundColor: "#A2D2FF",
                         padding: "3px 10px",
                         fontSize: "17px",
                         border: "none",
@@ -266,7 +268,7 @@ export default class teachers1 extends Component {
                   <td>
                     <Button
                       style={{
-                        backgroundColor: "#FF8080",
+                        backgroundColor: "#fa2525",
                         padding: "3px 10px",
                         fontSize: "17px",
                         border: "none",

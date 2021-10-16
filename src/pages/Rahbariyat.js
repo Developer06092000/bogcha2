@@ -56,16 +56,15 @@ export default class Rahbariyat extends Component {
     return (
       <div>
         {this.state.loader ? (
-  <div className={styles.loader}>
-  <PuffLoader
+          <div className={styles.loader}>
+            <PuffLoader
+              className={styles.loader1}
+              color={"#2C0091"}              size={100}
 
-    className={styles.loader1}
-    size={140}
-    color={"#2C0091"}
-    loading={this.state.loader}
-  />
- <p> Sayt Test Rejimida Ishlamoqda!</p>
-</div>
+              loading={this.state.loader}
+            />
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
+          </div>
         ) : (
           <div>
             <header>
@@ -201,8 +200,9 @@ export default class Rahbariyat extends Component {
                                 <h1 className={styles.title1}>
                                   Direktor o'rin bosari
                                 </h1>
-                                                    <div className={styles.AnimationUnderNews1}></div>
-
+                                <div
+                                  className={styles.AnimationUnderNews1}
+                                ></div>
                               </MDBCardTitle>
                               <MDBCardText>
                                 <p>
@@ -320,13 +320,14 @@ export default class Rahbariyat extends Component {
                             </div>
                           </MDBCol>
                           <MDBCol md="6" style={{ paddingLeft: "20px" }}>
-                            <MDBCardBody style={{backgrundColor:"#FEF9EF"}}>
+                            <MDBCardBody style={{ backgrundColor: "#FEF9EF" }}>
                               <MDBCardTitle>
                                 <h1 className={styles.title1}>
                                   Bosh buxgalter
                                 </h1>
-                                <div className={styles.AnimationUnderNews1}></div>
-
+                                <div
+                                  className={styles.AnimationUnderNews1}
+                                ></div>
                               </MDBCardTitle>
                               <MDBCardText>
                                 <p>

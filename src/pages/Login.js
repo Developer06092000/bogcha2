@@ -25,6 +25,7 @@ export default function Login() {
   const [nav, setNav] = useState(false);
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
+
   const [In, setIn] = React.useState(false);
   const [item, setLog] = React.useState(true);
   const [password, setPassword] = React.useState("");
@@ -119,15 +120,16 @@ export default function Login() {
   return (
     <div>
       {loader ? (
-          <div className={styles.loader}>
-          <PuffLoader
-            className={styles.loader1}
-            size={140}
-            color={"#2C0091"}
-            loading={this.state.loader}
-          />
-          <p> Sayt Test Rejimida Ishlamoqda!</p>
-        </div>
+       
+         <div className={styles.loader}>
+         <PuffLoader
+           className={styles.loader1}
+           color={"#2C0091"}              size={100}
+
+           loading={loader}
+         />
+         <p> Sayt Test Rejimida Ishlamoqda!</p>
+       </div>
       ) : (
         <div>
           <div className={styles.one}>

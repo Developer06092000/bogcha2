@@ -79,13 +79,12 @@ export default class Dashboard extends Component {
         {this.state.loader ? (
           <div className={styles.loader}>
             <PuffLoader
-
               className={styles.loader1}
-              size={140}
+              size={100}
               color={"#2C0091"}
               loading={this.state.loader}
             />
-           <p> Sayt Test Rejimida Ishlamoqda!</p>
+            <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
           <div>
@@ -354,10 +353,11 @@ export default class Dashboard extends Component {
                     <Dashboardtadbir />
                     <Row style={{ border: "1px solid rgba(0,0,0,0.1)" }}>
                       <Col lg={5} className={styles.heading1}>
-                        <h1>
+                        <h1 id={styles.Heading1H1}>
                           Bizning dunyomizni bir vaqtning o'zida bitta bolani
                           o'zgartirish
                         </h1>
+
                         <p>
                           Flamingo oroli toza sevgi va imondan yaratilgan.
                           Maktabimizning markazida ijtimoiy va emotsional

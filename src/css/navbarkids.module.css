@@ -1,12 +1,12 @@
 .collapsed2 {
   width: 260px !important;
-  background-color: #ff8080;
+  background-color: #A2D2FF;
   position: sticky;
   top: 0;
   height: 100vh;
 }
 .collapsed1 {
-  background-color: #ff8080;
+  background-color: #A2D2FF;
   position: sticky;
   top: 0;
   height: 100vh;
@@ -18,9 +18,23 @@
   justify-content: center;
   align-items: center;
 }
+.loader1 {
+  size: 140px;
+}
+
 .loader p {
   margin-left: 10px;
   font-size: 18px;
   color: #3d1699;
 
+}
+
+@media(max-width:400px) {
+  .loader1 {
+    size: 100px;
+  }
+
+  .loader p {
+    font-size: 15px;
+  }
 }

@@ -49,7 +49,7 @@ export default class Bosqich1 extends Component {
           <div className={style.loader}>
             <PuffLoader
               className={style.loader1}
-              size={140}
+              size={100}
               color={"#2C0091"}
               loading={this.state.loader}
             />
