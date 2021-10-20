@@ -10,6 +10,7 @@ import img1 from "../img/r3.jpg";
 import img4 from "../img/r4.jpeg";
 import img5 from "../img/r5.jpeg";
 import PuffLoader from "react-spinners/PuffLoader";
+import { Container } from "react-bootstrap";
 
 export default class Bosqich3 extends Component {
   state = {
@@ -78,14 +79,22 @@ export default class Bosqich3 extends Component {
                 <img src={img5} className={style.sliderImage} />
               </div>
             </Carousel>
-            <div className={style.matn}>
-              <h1>3-BOSQICH</h1>
+          
+            <h1>3-BOSQICH</h1>
               <div className={style.AnimationUnderNews1}></div>
               <div className={style.AnimationUnderNews2}></div>
-              <br />
-              <h5>A GREAT BIG WORLD</h5>
+          <br/>
+          <br/>
+          <br/>
+
+
+          <Container>
+          <div className={style.notepad}>
+            <div className={style.top}></div>
+            <div className={style.paper} contenteditable="true">
+            A GREAT BIG WORLD<br /><br />
               <p>
-                Entering the magical, fantastical world, are our newly minted
+              Entering the magical, fantastical world, are our newly minted
                 three’s. Is there a monster under my bed? Absolutely! Can
                 superhero ﬂy and ﬁght bad guys? Yes and yes again! This is an
                 exciting time of a child’s life as they discover a greater sense
@@ -93,9 +102,9 @@ export default class Bosqich3 extends Component {
                 Flamingo, we nurture a child’s creative imagination while
                 building a strong, healthy, academic background.
               </p>
-              <h5>WELL-ROUNDED EDUCATION</h5>
+              WELL-ROUNDED EDUCATION<br /><br />
               <p>
-                Yoga, gardening, and cooking become possible as we have now
+              Yoga, gardening, and cooking become possible as we have now
                 mastered pottytraining! Flamingo students learn about the world
                 in which they live, the continents on planet Earth, and impress
                 us by being able to write and identify their own names! With
@@ -105,7 +114,10 @@ export default class Bosqich3 extends Component {
                 discoveries.
               </p>
             </div>
-            <br />
+          </div>
+          </Container><br/><br/>
+
+
             <Footer />
           </div>
         )}
