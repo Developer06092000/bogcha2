@@ -13,19 +13,8 @@ import about3 from "../img/about3.jpg";
 import star from "../img/star.png"
 import delivery from "../img/delivery.png"
 import frame from "../img/frame.png"
-
-
-import {
-  MDBCard,
-  MDBCardTitle,
-  MDBCardText,
-  MDBCardBody,
-  MDBCardImage,
-  MDBRow,
-  MDBCol,
-  MDBCardFooter,
-} from "mdb-react-ui-kit";
-import { Link } from "react-router-dom";
+import { BsGeoAlt } from "react-icons/bs";
+import { FaCalendarAlt } from "react-icons/fa";
 
 export default class Educators extends Component {
   state = {
@@ -117,220 +106,211 @@ export default class Educators extends Component {
 							<svg className={styles.svg} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#FFF" fill-opacity="1" d="M0,256L1440,192L1440,320L0,320Z"></path></svg>
             </header>
 
-            <Container>
-              <ul className={styles.cards}>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li>
-                  <a href="" className={styles.card}>
-                    <img src={news1} className={styles.card__image} alt="" />
-                    <div className={styles.card__overlay}>
-                      <div className={styles.card__header}>
-                        <svg
-                          className={styles.card__arc}
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path />
-                        </svg>
-                        <div className={styles.card__header_text}>
-                          <h3 className={styles.card__title}>
-                            Bog'chamizga prezident tashrif buyirdi.
-                          </h3>
-                          <span className={styles.card__status}>Batafsil</span>
-                        </div>
-                      </div>
-                      <p
-                        style={{
-                          position: "relative",
-                          top: "-10px",
-                          marginLeft: "22px",
-                          color: "black",
-                        }}
-                      >
-                        <i
-                          style={{ color: "#FF865E" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </Container>
+            <Container style={{
+  marginTop:'60px',
+  marginBottom:'100px'
+}}>
+<div className={styles.figure__box}>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline"}}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px',
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+            marginTop:'-0px' 
+          }}
+        />{" "}
+        <span style={{
+          marginTop:'-20px'
+        }}>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline"}}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px',
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+            marginTop:'-0px' 
+          }}
+        />{" "}
+        <span style={{
+          marginTop:'-20px'
+        }}>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline"}}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px',
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+            marginTop:'-0px' 
+          }}
+        />{" "}
+        <span style={{
+          marginTop:'-20px'
+        }}>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline"}}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px',
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+            marginTop:'-0px' 
+          }}
+        />{" "}
+        <span style={{
+          marginTop:'-20px'
+        }}>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline" }}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px'
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+          }}
+        />{" "}
+        <span>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+<figure class="image-block">
+	<img src={news1} alt="" />
+	<figcaption>
+		<h3>
+    Bog'chamizga prezident tashrif buyirdi.
+		</h3>
+    <p style={{ display: "inline" }}>
+        <FaCalendarAlt
+          style={{
+            color: "#FF865E",
+          }}
+        />{" "}
+        <span
+        style={{
+            marginRight:'22px'
+          }}
+        >14/08/2020</span>
+      </p>
+      <p style={{ display: "inline" }}>
+        <BsGeoAlt
+          style={{
+            color: "#1597E5",
+          }}
+        />{" "}
+        <span>133-bog'cha</span>
+        </p>
+		<button>
+			Batafsil
+		</button>
+	</figcaption>
+</figure>
+</div>
+</Container>
 
             <Footer />
           </div>
