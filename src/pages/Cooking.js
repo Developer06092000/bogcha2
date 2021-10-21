@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../css/mini.module.css";
+import style from "../css/about_us.module.css";
 import kinder1 from "../img/kinder4.jpg";
 import kinder2 from "../img/kinder5.jpg";
 import kinder3 from "../img/kinder6.png";
@@ -55,31 +56,59 @@ export default class Wonder extends Component {
           </div>
         ) : (
           <div>
-            <Navbar />
-            <Carousel
-              className={styles.sliderHeader}
-              responsive={responsive}
-              infinite={true}
-              autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlaySpeed={3000}
-              keyBoardControl={true}
-              showDots={false}
-            >
-              <div>
-                <img src={kinder1} className={styles.sliderImage} />
+            <div className={styles.HeaderCooking}>
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                showDots={false}
+              >
+                <div>
+                  <img src={kinder1} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder2} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder3} className={styles.sliderImage} />
+                </div>
+              </Carousel>
+              <div className={style.HeaderMenu}>
+                <div className={style.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={style.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={style.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={style.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
+                </div>
               </div>
-              <div>
-                <img src={kinder2} className={styles.sliderImage} />
-              </div>
-              <div>
-                <img src={kinder3} className={styles.sliderImage} />
-              </div>
-            </Carousel>
+            </div>
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>
-                  <div style={{ display: "flex", justifyContent: "center" }}>
+                  <div
+                    style={{ textAlign: "center", justifyContent: "center" }}
+                  >
                     <h1>Pishirish</h1>
+                    <div className={styles.YogajsColor}> </div>
+
                   </div>
                   <h2>Chayqash va pishirish</h2>
                   <p>

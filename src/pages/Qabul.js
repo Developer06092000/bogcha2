@@ -29,6 +29,8 @@ export default class Qabul extends Component {
     };
     return (
       <div>
+                    <div className={styles.HeaderForBosqich}>
+
         <Navbar />
         {/* <div className="registratsiya"></div> */}
         <Carousel
@@ -86,6 +88,7 @@ export default class Qabul extends Component {
             <p>Ma'lumot Uchun </p>
             <p>Bog'lanish </p>
           </div>
+</div>
         </div>
 
         <div className="anima"></div>

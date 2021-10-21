@@ -57,6 +57,7 @@ export default class Oshxona extends Component {
           </div>
         ) : (
           <div>
+            <div className={styles.headerOshxona}>
             <Navbar />
             <Carousel
               className={styles.sliderHeader}
@@ -98,6 +99,7 @@ export default class Oshxona extends Component {
                 <p>Ma'lumot Uchun </p>
                 <p>Bog'lanish </p>
               </div>
+            </div>
             </div>
             <Container fluid style={{ padding: "0" }}>
               <Row>

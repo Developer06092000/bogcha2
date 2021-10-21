@@ -20,6 +20,43 @@ body{
     position: relative;  
     font-weight: 400;
 }
+/* -------------Yoga.js for it is */
+.HeaderYoga {
+    height: 650px;
+}
+
+/* ------------------------------ */
+/* -------------Musiqa.js for it is */
+.HeaderMusiqa {
+    height: 650px;
+}
+
+/* ------------------------------ */
+/* -------------Garden.js for it is */
+.HeaderGarden {
+    height: 650px;
+}
+
+/* ------------------------------ */
+
+/* -------------Cooking.js for it is */
+.HeaderCooking {
+    height: 650px;
+}
+
+/* ------------------------------ */
+/* -------------Pedagogy.js for it is */
+.HeaderPedagogy {
+    height: 650px;
+}
+
+/* ------------------------------ */
+/* -------------Loving.js for it is */
+.HeaderLoving {
+    height: 650px;
+}
+
+/* ------------------------------ */
 .AnimationUnderNews1 {
     height: 3px;
     width: 25%;
@@ -77,6 +114,31 @@ body{
     100% {
         background-position: 0% 50%;
     }
+    }
+
+    .YogajsColor {
+        height: 3px;
+        width: 20%;
+        margin: auto;
+        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+        background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
+        background-size: 400% 400%;
+
+        animation: YogajsColor1 2s ease infinite;
+    }
+
+    @keyframes YogajsColor1 {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 .text h1::after{
     content:'';
@@ -118,6 +180,9 @@ body{
     font-size: 16px;
     font-weight: 600;
     margin-right: 20px;
+}
+.headerOshxona {
+    height: 650px
 }
 .header{
     width: 100%;

@@ -60,7 +60,7 @@ export default class About_us extends Component {
         ) : (
           <div>
             <header>
-              <div className={styles.header}>
+              <div className={styles.headerAbout}>
                 {" "}
                 <Navbar />
                 <Carousel
@@ -115,7 +115,7 @@ export default class About_us extends Component {
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
 
-                  <div className={styles.text} >
+                  <div className={styles.text}>
                     <p>
                       <strong>UYDAN UYGA</strong>
                     </p>

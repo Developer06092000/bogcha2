@@ -17,7 +17,6 @@ body{
     padding:5px 30px;
     font-size: 16px;
     font-weight: 600;
-    border:1px solid black;
     margin-right: 20px;
 }
 .btn2{
@@ -225,7 +224,7 @@ body{
         position: relative;
         display: inline-block;
     }
-    .text h1::after{
+    /* .text h1::after{
         content:'';
         position: absolute;
         top: 140%;
@@ -234,14 +233,66 @@ body{
         height: 2px;
         background-color:#4587EB
     }
+*/ .BodyTextItem {
+    height: 3px;
+    width: 25%;
+    margin: auto;
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    border-radius: 20%;
+    background-size: 400% 400%;
+
+
+    animation: BodyTextItem1 2s ease infinite;
+}
+
+@keyframes BodyTextItem1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.LoginButtonItem {
+    width: 100%;
+    font-weight: 600;
+    border: none;
+    margin-top: 30px;
+    padding: 4px 0px;
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    border-radius: 5px;
+    background-size: 400% 400%;
+
+
+    animation: LoginButtonItem1 5s ease infinite;
+}
+
+@keyframes LoginButtonItem1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
     .form{
         text-align: left;
         margin-top: 50px;
         width: 450px;
         height: 320px;
-        background-color:#FF9999;
+        background-color:#A2D2FF;
         border-radius: 10px;
-        border:2px solid black;
         padding: 40px 20px;
         margin-bottom: 100px;
     }

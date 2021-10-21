@@ -174,7 +174,7 @@ export default class Rahbariyat extends Component {
                                 <p>
                                   <strong>Tug'ilgan sana: </strong>{" "}
                                   <i
-                                    style={{ color: "#FF865F" }}
+                                    style={{ color: "#A2D2FF" }}
                                     class="fas fa-calendar-alt"
                                   ></i>{" "}
                                   06/12/1995
@@ -190,7 +190,7 @@ export default class Rahbariyat extends Component {
                               </MDBCardText>
                               <MDBCardText>
                                 <i
-                                  style={{ color: "#FF865F" }}
+                                  style={{ color: "#A2D2FF" }}
                                   class="fas fa-quote-left"
                                 ></i>
                                 <br />
@@ -203,7 +203,7 @@ export default class Rahbariyat extends Component {
                                 </small>
                                 <br />
                                 <i
-                                  style={{ color: "#FF865F", float: "right" }}
+                                  style={{ color: "#A2D2FF", float: "right" }}
                                   class="fas fa-quote-right"
                                 ></i>
                               </MDBCardText>
@@ -235,7 +235,7 @@ export default class Rahbariyat extends Component {
                                 <p>
                                   <strong>Tug'ilgan sana: </strong>{" "}
                                   <i
-                                    style={{ color: "#FF865F" }}
+                                    style={{ color: "#A2D2FF" }}
                                     class="fas fa-calendar-alt"
                                   ></i>{" "}
                                   06/12/1995
@@ -251,7 +251,7 @@ export default class Rahbariyat extends Component {
                               </MDBCardText>
                               <MDBCardText>
                                 <i
-                                  style={{ color: "#FF865F" }}
+                                  style={{ color: "#A2D2FF" }}
                                   class="fas fa-quote-left"
                                 ></i>
                                 <br />
@@ -264,7 +264,7 @@ export default class Rahbariyat extends Component {
                                 </small>
                                 <br />
                                 <i
-                                  style={{ color: "#FF865F", float: "right" }}
+                                  style={{ color: "#A2D2FF", float: "right" }}
                                   class="fas fa-quote-right"
                                 ></i>
                               </MDBCardText>
@@ -360,7 +360,7 @@ export default class Rahbariyat extends Component {
                                 <p>
                                   <strong>Tug'ilgan sana: </strong>{" "}
                                   <i
-                                    style={{ color: "#FF865F" }}
+                                    style={{ color: "#A2D2FF" }}
                                     class="fas fa-calendar-alt"
                                   ></i>{" "}
                                   06/12/1995
@@ -376,7 +376,7 @@ export default class Rahbariyat extends Component {
                               </MDBCardText>
                               <MDBCardText>
                                 <i
-                                  style={{ color: "#FF865F" }}
+                                  style={{ color: "#A2D2FF" }}
                                   class="fas fa-quote-left"
                                 ></i>
                                 <br />
@@ -389,7 +389,7 @@ export default class Rahbariyat extends Component {
                                 </small>
                                 <br />
                                 <i
-                                  style={{ color: "#FF865F", float: "right" }}
+                                  style={{ color: "#A2D2FF", float: "right" }}
                                   class="fas fa-quote-right"
                                 ></i>
                               </MDBCardText>

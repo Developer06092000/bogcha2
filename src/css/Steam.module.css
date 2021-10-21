@@ -8,6 +8,31 @@
     width: 100%;
     height: auto;
 }
+.SteamChangeColor {
+    height: 3px;
+    width: 20%;
+    margin: auto;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    border-radius: 20%;
+
+    animation: SteamChangeColor1 2s ease infinite;
+}
+
+@keyframes SteamChangeColor1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
 .AnimationUnderNews1 {
     height: 3px;
     width: 285px;
@@ -151,3 +176,13 @@ h1{
     outline: 0;
     font-size: 22px;
 }
+.HeaderForBosqich {
+    height: 650px;
+}
+
+/* ----------Staem.js for it is------------*/
+.HeaderSteam {
+    height: 650px
+}
+
+/* --------------------------------------- */

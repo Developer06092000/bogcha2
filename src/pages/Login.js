@@ -120,16 +120,15 @@ export default function Login() {
   return (
     <div>
       {loader ? (
-       
-         <div className={styles.loader}>
-         <PuffLoader
-           className={styles.loader1}
-           color={"#2C0091"}              size={100}
-
-           loading={loader}
-         />
-         <p> Sayt Test Rejimida Ishlamoqda!</p>
-       </div>
+        <div className={styles.loader}>
+          <PuffLoader
+            className={styles.loader1}
+            color={"#2C0091"}
+            size={100}
+            loading={loader}
+          />
+          <p> Sayt Test Rejimida Ishlamoqda!</p>
+        </div>
       ) : (
         <div>
           <div className={styles.one}>
@@ -388,29 +387,32 @@ export default function Login() {
           </div>
           <Container fluid className={styles.bodyl}>
             {/* ----------------------------------- */}
-            <div className="Registratsiya">
+            {/* <div className="Registratsiya">
               {item ? (
                 <div className="login">
                   <h3 className="header">Kirish</h3>
                   <form onSubmit={handleSubmit}>
-                    <label className="inputPerson">
+                    <label className="inputPerson" controlId="formBasicEmail">
                       <input
                         className="inputtext"
-                        name="Username"
+                        name="Email"
                         type="text"
                         value={username}
-                        placeholder="Username"
+                        placeholder="Emailni Kiriting"
                         onChange={handleChangUser}
                         required
                       />
                     </label>
-                    <label className="inputPerson">
+                    <label
+                      className="inputPerson"
+                      controlId="formBasicPassword"
+                    >
                       <input
                         className="inputpass"
                         name="Password"
                         type="password"
                         value={password}
-                        placeholder="Password"
+                        placeholder="Passwordni Kiriting"
                         onChange={handleChangePass}
                         required
                       />
@@ -419,6 +421,7 @@ export default function Login() {
                     <input
                       className="LogInPriceLog"
                       type="submit"
+                      onClick={login}
                       value="Kirish"
                     />
                   </form>
@@ -491,13 +494,14 @@ export default function Login() {
                   </div>
                 </div>
               )}
-            </div>
+            </div> */}
 
             {/* ----------------------------------- */}
 
-            {/* <Row>
+             <Row>
               <Col lg={12} className={styles.text}>
                 <h1>Kirish</h1>
+                <div className={styles.BodyTextItem}></div>
                 <div className={styles.form}>
                   <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -528,20 +532,15 @@ export default function Login() {
                     <Button
                       onClick={login}
                       type="submit"
-                      style={{
-                        fontWeight: "600",
-                        backgroundColor: "#4587EB",
-                        border: "none",
-                        marginTop: "30px",
-                        width: "100%",
-                      }}
+                      className={styles.LoginButtonItem}
+                    
                     >
                       Kirish
                     </Button>
                   </Form>
                 </div>
               </Col>
-            </Row> */}
+            </Row> 
           </Container>
           <Footer />
         </div>

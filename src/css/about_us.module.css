@@ -18,10 +18,17 @@ body{
     height: 100vh;
 
 }
+/* -------------Bu--Qabul.js---------- */
+.HeaderForBosqich {
+    height: 620px;
 
+}
+
+/* ------------------------------------- */
 .HeaderMenu {
     width: 90%;
-    height: 520px;
+    height: auto;
+    padding: 2% 0%;
     /* background-image: url(../img/bogcha2/Group\ 432.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -32,6 +39,7 @@ body{
     text-align: center;
     position: relative;
     top: -520px;
+    z-index:1;
 
     font-family: Glamour Absolute;
 }
@@ -277,16 +285,18 @@ body{
 }
 .header{
     width: 100%;
-    height: auto;
+    height: 650px;
+    }
+
+    .headerAbout {
+        width: 100%;
+        height: 650px;
 }
 .body {
     z-index: 3;
 }
 
-.fdtegr {
-    margin-top: -400px;
 
-}
 
 .title {
     width: 285px;

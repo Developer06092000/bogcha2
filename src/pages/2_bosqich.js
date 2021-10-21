@@ -58,6 +58,8 @@ export default class Bosqich2 extends Component {
           </div>
         ) : (
           <div>
+                        <div className={style.HeaderForBosqich}>
+
             <Navbar />
             <Carousel
               className={style.sliderHeader}
@@ -98,6 +100,7 @@ export default class Bosqich2 extends Component {
               <div className={styles.HeaderMenuItemBox3}>
                 <p>Ma'lumot Uchun </p>
                 <p>Bog'lanish </p>
+              </div>
               </div>
             </div>
 

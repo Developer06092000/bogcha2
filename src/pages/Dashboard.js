@@ -250,7 +250,7 @@ export default class Dashboard extends Component {
                 <div className={styles.OurPragram}>
                   <i
                     id={styles.fontAwesomeIcon}
-                    style={{ color: "#F6F6F6" }}
+                    style={{ color: "#C1C1C1" }}
                     class="fas fa-book-open fa-3x"
                   ></i>
                   <p>

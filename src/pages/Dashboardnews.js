@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import styles from "../css/news.module.css";
+import style from '../css/DashboardNews.module.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import news1 from "../img/kinder6.png";
@@ -10,7 +11,7 @@ import Footer from "./Footer";
 import "react-multi-carousel/lib/styles.css";
 import {
   MDBCard,
-  MDBCardTitle,
+  MDBCardTitle, 
   MDBCardText,
   MDBCardBody,
   MDBCardImage,
@@ -57,7 +58,7 @@ export default class Dashboardnews extends Component {
               >
                 <div>
                   <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
+                    <MDBCard className="h-100" className={style.card}>
                       <MDBCardImage
                         src={news1}
                         className={styles.img}
@@ -91,7 +92,7 @@ export default class Dashboardnews extends Component {
                 </div>
                 <div>
                   <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
+                    <MDBCard className="h-100" className={style.card}>
                       <MDBCardImage
                         src={news1}
                         className={styles.img}
@@ -125,7 +126,7 @@ export default class Dashboardnews extends Component {
                 </div>
                 <div>
                   <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
+                    <MDBCard className="h-100" className={style.card}>
                       <MDBCardImage
                         src={news1}
                         className={styles.img}
@@ -164,7 +165,7 @@ export default class Dashboardnews extends Component {
                 </div>
                 <div>
                   <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={styles.card}>
+                    <MDBCard className="h-100" className={style.card}>
                       <MDBCardImage
                         src={news1}
                         className={styles.img}
