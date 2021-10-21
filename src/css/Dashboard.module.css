@@ -8,12 +8,24 @@ body {
 }
 .header {
   width: 100%;
-  height: 100vh;
+  height: auto;
+  margin-bottom: 5%;
   position: relative;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: linear-gradient(120deg,
+    rgba(255, 178, 84, 0.5) -14.08%,
+    rgba(171, 222, 203, 0.5) 25.96%,
+    #FFFFFF 60.76%);
+  }
+
+  .NavbarMenuItem {
+    height: 115px;
+  }
+
+  .headerItemGroup {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 .header .video {
   width: 100%;
@@ -22,7 +34,331 @@ body {
   left: 0;
   z-index: -1;
 }
+.youtube {
+  width: 100%;
+  height: 100%;
+  display: flex;
 
+}
+
+.headerItem {
+  width: 46%;
+  height: 68%;
+  margin-top: 1%;
+  text-align: start;
+
+}
+
+.headerItem1 {
+  width: 90%;
+  font-family: Archivo;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  /* or 100% */
+
+
+  /* Text and Main/Black */
+
+  color: #262626;
+}
+
+.headerItem2 {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
+
+  /* Text and Main/Black */
+
+  color: #262626;
+
+}
+
+.FormSearch {
+  width: 70%;
+  height: 60px;
+  padding: 5px;
+  border-radius: 5px;
+  border: outset;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 1px solid white;
+  background-color: white;
+}
+
+.FormSearch::after {
+  border: none;
+}
+
+.FormSearch input {
+  width: 70%;
+  height: 100%;
+  border-radius: none;
+  border: none;
+  border-radius: none;
+}
+
+.FormSearch input:hover,
+.FormSearch input::after,
+.FormSearch input::before,
+.FormSearch input::selection {
+  border: none;
+  border-radius: none;
+}
+
+.FormSearch button {
+  width: 25%;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  background-color: #FFB254;
+}
+
+.headerRight {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  background-image: url(../img//bogcha2//Dashboard//circle.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: auto;
+  object-fit: contain;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  margin-top: 5%;
+
+}
+
+
+
+.OutlineImg img {
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translate(-4%, -3%);
+
+}
+
+.PragressItem {
+  position: absolute;
+  width: 114px;
+  height: 150px;
+  text-align: center;
+  margin-top: -350px;
+  margin-left: 280px;
+  background: #F5F5F4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.PragressItem b {
+  margin-top: 10%;
+}
+
+.PragressItem p {
+  font-size: 12px;
+  color: #C1C1C1;
+
+}
+
+#PragressItem1 {
+  width: 70px;
+
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 17px;
+}
+
+.MentorPragress {
+  position: absolute;
+  width: 181px;
+  height: 70px;
+  margin-top: -250px;
+  margin-left: -80px;
+  background: #F5F5F4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 15px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.MentorPragress1 {
+  width: 35%;
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 13px;
+
+  background-color: #FFB254;
+
+}
+
+.MentorPragressIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.MentorPragress2 {
+  width: 40%;
+  padding: 5%;
+  margin-top: 5%;
+
+  line-height: 10px;
+}
+
+.MentorPragress2 p {
+  text-align: start;
+  font-size: 11px;
+  color: #C1C1C1;
+  margin-left: -5px;
+
+}
+
+.PeopleProgress1 p {
+  text-align: start;
+  font-size: 13px;
+  color: #C1C1C1;
+  margin-left: -5px;
+
+}
+
+.PeopleProgress1 {
+  width: 40%;
+  padding: 5%;
+  margin-top: 5%;
+
+  line-height: 10px;
+}
+
+.PeopleProgress2 {
+  width: 35%;
+  padding: 5%;
+  margin-top: 5%;
+  border-radius: 13px;
+  margin-left: 5px;
+  background-color: #FFB254;
+
+}
+
+.PeopleProgressIcon {
+  font-size: 24px;
+  color: white;
+}
+
+.PeopleProgress {
+
+  position: absolute;
+  width: 201px;
+  height: 70px;
+  margin-left: 200px;
+  margin-top: -100px;
+  background: #F5F5F4;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 10px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.CardGroupItem {
+  height: 100px;
+  width: 92%;
+  margin: auto;
+  margin-top: .5%;
+  display: flex;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+
+.OurPragram {
+  width: 100px;
+  height: 90%;
+  border-radius: 5px;
+  margin-top: 5px;
+  cursor: pointer;
+  background: linear-gradient(120deg,
+      rgba(255, 178, 84, 0.5) -35.08%,
+      rgba(171, 222, 203, 0.5) 99.96%,
+      #FFFFFF .76%);
+  box-shadow: rgba(99, 99, 99, 0.30) 0px 2px 8px 0px;
+}
+
+.OurPragram:nth-child(1) {
+  padding: 1.2% 0px;
+}
+
+#OurPragramB {
+  width: 100%;
+  height: 100%;
+  padding: 10px 0px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 18px;
+
+}
+
+.OurPragram b {
+  text: center;
+}
+
+.OurPragram p {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  margin: auto;
+
+}
+
+.OurPragram p a {
+  color: black;
+
+}
+
+.OurPragram:nth-child(5) i {
+  background: -moz-linear-gradient(top, #e72c83 20%, #FF865E 80%);
+  background: -webkit-linear-gradient(top, #e72c83 20%, #FF865E 80%);
+  background: linear-gradient(to bottom, #e72c83 20%, #FF865E 80%);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+  animation: ourPragram 1s ease infinite;
+}
+
+@keyframes ourPragram {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#fontAwesomeIcon {
+  font-size: 35px;
+  padding: 10px;
+  color: black;
+  margin: auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
 .btnHeader {
   position: absolute;
   top: 75%;
@@ -51,56 +387,925 @@ body {
     color: white;
     background-color: #FEE440;
     transition: .2s;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
     box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
 
 }
-.card {
-  height: 170px;
+.TourCardItem {
+  height: auto;
+  padding: 3% 0px;
+
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  }
+
+  .TourCardItem4 {
+    height: auto;
+    padding: 3% 0px;
+    background-color: #FEF9EF;
+    justify-content: center;
+  }
+
+  .ImgItem1 {
+    position: relative;
+    width: 27%;
+    height: 470px;
+    padding: 0px auto;
   justify-content: center;
   align-items: center;
-  transition: all 0.5s ease;
 }
-.card:hover {
-  cursor: pointer;
-  opacity: .7;
-  /* background-color: #404040 !important; */
+.ImgItem1 img {
+  width: 100%;
+  height: 100%;
 }
-.card1 {
-  height: 170px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 1s ease !important;
-}
-.card1:hover {
-  /* background: rgb(64, 64, 64) !important;
-  background: linear-gradient(
-    180deg,
-    rgba(64, 64, 64, 1) 0%,
-    rgba(64, 64, 64, 1) 100%
-  ) !important;
-  */ cursor: pointer;
-  opacity: .7;
-}
-.card img {
-  margin-top: 20px;
-}
-.card p {
-  margin-top: 20px;
-  color: white;
-}
-.card1 img {
-  margin-top: 20px;
-}
-.card1 p {
-  margin-top: 20px;
-  color: white;
+.ImgItem1 span {
+  margin-top: 3%;
 }
 
+.TextItem1 {
+  width: 63%;
+  height: 470px;
+  padding: 5%;
+
+  background-color: #FEF9EF;
+}
+
+.TextItemHr {
+
+  width: 100%;
+  height: 3px;
+  margin-bottom: 5%;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+  background-size: 400% 400%;
+  animation: TextItemHr1 3s ease infinite;
+}
+
+@keyframes TextItemHr1 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.TextItem1 h1 {
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 400;
+  position: relative;
+  font-family: "Andale Mono",
+    monospace;
+}
+
+.TourCardItem2Text {
+  width: 40%;
+  height: 470px;
+  padding: 5% 4%;
+  background-color: #FEF9EF;
+}
+
+.TourCardItem2Text p {
+  width: 90%;
+}
+
+.TourCardItem2Text h1 {
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 400;
+
+  position: relative;
+  font-family: "Andale Mono",
+    monospace;
+}
+
+.TourCardItem3Text h1 {
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 500;
+
+  position: relative;
+  font-family: "Andale Mono",
+    monospace;
+}
+
+.TourCardItem2Img {
+  width: 50%;
+  height: 470px;
+  padding: 2% 0%;
+}
+
+.TourCardItem2Img img {
+  position: relative;
+  width: 110%;
+  margin-left: -10%;
+}
+
+.TourCardItem3Text {
+  width: 35%;
+  height: 470px;
+  padding: 5% 5%;
+  background-color: #A2D2FF;
+}
+
+.TourCardItem3Img {
+  width: 65%;
+  height: 470px;
+}
+
+.TourCardItem3ImgItem {
+  width: 100%;
+  height: 50%;
+  display: flex;
+}
+
+.TourCardItem3ImgItem1 {
+  width: 66%;
+  height: 100%;
+  background-color: #000;
+
+}
+
+.TourCardItem3ImgItem1 img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+}
+
+.TourCardItem3ImgItem2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.TourCardItem3ImgItem2 {
+  width: 34%;
+  height: 100%;
+}
+
+.TourCardItem3ImgItemA {
+  width: 34%;
+  height: 100%;
+
+}
+
+.TourCardItem3ImgItemA img {
+  width: 100%;
+  height: 100%;
+
+}
+
+.TourCardItem3ImgItemB {
+  width: 66%;
+  height: 100%;
+  padding: 4% 4%;
+  background-color: #FEF9EF;
+
+}
+
+.TourCardItem4Head {
+  width: 50%;
+  height: 110px;
+  line-height: 20px;
+  margin-left: 2%;
+}
+
+.TourCardItem4Body {
+  width: 100%;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+}
+
+.TourCardItem4Head h2 {
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+  font-weight: 400;
+  padding: 0% 2%;
+  margin-bottom: 2%;
+
+  position: relative;
+  font-family: "Andale Mono",
+    monospace;
+}
+
+.TourCardItem4Img {
+  width: 25%;
+  height: 100%;
+}
+
+.TourCardItem4Img img {
+  width: 100%;
+  height: 100%;
+}
+
+.TourCardItem4Text {
+  width: 70%;
+  height: 100%;
+  padding: 2% 2%;
+}
+
+.TourCardItem4Text p:nth-child(1) {
+  width: 90%;
+  margin-bottom: 3%;
+}
+
+.TourCardItem4Text p:nth-child(2) {
+  width: 80%;
+  margin-bottom: 3%;
+
+}
+
+/* --------------Media--Mobile----------------- */
+
+@media(min-width:768px) and (max-width:990px) {
+  .headerItem:nth-child(1) {
+    padding: 3% 0%;
+  }
+
+  .headerItem1 {
+    font-size: 35px;
+    line-height: 35px;
+
+  }
+
+  .headerItem2 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .FormSearch {
+    width: 85%;
+  }
+
+  .CardGroupItem {
+    margin-top: 5%;
+  }
+
+
+
+  .TourCardItem4Head {
+    width: 70%;
+  }
+
+  .TourCardItem4Text p:nth-child(1) {
+    width: 95%;
+  }
+
+}
+
+@media(max-width:850px) {
+  .MentorPragress {
+    width: 150px;
+    height: 70px;
+    margin-top: -260px;
+    margin-left: -60px;
+
+  }
+
+  .PragressItem {
+
+    width: 90px;
+    height: 130px;
+    text-align: center;
+    display: block;
+    margin-top: -350px;
+    margin-left: 260px;
+
+  }
+
+  .PragressItem b {
+    margin-top: 5%;
+    font-size: 14px;
+  }
+
+  .PragressItem p {
+    font-size: 11px;
+    color: #C1C1C1;
+
+  }
+
+  #PragressItem1 {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10%;
+
+
+  }
+
+  .PeopleProgress {
+
+    width: 170px;
+    height: 70px;
+    margin-left: 170px;
+    margin-top: -100px;
+
+  }
+
+  .TextItem1 p {
+    margin-top: 1px;
+  }
+
+  .TextItemHr span {
+    margin-top: 1%
+  }
+
+  .TourCardItem4Head {
+    width: 70%;
+  }
+
+  .TourCardItem4Text p:nth-child(1) {
+    width: 100%;
+  }
+
+  .TourCardItem4Text p:nth-child(2) {
+    width: 100%;
+  }
+}
+
+@media(max-width:767px) {
+
+  .headerItem1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .headerItem2 {
+    font-size: 17px;
+    line-height: 25px;
+  }
+
+  .FormSearch {
+    width: 95%;
+  }
+
+  .headerItem:nth-child(1) {
+    padding: 3% 0%;
+  }
+
+
+
+  .headerRight {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin-top: 5%;
+  }
+
+  .OutlineImg img {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transform: translate(-4%, -3%);
+
+  }
+
+  .MentorPragress {
+    margin-top: -230px;
+    margin-left: -60px;
+  }
+
+  .PragressItem {
+    text-align: center;
+    display: block;
+    margin-top: -290px;
+    margin-left: 200px;
+  }
+
+  .PeopleProgress {
+    margin-left: 130px;
+    margin-top: -80px;
+  }
+
+  .CardGroupItem {
+    height: auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .OurPragram {
+    width: 23%;
+    margin-bottom: 3%;
+  }
+
+  .OurPragram:nth-child(1) {
+    height: 80px;
+    padding: 2% 5%;
+    text-align: center;
+  }
+
+  .ImgItem1 {
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .TextItem1 {
+    width: 90%;
+    margin: auto;
+
+  }
+
+  .TourCardItem {
+    display: block;
+  }
+
+  .TextItem1 p {
+    margin-top: 5%;
+  }
+
+  .TourCardItem2Text {
+    width: 90%;
+    margin: auto;
+  }
+
+  .TourCardItem2Img {
+    width: 70%;
+    margin: auto;
+    height: auto;
+    padding: 0px;
+  }
+
+  .TourCardItem2Img img {
+    margin: 0px;
+    width: 100%;
+    margin-top: -8%;
+
+  }
+
+  .TourCardItem3Text {
+    width: 90%;
+    margin: auto;
+    height: auto;
+    padding: 5% 4%;
+  }
+
+  .TourCardItem3Img {
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+
+  .TourCardItem3ImgItem {
+    display: block;
+    margin: auto;
+  }
+
+  .TourCardItem3ImgItem1 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .TourCardItem3ImgItem1 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .TourCardItem3ImgItem2 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .TourCardItem3ImgItem2 img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .TourCardItem3ImgItemA {
+    width: 100%;
+    height: 400px;
+
+  }
+
+  .TourCardItem3ImgItemA {
+    width: 100%;
+    height: 100%;
+  }
+
+  .TourCardItem3ImgItemB {
+    width: 100%;
+    height: auto;
+    padding: 6% 4%;
+  }
+
+  .TourCardItem4Body {
+    height: auto;
+    display: block;
+  }
+
+  .TourCardItem4Head {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .TourCardItem4Img {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .TourCardItem4Img img {
+      width: 80%;
+      margin: auto;
+      padding: 5% 0%;
+      margin-left: 10%;
+      text-align: center;
+    }
+
+    .TourCardItem4Text {
+      width: 100%;
+    }
+
+
+    .TourCardItem4 {
+      width: 90%;
+      height: auto;
+      margin: auto;
+      padding: 6% 4%;
+    }
+
+
+    }
+
+    @media(max-width:600px) {
+      .headerItemGroup {
+        display: block;
+      }
+
+      .headerItem:nth-child(1) {
+        width: 100%;
+        padding: 3% 4%;
+      }
+
+      .FormSearch {
+        width: 80%;
+      }
+
+      .headerItem:nth-child(2) {
+        padding: 0% 0%;
+        width: 100%;
+      }
+
+      .headerRight {
+        margin-top: 0px;
+        padding: 0px;
+      }
+
+      .CardGroupItem {
+        position: relative;
+        height: auto;
+        padding: 2% 0%;
+      }
+
+      .TourCardItem4Head h2 {
+        font-size: 20px !important;
+        font-weight: bolder;
+      }
+
+      .TourCardItem4Head {
+        height: auto;
+        padding-left: 3% 0%;
+      }
+
+    }
+
+    @media(max-width:450px) {
+      .OurPragram:nth-child(1) {
+        display: none;
+      }
+
+      .OurPragram {
+        width: 30%;
+      }
+
+      .TextItem1 h1 {
+        font-weight: bolder;
+        font-size: 19px !important;
+      }
+
+      .TourCardItem2Text h1 {
+        font-weight: bolder;
+        font-size: 19px !important;
+      }
+
+      .TourCardItem3Text h1 {
+        font-weight: bolder;
+        font-size: 19px !important;
+      }
+
+      .TourCardItem4Head h2 {
+        font-weight: bolder;
+        font-size: 19px !important;
+      }
+
+      .TourCardItem2Text {
+        height: auto;
+        padding: 6% 3%;
+      }
+
+      .TourCardItem2Img {
+        width: 80%;
+      }
+
+      .TourCardItem3ImgItem1 {
+        width: 100%;
+        height: 250px;
+      }
+
+
+      .TourCardItem3ImgItem2 {
+        width: 100%;
+        height: 250px;
+      }
+
+
+
+      .TourCardItem3ImgItemA {
+        width: 100%;
+        height: 250px;
+
+      }
+
+    }
+
+    @media(max-width:400px) {
+      .MentorPragress {
+        width: 120px;
+        height: 60px;
+        margin-top: -200px;
+        margin-left: -30px;
+        justify-content: space-around;
+
+      }
+
+      .MentorPragress2 {
+        width: 55%;
+      }
+
+      .PragressItem {
+
+        width: 80px;
+        height: 120px;
+        text-align: center;
+        display: block;
+        margin-top: -300px;
+        margin-left: 210px;
+
+      }
+
+      .PragressItem b {
+        font-size: 13px;
+      }
+
+      .PragressItem p {
+        font-size: 10px;
+      }
+
+      .PeopleProgress {
+        width: 140px;
+        height: 60px;
+        margin-left: 150px;
+        margin-top: -80px;
+        justify-content: space-around;
+
+      }
+
+      .PeopleProgress1 b {
+        font-size: 13px;
+      }
+
+      .TextItem1 span {
+        margin-top: 1% !important;
+
+      }
+
+      .TextItem1 h1 {
+        font-size: 17px !important;
+        font-weight: bolder;
+
+      }
+
+      .TourCardItem4Head h2 {
+        font-weight: bolder;
+        font-size: 17px !important;
+      }
+
+      .TextItem1 p {
+        font-size: 13px;
+      }
+
+      .TourCardItem4Text p {
+        font-size: 13px;
+
+      }
+
+      .TourCardItem2Text p {
+        font-size: 13px;
+      }
+
+      .TourCardItem3Text p {
+        font-size: 13px;
+      }
+
+      .TourCardItem3ImgItemB p {
+        font-size: 13px;
+      }
+
+      .TourCardItem3Text h1 {
+        font-weight: bolder;
+        font-size: 17px !important;
+      }
+
+      .TourCardItem3ImgItem1 {
+        width: 100%;
+        height: 200px;
+      }
+
+      .TourCardItem3ImgItem2 {
+        width: 100%;
+        height: 200px;
+      }
+
+      .TourCardItem3ImgItemA {
+        width: 100%;
+        height: 200px;
+      }
+    }
+
+    @media(max-width:350px) {
+      .headerItem1 {
+        font-size: 25px;
+      }
+
+      .headerItem2 {
+        font-size: 18px;
+      }
+
+      .FormSearch {
+        width: 95%;
+      }
+
+      .OurPragram {
+        width: 45%;
+      }
+
+      .PeopleProgress {
+        width: 130px;
+        height: 60px;
+        margin-left: 160px;
+        margin-top: -80px;
+      }
+
+      .PeopleProgress1 b {
+        font-size: 12px;
+      }
+
+      .MentorPragress {
+        width: 110px;
+        height: 60px;
+        margin-top: -210px;
+        margin-left: -10px;
+      }
+
+      .TextItem1 span {
+        margin-top: -1% !important;
+
+      }
+
+      .TextItem1 h1 {
+        font-size: 15px !important;
+        font-weight: bolder;
+      }
+
+      .TextItem1 p {
+        font-size: 12px;
+      }
+
+      .TourCardItem2Text h1 {
+        font-size: 15px !important;
+        font-weight: bolder;
+      }
+
+      .TourCardItem4Head h2 {
+        font-size: 15px !important;
+        font-weight: bolder;
+      }
+
+      .TourCardItem2Text p {
+        font-size: 12px;
+      }
+
+      .TourCardItem4Text p {
+        font-size: 12px;
+      }
+
+      .TourCardItem4Text p ul li {
+        font-size: 12px;
+      }
+
+      .TourCardItem2Text {
+        padding: 6% 4%;
+      }
+
+      .TourCardItem2Img {
+        width: 85%;
+      }
+
+      .TourCardItem3Text p {
+        font-size: 12px;
+      }
+
+      .TourCardItem3ImgItemB p {
+        font-size: 12px;
+      }
+
+      .TourCardItem3Text h1 {
+        font-weight: bolder;
+        font-size: 15px !important;
+      }
+
+    }
+
+    @media(max-width:320px) {
+      .MentorPragress {
+        margin-left: 1px;
+      }
+
+      .MentorPragress2 p {
+        font-size: 10px;
+      }
+
+      .MentorPragress2 b {
+        font-size: 13px;
+      }
+
+      .headerRight {
+        width: 270px;
+        height: 270px;
+      }
+
+      .PragressItem {
+
+        /* width: 80px;
+    height: 120px; */
+        text-align: center;
+        display: block;
+        margin-top: -270px;
+        margin-left: 190px;
+
+      }
+
+      .PragressItem b {
+        font-size: 13px;
+      }
+
+      .PragressItem p {
+        font-size: 10px;
+      }
+
+      .PeopleProgress {
+        /* width: 140px;
+  height: 60px; */
+        margin-left: 130px;
+        margin-top: -80px;
+        justify-content: space-around;
+
+      }
+
+      .TourCardItem3ImgItem1 {
+        width: 100%;
+        height: 170px;
+      }
+
+      .TourCardItem3ImgItem2 {
+        width: 100%;
+        height: 170px;
+}
+.TourCardItem3ImgItemA {
+  width: 100%;
+  height: 170px;
+}
+.TourCardItem4Head h2 {
+  font-size: 15px !important;
+  font-weight: bolder;
+}
+.TourCardItem4Text p {
+  font-size: 12px;
+}
+.TourCardItem4Text p ul li {
+  font-size: 11px;
+}
+}
+
+  /* -------------------------------- */
 .tourCard {
   display: flex;
   justify-content: center;
@@ -440,7 +1645,6 @@ body {
   height: 100px;
   box-sizing: border-box;
   margin: auto;
-  border: 1px solid lightgray;
 }
 .sliderHomiy p {
   color: rgb(139, 139, 140);
@@ -454,12 +1658,4 @@ body {
   border-radius: 50%;
   width: 100%;
   height: auto;
-}
-
-.youtube {
-  z-index: -3;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.9;
 }

@@ -19,6 +19,8 @@ import {
   FaInstagram,
   FaTelegramPlane,
 } from "react-icons/fa";
+import { Progress } from "antd";
+import AOS from "aos";
 import rasm5 from "../img/logo-dark.png";
 import { BsFillTriangleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -38,14 +40,25 @@ import her4 from "../img/h4.jpg";
 import her5 from "../img/h5.png";
 import her6 from "../img/h6.png";
 import YouTube from "@u-wave/react-youtube";
-// import HeadOne from "../img/bogcha2/HeadImg.jpg";
 import HeadOne from "../img/bogcha2/B7.jpeg";
+import mentor from "../img/bogcha2/Dashboard/icon.png";
+import imgDegre1 from "../img/bogcha2/A8.jpeg";
+import imgDegre2 from "../img/q3.jpg";
+import qabul from "../img/educators1.jpg";
+import qabul1 from "../img/bogcha2/A2.jpeg";
+import qabul3 from "../img/bogcha2/A1.jpeg";
+import ChildImg from "../img/bogcha2/Child1.jpg";
 import { Button } from "antd";
+import OutlineRasm from "../img/bogcha2/Dashboard/circleOut.png";
+import { GiTeacher } from "react-icons/gi";
+import { FaPeopleArrows } from "react-icons/fa";
 
 export default class Dashboard extends Component {
   state = {
     loader: true,
   };
+
+  // -----------------------------
   componentDidMount() {
     setInterval(() => {
       this.setState({
@@ -74,6 +87,10 @@ export default class Dashboard extends Component {
         items: 2,
       },
     };
+    AOS.init({
+      duration: 1200,
+    });
+
     return (
       <div>
         {this.state.loader ? (
@@ -89,165 +106,356 @@ export default class Dashboard extends Component {
         ) : (
           <div>
             <div className={styles.header}>
-              <Navbar />
-              <div className={styles.youtube}>
-                <img className={styles.video} src={HeadOne} />
-                {/* <YouTube
-                  video="Vjkedan2rxA"
-                  autoplay
-                  muted
-                  controls={false}
-                  showRelatedVideos={false}
-                  showInfo={false}
-                  annotations={false}
-                  paused={false}
-                  showCaptions={false}
-                  modestBranding={false}
-                  loop={0}
-                  width="100%"
-                  height="100%"
-                  style={{ zIndex: "-7" }}
-                /> */}
+              <div className={styles.NavbarMenuItem}>
+                <Navbar />
               </div>
-              {/* <video autoPlay="autoplay" loop="loop" muted>
-                <source src={kinder} type="video/mp4" />
-              </video> */}
-              <div className={styles.btnHeader}>
-                <Button id={styles.ButtonMenuHeadFor}>
-                  Hoziroq qo'ng'iroq qiling!
-                </Button>
+              <div className={styles.headerItemGroup}>
+                <div className={styles.headerItem}>
+                  <p className={styles.headerItem1}>
+                    Farzandingizning Kelajagini biz bilan birga yarating!
+                  </p>
+                  <p className={styles.headerItem2}>
+                    Bizning ta'lim sifatimiz reytengi eng yuqori va
+                    standartlarga javob beradi!
+                  </p>
+                  <p>
+                    <form className={styles.FormSearch} action="/" method="get">
+                      <input
+                        style={{ border: "none" }}
+                        type="text"
+                        id="header-search"
+                        placeholder="Search blog posts"
+                        name="s"
+                      />
+                      <button type="submit">
+                        <i style={{ color: "white" }}>Search</i>
+                      </button>
+                    </form>
+                  </p>
+                </div>
+                <div className={styles.headerItem}>
+                  <div className={styles.headerRight}>
+                    <p className={styles.OutlineImg}>
+                      <img src={OutlineRasm} />
+                      <p data-aos="zoom-in" className={styles.MentorPragress}>
+                        <p className={styles.MentorPragress1}>
+                          <GiTeacher className={styles.MentorPragressIcon} />
+                        </p>
+
+                        <p className={styles.MentorPragress2}>
+                          <p>O'qituvchilar!</p>
+                          <b>150 ta</b>
+                        </p>
+                      </p>
+
+                      <p data-aos="zoom-in" className={styles.PragressItem}>
+                        {" "}
+                        <Progress
+                          id={styles.PragressItem1}
+                          type="circle"
+                          size={10}
+                          width="50px"
+                          strokeColor={{
+                            "0%": "#FFB254",
+                            "100%": "#FFB254",
+                          }}
+                          percent={90}
+                          status="active"
+                        />
+                        <br />
+                        <b>500 Users</b>
+                        <p>Bizning mijozlar!</p>
+                      </p>
+
+                      <p data-aos="zoom-in" className={styles.PeopleProgress}>
+                        <p className={styles.PeopleProgress1}>
+                          <p>O'quvchilar!</p>
+                          <b>1000 +</b>
+                        </p>
+                        <p className={styles.PeopleProgress2}>
+                          <FaPeopleArrows
+                            className={styles.PeopleProgressIcon}
+                          />
+                        </p>
+                      </p>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className={styles.CardGroupItem}>
+                <div className={styles.OurPragram}>
+                  <b id={styles.OurPragramB} style={{ marginTop: "10px" }}>
+                    Bizning Kurs
+                  </b>
+                </div>
+                <div className={styles.OurPragram}>
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    style={{ color: "red" }}
+                    class="fas fa-heartbeat fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/yoga/uz">Sport</Link>
+                  </p>
+                </div>
+                <div className={styles.OurPragram}>
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    style={{ color: "#35BDBB" }}
+                    class="fas fa-music fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/musiqa/uz">Musiqa</Link>
+                  </p>
+                </div>
+                <div className={styles.OurPragram}>
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    style={{ color: "green" }}
+                    class="fas fa-tree fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/garden/uz">Bog'</Link>
+                  </p>
+                </div>
+                <div className={styles.OurPragram}>
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    class="fas fa-rocket fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/steam/uz">Steam</Link>
+                  </p>
+                </div>
+                {/* <div className={styles.OurPragram}>
+                  {" "}
+                  <i id={styles.fontAwesomeIcon} class="fas fa-rocket fa-3x"></i>
+                  <p>
+                    <Link  to="/steam/uz">
+                      Steam
+                    </Link>
+                  </p>
+                </div> */}
+                <div className={styles.OurPragram}>
+                  {" "}
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    style={{ color: "#C68B59" }}
+                    class="fas fa-birthday-cake fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/cooking/uz">Shirinlik</Link>
+                  </p>
+                </div>
+                <div className={styles.OurPragram}>
+                  <i
+                    id={styles.fontAwesomeIcon}
+                    style={{ color: "#F6F6F6" }}
+                    class="fas fa-book-open fa-3x"
+                  ></i>
+                  <p>
+                    <Link to="/pedagogy/uz">Ta'lim</Link>
+                  </p>
+                </div>
               </div>
             </div>
+           <div>
+           <Container fluid>
+              <Row>
+                <Col lg={12} className={styles.tourCard}>
+                  {/* <button>Turni rejalashtirish</button> */}
+                  <Button className={styles.ButtonMenuHeadUnder} danger>
+                    Turni rejalashtirish
+                  </Button>
+                </Col>
+              </Row>
+            </Container>
+           </div>
             <div className={styles.second}>
-              <Container fluid>
-                <Row>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{
-                      background: "rgb(247,107,106)",
-                      background:
-                        "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
-                    }}
-                    className={styles.card1}
-                  >
-                    <img alt="" src={icon1} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/yoga/uz">
-                        Sport
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{ backgroundColor: "#35BDBB" }}
-                    className={styles.card}
-                  >
-                    <img alt="" src={icon2} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/musiqa/uz">
-                        Musiqa
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{
-                      backgroundColor: "#F4C204",
-                      // background: "rgb(247,107,106)",
-                      // background:
-                      //   "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
-                    }}
-                    className={styles.card1}
-                  >
-                    <img alt="" src={icon3} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/garden/uz">
-                        Bog'
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{ backgroundColor: "#EE7CC3" }}
-                    className={styles.card}
-                  >
-                    <img alt="" src={icon4} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/steam/uz">
-                        Steam
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{
-                      backgroundColor: "#4587EB",
-                      // background: "rgb(247,107,106)",
-                      // background:
-                      //   "linear-gradient(180deg, rgba(247,107,106,1) 0%, rgba(198,192,192,1) 100%)",
-                    }}
-                    className={styles.card1}
-                  >
-                    <img alt="" src={icon5} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/cooking/uz">
-                        Shirinlik
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col
-                    lg={2}
-                    md={4}
-                    sm={4}
-                    style={{ backgroundColor: "#33BEB9" }}
-                    className={styles.card}
-                  >
-                    <img alt="" src={icon6} />
-                    <p>
-                      <Link style={{ color: "white" }} to="/pedagogy/uz">
-                        Pedagogika
-                      </Link>
-                    </p>
-                  </Col>
-                  <Col lg={12} className={styles.tourCard}>
-                    {/* <button>Turni rejalashtirish</button> */}
-                    <Button className={styles.ButtonMenuHeadUnder} danger>
-                      Turni rejalashtirish
-                    </Button>
-                  </Col>
-                  <Col
-                    lg={12}
-                    style={{
-                      border: "1px solid rgba(0,0,0,0.1)",
-                      width: "95%",
-                      marginLeft: "2.5%",
-                      marginBottom: "50px",
-                    }}
-                  >
-                    <Row>
-                      <Col lg={7} style={{ padding: "0" }}>
-                        <img alt="" src={rasm6} style={{ width: "100%" }} />
-                      </Col>
-                      <Col lg={5} className={styles.heading}>
-                        <h1>Mehribon va tarbiyalovchi muhit</h1>
+              <div>
+                <Container fluid>
+                  <div className={styles.TourCardItem}>
+                    <div className={styles.ImgItem1}>
+                      <img src={imgDegre1} />
+                    </div>
+                    <div className={styles.TextItem1}>
+                      <div className={styles.TextItemHr}></div>
+                      <h1>Mehribon va tarbiyalovchi muhit</h1>
+                      <p>
+                        Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                        o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
+                        muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi. Har
+                        bir talabaning o'ziga xos kuchli, zaif tomonlari va
+                        sovg'alari bizni katta va kichik yangi marralarni
+                        birgalikda nishonlash paytida qabul qilinadi va
+                        qo'llab-quvvatlanadi.
+                      </p>
+                      <p>
+                        Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                        o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
+                        muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi. Har
+                        bir talabaning o'ziga xos kuchli.
+                      </p>
+                      <br />
+                      <span>
+                        <Link
+                          to="/loving/uz"
+                          className={styles.ButtonInfoForText}
+                          style={{ color: "white" }}
+                        >
+                          Batafsil
+                        </Link>
+                      </span>
+                    </div>
+                  </div>
+                </Container>
+              </div>
+              <div>
+                <Container fluid>
+                  <div className={styles.TourCardItem}>
+                    <div className={styles.TourCardItem2Text}>
+                      <h1>Ajoyib / qiziquvchanlik</h1>
+                      <div className={styles.TextItemHr}></div>
+
+                      <p>
+                        Young children are born with an innate curiosity of the
+                        world around them. Flamingo nurtures this natural wonder
+                        and joy for learning. Our learning activities integrate
+                        wonder and curiosity on a daily basis. Searching for
+                        worms and building a house for a beetle are monumental
+                        moments in a child’s day! We nurture young perspectives
+                        to embrace and support inquiry and discovery.
+                      </p>
+                      <span>
+                        <Link
+                          to="/wonder/uz"
+                          className={styles.ButtonInfoForText}
+                          style={{ color: "white" }}
+                        >
+                          Batafsil
+                        </Link>
+                      </span>
+                    </div>
+                    <div className={styles.TourCardItem2Img}>
+                      <img src={imgDegre2} />
+                    </div>
+                  </div>
+                </Container>
+              </div>
+              <div>
+              <Dashboardnews />
+
+              </div>
+              <div>
+                <Container fluid>
+                  <div className={styles.TourCardItem}>
+                    <div className={styles.TourCardItem3Text}>
+                      <div className={styles.TextItemHr}></div>
+
+                      <h1>G'ayrat. Nishon. Etakchilik</h1>
+
+                      <p>
+                        Young children are born with an innate curiosity of the
+                        world around them. Flamingo nurtures this natural wonder
+                        and joy for learning. Our learning activities integrate
+                        wonder and curiosity on a daily basis. Searching for
+                        worms and building a house for a beetle are monumental
+                        moments in a child’s day! We nurture young perspectives
+                        to embrace and support inquiry and discovery.
+                      </p>
+                    </div>
+                    <div className={styles.TourCardItem3Img}>
+                      <div className={styles.TourCardItem3ImgItem}>
+                        <div className={styles.TourCardItem3ImgItem1}>
+                          <img src={qabul} />
+                        </div>
+                        <div className={styles.TourCardItem3ImgItem2}>
+                          <img src={qabul1} />
+                        </div>
+                      </div>
+                      <div className={styles.TourCardItem3ImgItem}>
+                        <div className={styles.TourCardItem3ImgItemA}>
+                          <img src={qabul3} />
+                        </div>
+                        <div className={styles.TourCardItem3ImgItemB}>
+                          <p>
+                            <b>Bizning Imkoniyatlar:</b>Our learning activities
+                            integrate wonder and curiosity on a daily basis.
+                            Searching for worms and building a house for a
+                            beetle are monumental moments in a child’s day! We
+                            nurture young perspectives to embrace and support
+                            inquiry and discovery.
+                          </p>
+                          <span>
+                            <Link
+                              to="/loving/uz"
+                              className={styles.ButtonInfoForText}
+                              style={{ color: "white" }}
+                            >
+                              Batafsil
+                            </Link>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </div>
+              <div>
+              <Dashboardtadbir />
+
+              </div>
+
+              <div>
+                <Container fluid>
+                  <div className={styles.TourCardItem4}>
+                    <div className={styles.TourCardItem4Head}>
+                      <div
+                        style={{ marginBottom: "2%" }}
+                        className={styles.TextItemHr}
+                      ></div>
+                      <h2>
+                        {" "}
+                        Ota -onalar va Bolalar uchun Bolalarning xavfsizligi va
+                        salomatligi to'g'risida ma'lumot!
+                      </h2>
+                    </div>
+                    <div className={styles.TourCardItem4Body}>
+                      <div className={styles.TourCardItem4Img}>
+                        <img src={ChildImg} />
+                      </div>
+                      <div className={styles.TourCardItem4Text}>
                         <p>
-                          Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                          o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                          muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi.
-                          Har bir talabaning o'ziga xos kuchli, zaif tomonlari
-                          va sovg'alari bizni katta va kichik yangi marralarni
-                          birgalikda nishonlash paytida qabul qilinadi va
-                          qo'llab-quvvatlanadi.
+                          <b>B.C</b> Flamingo orolidagi ta'lim o'qituvchilar,
+                          ota-onalar va o'quvchilar mehribon va mehribon, ilmiy
+                          jihatdan boy muhitda hamkorlik qiladigan go'zal raqsga
+                          o'xshaydi. Har bir talabaning o'ziga xos kuchli, zaif
+                          tomonlari va sovg'alari bizni katta va kichik yangi
+                          marralarni birgalikda nishonlash paytida qabul
+                          qilinadi va qo'llab-quvvatlanadi.{" "}
+                        </p>
+                        <p>
+                          <ul>
+                            <li>
+                              {" "}
+                              Aloqa o'rnatadi va aniq umidlar va maqbul xulq
+                              -atvorni mustahkamlaydi va iqlim va o'zaro hurmat
+                              va mas'uliyatni ta'minlaydi
+                            </li>
+                            <li> Modullarni o'rgatadi va rag'batlantiradi</li>
+                            <li> Ijtimoiy mas'uliyatli xatti -harakatlar</li>
+                            <li>
+                              {" "}
+                              Muammolarni tinch yo'l bilan hal qilish va
+                              talabalarga bir -biriga yordam berishga harakat
+                              qilish
+                            </li>
+                            <li>
+                              {" "}
+                              Shafqatsizlik va himoyalanish va inson huquqlariga
+                              katta ahamiyat bering{" "}
+                            </li>
+                          </ul>
                         </p>
                         <span>
                           <Link
@@ -258,138 +466,14 @@ export default class Dashboard extends Component {
                             Batafsil
                           </Link>
                         </span>
-                        <img alt="" src={border} />
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col
-                    lg={12}
-                    style={{
-                      border: "1px solid rgba(0,0,0,0.1)",
-                      width: "95%",
-                      marginLeft: "2.5%",
-                      marginBottom: "50px",
-                    }}
-                  >
-                    <Row>
-                      <Col lg={5} className={styles.heading1}>
-                        <h1>Ajoyib / qiziquvchanlik</h1>
-                        <p>
-                          Young children are born with an innate curiosity of
-                          the world around them. Flamingo nurtures this natural
-                          wonder and joy for learning. Our learning activities
-                          integrate wonder and curiosity on a daily basis.
-                          Searching for worms and building a house for a beetle
-                          are monumental moments in a child’s day! We nurture
-                          young perspectives to embrace and support inquiry and
-                          discovery.
-                        </p>
-                        <span>
-                          <Link
-                            to="/wonder/uz"
-                            className={styles.ButtonInfoForText}
-                            style={{ color: "white" }}
-                          >
-                            Batafsil
-                          </Link>
-                        </span>
-                        <img alt="" src={border} className={styles.img1} />
-                      </Col>
+                      </div>
+                    </div>
+                  </div>
+                </Container>
+              </div>
 
-                      <Col lg={7} style={{ padding: "0" }}>
-                        <img alt="" src={rasm3} style={{ width: "100%" }} />
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col
-                    lg={12}
-                    style={{
-                      width: "95%",
-                      marginLeft: "2.5%",
-                      marginBottom: "50px",
-                    }}
-                  >
-                    <Dashboardnews />
-                    <Row style={{ border: "1px solid rgba(0,0,0,0.1)" }}>
-                      <Col lg={7} style={{ padding: "0" }}>
-                        <img alt="" src={rasm4} style={{ width: "100%" }} />
-                      </Col>
-                      <Col lg={5} className={styles.heading}>
-                        <h1>G'ayrat. Nishon. Etakchilik</h1>
-                        <p>
-                          Flamingo orolida o'rganish hech qachon qiyin ish emas.
-                          O'rganish quvonchli, ijodiy, egiluvchan va hattoki
-                          noyob bolalar qiziqishlari atrofida moslashtirilgan.
-                          Bundan ham muhimi, "Flamingo" da ta'lim mazmunli va
-                          farzandingizning kelajagi uchun juda foydali. Bu
-                          eshiklarni, imkoniyatlarni ochadi va bolangizni ta'lim
-                          safariga olib boradi. "Daryolarda siz tegizadigan suv
-                          o'tganlarning oxirgi va kelayotganlarning
-                          birinchisidir; hozirgi zamon bilan ham." Leonardo da
-                          Vinchi
-                        </p>
-                        <span>
-                          <Link
-                            to="/leadership/uz"
-                            className={styles.ButtonInfoForText}
-                            style={{ color: "white" }}
-                          >
-                            Batafsil
-                          </Link>
-                        </span>
-                        <img alt="" src={border} />
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col
-                    lg={12}
-                    style={{
-                      width: "95%",
-                      marginLeft: "2.5%",
-                      marginBottom: "50px",
-                    }}
-                  >
-                    {" "}
-                    <Dashboardtadbir />
-                    <Row style={{ border: "1px solid rgba(0,0,0,0.1)" }}>
-                      <Col lg={5} className={styles.heading1}>
-                        <h1 id={styles.Heading1H1}>
-                          Bizning dunyomizni bir vaqtning o'zida bitta bolani
-                          o'zgartirish
-                        </h1>
-
-                        <p>
-                          Flamingo oroli toza sevgi va imondan yaratilgan.
-                          Maktabimizning markazida ijtimoiy va emotsional
-                          salomatlik bola poydevori va kelajagi uchun ajralmas
-                          tarkibiy qism ekanligini tushunishdir. Flamingo
-                          talabalari altruistik xususiyatlarni rivojlantiradilar
-                          va ularga o'z jamoalari va dunyo etakchilari bo'lish
-                          uchun vositalar berishadi. "Agar biz o'zimizni
-                          o'zgartira olsak, dunyodagi tendentsiyalar ham
-                          o'zgargan bo'lar edi. Inson o'z tabiatini
-                          o'zgartirishi bilan, dunyoning unga bo'lgan munosabati
-                          ham o'zgaradi." Gandi
-                        </p>
-                        <span>
-                          <Link
-                            to="/changing/uz"
-                            className={styles.ButtonInfoForText}
-                            style={{ color: "white" }}
-                          >
-                            Batafsil
-                          </Link>
-                        </span>
-                        <img alt="" src={border} className={styles.img1} />
-                      </Col>
-                      <Col lg={7} style={{ padding: "0" }}>
-                        <img alt="" src={rasm7} style={{ width: "100%" }} />
-                      </Col>
-                    </Row>
-                  </Col>
-                </Row>
-              </Container>
-            </div>
+           
+            </div> 
             <div style={{ padding: "10px 0 30px" }}>
               <h1 className={styles.sarlavha}> Bizning hamkorlarimiz</h1>
               <div className={styles.AnimationPartnerOn}></div>
