@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../css/mini.module.css";
+import style from "../css/about_us.module.css";
 import kinder1 from "../img/meal1.jpg";
 import kinder2 from "../img/meal2.jpg";
 import kinder3 from "../img/meal3.jpg";
@@ -76,6 +77,28 @@ export default class Oshxona extends Component {
                 <img src={kinder3} className={styles.sliderImage} />
               </div>
             </Carousel>
+            <div className={style.HeaderMenu}>
+              <div className={style.HeaderMenuItemBox}>
+                <p></p>
+                <p>Bu Sizning Tanlovingiz</p>
+                <p></p>
+              </div>
+              <div className={style.HeaderMenuItemBox1}>
+                <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+              </div>
+              <div className={style.HeaderMenuItemBox2}>
+                <p>
+                  {" "}
+                  Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                  o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                  hamkorlik qiladigan go'zal raqsga o'xshaydi
+                </p>
+              </div>
+              <div className={style.HeaderMenuItemBox3}>
+                <p>Ma'lumot Uchun </p>
+                <p>Bog'lanish </p>
+              </div>
+            </div>
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>

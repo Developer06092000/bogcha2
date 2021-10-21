@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import styles from "../css/educators.module.css";
+import style from '../css/about_us.module.css'
 import educators1 from "../img/educators1.jpg";
 import educators2 from "../img/educators2.jpg";
 import educators3 from "../img/educators3.jpg";
@@ -86,6 +87,28 @@ export default class Rahbariyat extends Component {
                     <img src={educators2} className={styles.headerImage} />
                   </div>
                 </Carousel>
+                <div className={style.HeaderMenu}>
+                  <div className={style.HeaderMenuItemBox}>
+                    <p></p>
+                    <p>Bu Sizning Tanlovingiz</p>
+                    <p></p>
+                  </div>
+                  <div className={style.HeaderMenuItemBox1}>
+                    <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                  </div>
+                  <div className={style.HeaderMenuItemBox2}>
+                    <p>
+                      {" "}
+                      Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                      o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
+                      muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi
+                    </p>
+                  </div>
+                  <div className={style.HeaderMenuItemBox3}>
+                    <p>Ma'lumot Uchun </p>
+                    <p>Bog'lanish </p>
+                  </div>
+                </div>
               </div>
             </header>
 

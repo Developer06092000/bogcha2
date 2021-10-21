@@ -18,14 +18,279 @@ body{
     height: 100vh;
 
 }
+
+.HeaderMenu {
+    width: 90%;
+    height: 520px;
+    /* background-image: url(../img/bogcha2/Group\ 432.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    object-fit: contain;
+    margin: auto;
+    transform: matrix(1, 0, 0, 1, 0, 0); */
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: -520px;
+
+    font-family: Glamour Absolute;
+}
+
+.HeaderMenuItemBox {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.HeaderMenuItemBox p:nth-child(1) {
+    height: 2px;
+    width: 150px;
+    margin: auto;
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    border-radius: 20%;
+
+    animation: HeaderMenuItemP1 2s ease infinite;
+}
+
+@keyframes HeaderMenuItemP1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.HeaderMenuItemBox p:nth-child(2) {
+    color: white;
+    font-family: "Andale Mono",
+        monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: center center;
+
+}
+
+.HeaderMenuItemBox p:nth-child(3) {
+    height: 2px;
+    width: 150px;
+    margin: auto;
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    border-radius: 20%;
+
+    animation: HeaderMenuItemP3 2s ease infinite;
+}
+
+@keyframes HeaderMenuItemP3 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.HeaderMenuItem p:nth-child(1) {
+    height: 3px;
+    width: 100px;
+    margin: auto;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    border-radius: 20%;
+
+    animation: HeaderMenuItemP1 2s ease infinite;
+}
+
+@keyframes HeaderMenuItemP1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.HeaderMenuItemBox1 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+.HeaderMenuItemBox2 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+
+}
+
+.HeaderMenuItemBox2 p {
+    font-family: "Andale Mono",
+        monospace;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.HeaderMenuItemBox1 p {
+    color: white;
+    font-family: "Andale Mono",
+        monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: center center;
+
+}
+
+.HeaderMenuItemBox3 {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin-top: 5%;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.HeaderMenuItemBox3 p:nth-child(1) {
+    width: 200px;
+    height: auto;
+    padding: 1% 0%;
+    background-color: #FEE440;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: "Andale Mono",
+        monospace;
+    align-items: center;
+    margin-right: 3%;
+}
+
+.HeaderMenuItemBox3 p:nth-child(1):hover {
+    background-color: #ebda71;
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.HeaderMenuItemBox3 p:nth-child(2) {
+    width: 200px;
+    height: auto;
+    padding: 1% 0%;
+    border: 1px solid #ebda71;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: "Andale Mono",
+        monospace;
+    align-items: center;
+    margin-left: 3%;
+
+}
+
+/* ---------------Don't working------------------- */
+.notepad {
+    width: 100%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, .15);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+
+
+
+.top {
+    width: 100%;
+    height: 40px;
+    background: #333;
+    border-radius: 5px;
+    margin: auto;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+
+    animation: top1 2s ease infinite;
+}
+
+@keyframes top1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.paper {
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+    padding: 35px 20px;
+    background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4 31px, #94acd4 32px);
+    font-family: 'Shadows Into Light', cursive;
+    line-height: 32px;
+    outline: 0;
+    font-size: 22px;
+}
+
+/* ----------------------------------- */
+
+.HeaderMenuItemBox3 p:nth-child(2):hover {
+    background-color: #FEE440;
+    transition: .2s;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .header{
     width: 100%;
     height: auto;
 }
+.body {
+    z-index: 3;
+}
+
+.fdtegr {
+    margin-top: -400px;
+
+}
+
 .title {
     width: 285px;
     margin: auto;
-    margin-top:40px ;
     margin-bottom:40px ;
    
 }
@@ -69,7 +334,126 @@ body{
     color: #3d1699;
 
 }
+@media(max-width:767px) {
+    .HeaderMenu {
+        margin-top: -150px;
+        height: auto;
+        padding: 5% 0%;
+    }
 
+    .HeaderMenuItemBox {
+        width: 100%;
+    }
+
+    .HeaderMenuItemBox p:nth-child(2) {
+        font-size: 23px;
+    }
+
+    .HeaderMenuItemBox1 p {
+        font-size: 23px;
+    }
+
+    .HeaderMenuItemBox2 p {
+        font-size: 18px;
+    }
+
+    .HeaderMenuItemBox3 {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(1) {
+        width: 230px;
+        font-size: 22px;
+        padding: 2% 3%;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(2) {
+        width: 230px;
+        font-size: 22px;
+        padding: 2% 0;
+    }
+}
+
+@media(max-width:550px) {
+    .HeaderMenuItemBox p:nth-child(1) {
+        width: 100px;
+    }
+
+    .HeaderMenuItemBox p:nth-child(3) {
+        width: 100px;
+    }
+
+    .HeaderMenuItemBox p:nth-child(2) {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .HeaderMenuItemBox1 p {
+        font-size: 19px;
+        font-weight: bolder;
+    }
+
+    .HeaderMenuItemBox2 {
+        width: 100%;
+    }
+
+    .HeaderMenuItemBox2 p {
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(1) {
+        width: 200px;
+        font-size: 20px;
+        padding: 2% 3%;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(2) {
+        width: 200px;
+        font-size: 20px;
+        padding: 2% 0;
+    }
+
+    .HeaderMenu {
+        margin-top: -70px;
+    }
+}
+
+@media(max-width:450px) {
+    .HeaderMenuItemBox3 {
+        margin-top: 10%;
+
+    }
+
+    .HeaderMenuItemBox p:nth-child(1) {
+        width: 20%;
+
+    }
+
+    .HeaderMenuItemBox p:nth-child(3) {
+        width: 20%;
+
+    }
+
+    .HeaderMenuItemBox p:nth-child(2) {
+        width: 60%;
+        font-size: 17px;
+    }
+
+    .HeaderMenuItemBox1 {
+        width: 100%;
+        margin-top: 10%;
+    }
+
+    .HeaderMenuItemBox2 {
+        margin-top: 10%;
+    }
+
+    .HeaderMenuItemBox1 p {
+        font-size: 17px;
+    }
+    }
 @media(max-width:400px) {
     .loader1 {
         size: 100px;
@@ -77,6 +461,53 @@ body{
 
     .loader p {
         font-size: 15px;
+    }
+.HeaderMenuItemBox p:nth-child(2) {
+    font-size: 15px;
+}
+
+.HeaderMenuItemBox1 p {
+    font-size: 15px;
+}
+
+.HeaderMenuItemBox2 p {
+    font-size: 12px;
+}
+
+.HeaderMenuItemBox3 p:nth-child(1) {
+    width: 45%;
+    font-size: 16px;
+    margin: 0;
+}
+
+.HeaderMenuItemBox3 {
+    justify-content: space-between;
+}
+
+.HeaderMenuItemBox3 p:nth-child(2) {
+    width: 45%;
+    font-size: 16px;
+    margin: 0;
+
+}
+}
+
+@media(max-width:350px) {
+    .HeaderMenuItemBox p:nth-child(2) {
+        font-size: 13px;
+    }
+
+    .HeaderMenuItemBox2 p {
+        font-size: 10px;
+        width: 90%;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(1) {
+        font-size: 13px;
+    }
+
+    .HeaderMenuItemBox3 p:nth-child(2) {
+        font-size: 13px;
     }
 }
 .AnimationUnderNews1 {
