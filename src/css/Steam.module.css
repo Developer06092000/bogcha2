@@ -60,17 +60,8 @@
         background-position: 0% 50%;
     }
 }
-.citem{
-    width: 100%;
-    height: 85vh;
-    overflow: hidden;
-}
-.matn{
-    max-width: 1240px;
-    height: auto;
-    margin: 0px auto;
-}
-.matn h1{
+
+h1{
     font-size: 34px;
     color: #585959;
     font-family: arial;
@@ -78,36 +69,11 @@
     padding: 34px 0px 8px 0px;
     
 }
-.matn h5{
-    
-    color: #444444;
-    margin: 32px 0px;
-    font-weight: 700;
-}
-.matn p{
-    font-size: 20px;
-    color: #444;
-    line-height: 32px;
-}
+
 @media screen and (max-width:1300px){
-    .matn{
-        margin: 0px 5%;
-    }
-    .citem{
-        width: 100%;
-        height: 51vw;
-    }
-    .matn h1{
+    h1{
         padding: 24px 0px 4px 0px;
         font-size: 28px;
-    }
-    .matn p{
-        font-size: 19px;
-        line-height: 31px;
-    }
-    .matn h5{
-        font-weight: 600;
-        font-size: 19px;
     }
 }
 .loader{
@@ -132,7 +98,6 @@
     .loader1 {
         size: 100px;
     }
-
     .loader p {
         font-size: 15px;
     }
@@ -147,4 +112,42 @@
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.notepad {
+    width: 100%;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, .15);
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    margin-bottom: 60px;
+}
+.top {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    border-radius: 5px 5px 0 0;
+}
+.paper {
+    width: 100%;
+    height: 100%;
+    min-height: 60vh;
+    padding: 35px 20px;
+    background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4 31px, #94acd4 32px);
+    font-family: 'Shadows Into Light', cursive;
+    line-height: 32px;
+    outline: 0;
+    font-size: 22px;
 }
