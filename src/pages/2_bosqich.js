@@ -1,8 +1,12 @@
 import React, { Component } from "react"
 import style from "../css/Steam.module.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Button } from "react-bootstrap";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import star from "../img/star.png"
+import delivery from "../img/delivery.png"
+import frame from "../img/frame.png"
 import img1 from "../img/r2.jpg"
 import img4 from "../img/r4.jpeg"
 import img5 from "../img/r5.jpeg"
@@ -11,7 +15,6 @@ import styles from "../css/about_us.module.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import { Container } from "react-bootstrap";
 export default class Bosqich2 extends Component {
   state = {
     loader: true,
@@ -80,6 +83,7 @@ export default class Bosqich2 extends Component {
                 <img src={img5} className={style.sliderImage} />
               </div>
             </Carousel>
+<<<<<<< Updated upstream
             <div className={styles.HeaderMenu}>
               <div className={styles.HeaderMenuItemBox}>
                 <p></p>
@@ -152,6 +156,72 @@ export default class Bosqich2 extends Component {
             </Container>
             <br />
             <br />
+=======
+
+            <div className={style.header__box}>
+                  <div className={style.star}><img src={star} />Trustpilot 4.6(136 reviews)</div>
+                  <div className={style.lines}>
+                  	<div className={style.line}></div>
+										<p>Because you</p>
+                  	<div className={style.line}></div>
+									</div>
+									<h2>deserve the best skin possible</h2>
+									<p className={style.p__title}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+									<div className={style.buttons}> 
+										<Button style={{marginRight:'5%'}} variant="light">Start Free Consultation</Button>
+										<Button variant="outline-light">Why Choose Dahl?</Button>
+									</div>
+									<div className={style.links}>
+									<div className={style.link}><img src={delivery} /><p>free express delivery</p></div>
+									<div className={style.link}><img src={frame} /><p>Money back guaranteed</p></div>
+									</div>
+								</div>
+
+
+    <header>
+            <h1>2-BOSQICH</h1>
+              <div className={style.AnimationUnderNews1}></div>
+              <div className={style.AnimationUnderNews2}></div>
+          <br/>
+          <br/>
+          <br/>
+
+
+          <Container>
+          <div className={style.notepad}>
+            <div className={style.top}></div>
+            <div className={style.paper} contenteditable="true">
+            HANDS-ON LEARNING<br /><br />
+              <p>
+              At Flamingo we begin by providing a loving, nurturing
+                environment to support the development of our now very mobile
+                and active toddlers. Academics is hands-on, playful, and more
+                importantly, structured and consistent.
+              </p>
+              BIG CONCEPTS, SMALL RATIOS<br /><br />
+              <p>
+              Weekly lesson plans are carefully crafted to engage our toddlers
+                as they demand opportunities for exploration and play. We
+                integrate our rich curriculum such as Hand Writing Without Tears
+                in a joyful, playful manner. We begin identifying both upper and
+                lowercase letters through multiple ways of touch, learn, and
+                discovery. Mathematics is integrated via hands-on manipulative
+                and small group learning formats of 6-8 students. Two very
+                special studios-an Art Studio and Sensory Studio-meet the needs
+                of our busy toddlers.
+              </p><br/>
+              <p>
+              Our small student-teacher ratios complement high-quality
+                learning. The results are brilliant, curious, eager little minds
+                that truly develop a love for learning! Did we mention too:
+                potty-training is a big milestone achieved between 24-36 months.
+                Hip Hip Hooray!
+              </p>
+            </div>
+          </div>
+          </Container><br/><br/>
+</header>
+>>>>>>> Stashed changes
 
             <Footer />
           </div>
