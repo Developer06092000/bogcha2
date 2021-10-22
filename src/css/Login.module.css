@@ -128,8 +128,10 @@ body{
      .logo img{
         width: 150px !important;
         margin-left: 40px;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 5px 5px;
+
     }
     .subNav1{
         display: none;
@@ -411,12 +413,30 @@ body{
         display: none;
     }
     .logo1 img{
-        width: 110px !important;
+        width: 100px !important;
         margin-left: 20px;
     }
      .logo img{
-        width: 140px !important;
-    }
+        width: 100px !important;
+        }
+        }
+
+        @media(max-width:450px) {
+            .form {
+                width: 90%;
+                margin: auto;
+                margin-top: 5%;
+            }
+
+            .LoginButtonItem {
+
+                padding: 3% 0px;
+                font-size: 17px;
+            }
+
+            .BodyTextItem {
+                width: 40%;
+            }
     }
     
     @media screen and (min-width:567px) {
@@ -495,7 +515,7 @@ body{
     margin-left: 20px;
     }
     .logo img{
-    width: 140px !important;
+    width: 110px !important;
     }
     }
     
@@ -517,7 +537,7 @@ body{
     margin-left: 20px;
     }
     .logo img{
-    width: 140px !important;
+    width: 120px !important;
     }
     }
     
@@ -559,7 +579,7 @@ body{
     margin-left: 20px;
     }
     .logo img{
-    width: 140px !important;
+    width: 120px !important;
     }
     .second{
       display: none;

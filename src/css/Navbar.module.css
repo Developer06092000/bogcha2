@@ -28,11 +28,12 @@ body{
         display: flex;
         justify-content:space-between;
         align-items: center;
-        padding:20px;
+        padding:10px;
+
        
 
     }
-    .logo1{
+    .logo1 {
         width: 100vw;
         z-index: 1;
         position: absolute;
@@ -42,13 +43,14 @@ body{
         justify-content:space-between;
         align-items: center;
         background-color:white;
-        padding:20px;
+padding:10px;
         box-shadow: 0 0.46875rem 2.1875rem rgb(4 9 20 / 3%), 0 0.9375rem 1.40625rem rgb(4 9 20 / 3%), 0 0.25rem 0.53125rem rgb(4 9 20 / 5%), 0 0.125rem 0.1875rem rgb(4 9 20 / 3%);
     }
     .navbar{
         margin-left: 360px !important;
         background-color:transparent;
         position: relative;
+       
     }
     .navbar a{
         font-weight: bold;
@@ -60,7 +62,7 @@ body{
         text-decoration: underline;
     }
     .logo1 img{
-        width: 110px !important;
+        width: 100px !important;
         margin-left: 20px;
     }
     .navbar span{
@@ -72,8 +74,10 @@ body{
       cursor: pointer;
       padding:20px 0;
     }
-     .logo img{
-        width: 200px !important;
+     .logo img {
+         width: 150px !important;
+         margin-left: 20px;
+         padding: 5px 5px;
     }
     .btn1{
         background-color: #4587EB;
@@ -82,18 +86,15 @@ body{
         padding:5px 30px;
         font-size: 16px;
         font-weight: 600;
-        border:1px solid black;
         margin-right: 20px;
         transition: all 0.3s;
     }
     .btn1:hover{
         background-color: white;
-        border:1px solid #000000;
         color:red;
     }
     .btn2:hover{
         background-color: white;
-        border:1px solid #000000;
         color:red;
         }
     .btn2{
@@ -271,11 +272,11 @@ body{
         display: none;
     }
     .logo1 img{
-        width: 110px !important;
+        width: 100px !important;
         margin-left: 20px;
     }
      .logo img{
-        width: 140px !important;
+        width: 100px !important;
     }
     }
 
@@ -351,11 +352,11 @@ body{
     display: none;
 }
 .logo1 img{
-    width: 110px !important;
+    width: 100px !important;
     margin-left: 20px;
 }
  .logo img{
-    width: 140px !important;
+    width: 120px !important;
 }
 }
 
@@ -431,7 +432,7 @@ body{
     margin-left: 20px;
 }
  .logo img{
-    width: 140px !important;
+    width: 120px !important;
 }
 }
 @media screen and (min-width:992px) {
@@ -469,7 +470,7 @@ body{
     margin-left: 20px;
    }
    .logo img{
-    width: 140px !important;
+    width: 120px !important;
   }
   .second{
       display: none;

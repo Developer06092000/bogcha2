@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import style from "../css/Dasturlar.module.css";
 import Footer from "./Footer";
-import rasm1 from "../img/logo-dark.png";
-import rasm5 from "../img/logo-dark.png";
+import rasm1 from "../img/BrandKinder2.png";
+import rasm5 from "../img/BrandKinder2.png";
 import img1 from "../img/q1.jpg";
 import img2 from "../img/q2.jpg";
 import img3 from "../img/q3.jpg";

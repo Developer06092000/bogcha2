@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "../css/Login.module.css";
 import "../css/login.css";
 import PuffLoader from "react-spinners/PuffLoader";
-import rasm5 from "../img/logo-dark.png";
+import rasm5 from "../img/BrandKinder2.png";
 import { Link } from "react-router-dom";
 import { BsFillTriangleFill } from "react-icons/bs";
 import Footer from "./Footer";

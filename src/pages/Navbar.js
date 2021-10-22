@@ -10,8 +10,10 @@ import {
   FaFacebookSquare,
   FaFacebook,
 } from "react-icons/fa";
-import rasm1 from "../img/ftr-logo.png";
-import rasm5 from "../img/logo-dark.png";
+import rasm1 from "../img/BrandKinder2.png";
+import rasm5 from "../img/BrandKinder2.png";
+// import rasm1 from "../img/ftr-logo.png";
+// import rasm5 from "../img/logo-dark.png";
 import { BsFillTriangleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { Menu } from "antd";
@@ -72,7 +74,7 @@ export default class Navbar extends Component {
                 </span>
                 <span style={{ fontSize: "25px" }}>|</span>
                 <span className={styles.sub1}>
-                  <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
+                  <Link to="/bizhaqimizda/uz">Bizl haqimizda</Link>
                 </span>
                 <div className={styles.subNav1}>
                   <span>
@@ -93,9 +95,7 @@ export default class Navbar extends Component {
                   <p>
                     <Link to="/oshxona/uz">Oshxona</Link>
                   </p>
-                  <p>
-                    <Link to="/galereya/uz">Galereya</Link>
-                  </p>
+                 
                   <p>
                     <Link to="/manzil/uz">Manzil</Link>
                   </p>
@@ -221,7 +221,7 @@ export default class Navbar extends Component {
                         style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                       >
                         <Menu.Item key="2">
-                        <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
+                          <Link to="/bizhaqimizda/uz">Biz haqimizda</Link>
                         </Menu.Item>
                         <Menu.Item key="3">
                           <Link to="/bizningtarix/uz">Bizning tarix</Link>
@@ -235,10 +235,8 @@ export default class Navbar extends Component {
                         <Menu.Item key="6">
                           <Link to="/tarbiyachilar/uz">Tarbiyalovchilar</Link>
                         </Menu.Item>
+                        
                         <Menu.Item key="7">
-                          <Link to="/galereya/uz">Galereya</Link>
-                        </Menu.Item>
-                        <Menu.Item key="8">
                           <Link to="/manzil/uz">Manzil</Link>
                         </Menu.Item>
                       </Menu.ItemGroup>
@@ -252,22 +250,22 @@ export default class Navbar extends Component {
                       <Menu.ItemGroup
                         style={{ borderTop: "3px solid rgba(0,0,0,0.4)" }}
                       >
-                        <Menu.Item key="9">
-                        <Link to="/dasturlar/uz">Dasturlar</Link>
+                        <Menu.Item key="8">
+                          <Link to="/dasturlar/uz">Dasturlar</Link>
                         </Menu.Item>
-                        <Menu.Item key="10">
+                        <Menu.Item key="9">
                           <Link to="/dastur_1/uz">1-dastur</Link>
                         </Menu.Item>
-                        <Menu.Item key="11">
+                        <Menu.Item key="10">
                           <Link to="/dastur_2/uz">2-dastur</Link>
                         </Menu.Item>
-                        <Menu.Item key="12">
+                        <Menu.Item key="11">
                           <Link to="/dastur_3/uz">3-dastur</Link>
                         </Menu.Item>
                       </Menu.ItemGroup>
                     </SubMenu>
                     <Menu.Item
-                      key="10"
+                      key="12"
                       style={{ color: "white", backgroundColor: "#A2D2FF" }}
                     >
                       <Link to="/curriculm/uz" style={{ color: "white" }}>
@@ -275,7 +273,7 @@ export default class Navbar extends Component {
                       </Link>
                     </Menu.Item>
                     <Menu.Item
-                      key="11"
+                      key="13"
                       style={{ color: "white", backgroundColor: "#A2D2FF" }}
                     >
                       <Link style={{ color: "white" }} to="/yangiliklar/uz">
@@ -283,7 +281,7 @@ export default class Navbar extends Component {
                       </Link>
                     </Menu.Item>
                     <Menu.Item
-                      key="12"
+                      key="14"
                       style={{ color: "white", backgroundColor: "#A2D2FF" }}
                     >
                       <Link style={{ color: "white" }} to="/tadbirlar/uz">
