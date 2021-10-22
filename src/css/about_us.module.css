@@ -16,6 +16,14 @@ body{
 .sliderHeader{
     width: 100%;
     height: 100vh;
+    /*---------------------------- Bu sohta ----------------------------- */
+    margin-top: 260px;
+
+    }
+
+    .sliderHeader img {
+        width: 100%;
+        height: 100vh;
 
 }
 /* -------------Bu--Qabul.js---------- */
@@ -26,8 +34,9 @@ body{
 
 /* ------------------------------------- */
 .HeaderMenu {
+    position: relative;
     width: 90%;
-    height: auto;
+    height: 520px;
     padding: 2% 0%;
     /* background-image: url(../img/bogcha2/Group\ 432.png);
     background-repeat: no-repeat;
@@ -37,11 +46,8 @@ body{
     transform: matrix(1, 0, 0, 1, 0, 0); */
     margin: auto;
     text-align: center;
-    position: relative;
     top: -520px;
-    z-index:1;
-
-    font-family: Glamour Absolute;
+    border: 1px solid black;
 }
 
 .HeaderMenuItemBox {
@@ -225,59 +231,6 @@ body{
     margin-left: 3%;
 
 }
-
-/* ---------------Don't working------------------- */
-.notepad {
-    width: 100%;
-    box-shadow: 10px 10px 40px rgba(0, 0, 0, .15);
-    border-radius: 0 0 10px 10px;
-    overflow: hidden;
-    margin-bottom: 60px;
-}
-
-
-
-.top {
-    width: 100%;
-    height: 40px;
-    background: #333;
-    border-radius: 5px;
-    margin: auto;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
-    background-size: 400% 400%;
-
-    animation: top1 2s ease infinite;
-}
-
-@keyframes top1 {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
-}
-
-.paper {
-    width: 100%;
-    height: 100%;
-    min-height: 60vh;
-    padding: 35px 20px;
-    background: repeating-linear-gradient(#f1ede9, #f1ede9 31px, #94acd4 31px, #94acd4 32px);
-    font-family: 'Shadows Into Light', cursive;
-    line-height: 32px;
-    outline: 0;
-    font-size: 22px;
-}
-
-/* ----------------------------------- */
-
 .HeaderMenuItemBox3 p:nth-child(2):hover {
     background-color: #FEE440;
     transition: .2s;
@@ -291,9 +244,9 @@ body{
     .headerAbout {
         width: 100%;
         height: 650px;
-}
+        }
 .body {
-    z-index: 3;
+    border: 1px solid black;
 }
 
 

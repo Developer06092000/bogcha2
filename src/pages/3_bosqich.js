@@ -6,15 +6,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
 import img1 from "../img/r3.jpg";
-<<<<<<< Updated upstream
 import styles from "../css/about_us.module.css";
-
-=======
 import star from "../img/star.png"
 import delivery from "../img/delivery.png"
 import frame from "../img/frame.png"
 import { Container, Button } from "react-bootstrap";
->>>>>>> Stashed changes
 import img4 from "../img/r4.jpeg";
 import img5 from "../img/r5.jpeg";
 import PuffLoader from "react-spinners/PuffLoader";
@@ -88,7 +84,6 @@ export default class Bosqich3 extends Component {
                 <img src={img5} className={style.sliderImage} />
               </div>
             </Carousel>
-<<<<<<< Updated upstream
             <div className={styles.HeaderMenu}>
               <div className={styles.HeaderMenuItemBox}>
                 <p></p>
@@ -111,28 +106,8 @@ export default class Bosqich3 extends Component {
                 <p>Bog'lanish </p>
               </div>
               </div>
-=======
-          
-            <div className={style.header__box}>
-                  <div className={style.star}><img src={star} />Trustpilot 4.6(136 reviews)</div>
-                  <div className={style.lines}>
-                  	<div className={style.line}></div>
-										<p>Because you</p>
-                  	<div className={style.line}></div>
-									</div>
-									<h2>deserve the best skin possible</h2>
-									<p className={style.p__title}>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
-									<div className={style.buttons}> 
-										<Button style={{marginRight:'5%'}} variant="light">Start Free Consultation</Button>
-										<Button variant="outline-light">Why Choose Dahl?</Button>
-									</div>
-									<div className={style.links}>
-									<div className={style.link}><img src={delivery} /><p>free express delivery</p></div>
-									<div className={style.link}><img src={frame} /><p>Money back guaranteed</p></div>
-									</div>
-								</div>
-
-<header>
+          </div>
+           
 
             <h1>3-BOSQICH</h1>
               <div className={style.AnimationUnderNews1}></div>
@@ -167,57 +142,14 @@ export default class Bosqich3 extends Component {
                 sometimes jaw dropped when they come home saying the newest NASA
                 discoveries.
               </p>
->>>>>>> Stashed changes
             </div>
-            <h1>3-BOSQICH</h1>
-            <div className={style.AnimationUnderNews1}></div>
-            <div className={style.AnimationUnderNews2}></div>
-            <br />
-            <br />
-            <br />
-
-<<<<<<< Updated upstream
-            <Container>
-              <div className={style.notepad}>
-                <div className={style.top}></div>
-                <div className={style.paper} contenteditable="true">
-                  A GREAT BIG WORLD
-                  <br />
-                  <br />
-                  <p>
-                    Entering the magical, fantastical world, are our newly
-                    minted three’s. Is there a monster under my bed? Absolutely!
-                    Can superhero ﬂy and ﬁght bad guys? Yes and yes again! This
-                    is an exciting time of a child’s life as they discover a
-                    greater sense of identity and begin to distinguish fantasy
-                    from reality. At Flamingo, we nurture a child’s creative
-                    imagination while building a strong, healthy, academic
-                    background.
-                  </p>
-                  WELL-ROUNDED EDUCATION
-                  <br />
-                  <br />
-                  <p>
-                    Yoga, gardening, and cooking become possible as we have now
-                    mastered pottytraining! Flamingo students learn about the
-                    world in which they live, the continents on planet Earth,
-                    and impress us by being able to write and identify their own
-                    names! With much love, support, and encouragement, Flamingo
-                    oﬀers a well-rounded rich learning experience that will
-                    leave you sometimes jaw dropped when they come home saying
-                    the newest NASA discoveries.
-                  </p>
-                </div>
-              </div>
-            </Container>
-            <br />
-            <br />
-
-=======
-</header>
->>>>>>> Stashed changes
-            <Footer />
+            </div>
+            
+           
+          </Container>
+          <Footer />
           </div>
+       
         )}
       </div>
     );

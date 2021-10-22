@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import styles from "../css/educators.module.css";
-import style from '../css/about_us.module.css'
+import style from "../css/about_us.module.css";
 import educators1 from "../img/educators1.jpg";
 import educators2 from "../img/educators2.jpg";
 import educators3 from "../img/educators3.jpg";
@@ -60,8 +60,8 @@ export default class Rahbariyat extends Component {
           <div className={styles.loader}>
             <PuffLoader
               className={styles.loader1}
-              color={"#2C0091"}              size={100}
-
+              color={"#2C0091"}
+              size={100}
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>
@@ -69,25 +69,25 @@ export default class Rahbariyat extends Component {
         ) : (
           <div>
             <header>
-              <div className={styles.header}>
-                <Navbar />
-                <Carousel
-                  className={styles.sliderHeader}
-                  responsive={responsive}
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={false}
-                  showDots={false}
-                >
-                  <div>
-                    <img src={educators1} className={styles.headerImage} />
-                  </div>
-                  <div>
-                    <img src={educators2} className={styles.headerImage} />
-                  </div>
-                </Carousel>
-                <div className={style.HeaderMenu}>
+              <div className={styles.headerManager}>
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={false}
+                showDots={false}
+              >
+                <div>
+                  <img src={educators1} className={styles.headerImage} />
+                </div>
+                <div>
+                  <img src={educators2} className={styles.headerImage} />
+                </div>
+              </Carousel>
+              <div className={style.HeaderMenu}>
                   <div className={style.HeaderMenuItemBox}>
                     <p></p>
                     <p>Bu Sizning Tanlovingiz</p>

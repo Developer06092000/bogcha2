@@ -138,22 +138,9 @@ h1{
     height: 100vh;
     object-fit: cover;
 }
-
-
-
 header {
     margin-top: -260px;
 }
-
-
-
-
-
-
-
-
-
-
 .notepad {
     width: 100%;
     box-shadow: 10px 10px 40px rgba(0, 0, 0, .15);
@@ -178,7 +165,6 @@ header {
     outline: 0;
     font-size: 22px;
 }
-<<<<<<< Updated upstream
 .HeaderForBosqich {
     height: 650px;
 }
@@ -189,15 +175,6 @@ header {
 }
 
 /* --------------------------------------- */
-=======
-
-
-
-
-
-
-
-
 
 .sliderHeader {
     width: 100%;
@@ -302,5 +279,3 @@ header {
     margin-left: 15px;
   }
   
-  
->>>>>>> Stashed changes

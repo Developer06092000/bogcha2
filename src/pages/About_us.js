@@ -107,7 +107,7 @@ export default class About_us extends Component {
               </div>
             </header>
             <Container>
-              <body className={styles.fdtegr}>
+              <body>
                 <div className={styles.body}>
                   <div className={styles.title}>
                     <h1>Biz haqimizda</h1>{" "}
