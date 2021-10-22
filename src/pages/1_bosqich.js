@@ -103,53 +103,18 @@ export default class Bosqich1 extends Component {
                 <p>Ma'lumot Uchun </p>
                 <p>Bog'lanish </p>
               </div>
+              </div>
 
 								</div>
 
-  <header>
               
-  {/* <h1>1-BOSQICH</h1>
+  <h1>1-BOSQICH</h1>
               <div className={style.AnimationUnderNews1}></div>
               <div className={style.AnimationUnderNews2}></div>
           <br/>
           <br/>
-          <br/> */}
+          <br/>
 
-
-          {/* <Container>
-          <div className={style.notepad}>
-            <div className={style.top}></div>
-            <div className={style.paper} contenteditable="true">
-              BUSY BEES<br /><br />
-              <p>
-                Our littlest Flamingo students are known as the Busy Bees. This
-                is a sweet, tender environment where every student is loved,
-                nurtured, and supported. Beginning in the morning, students
-                start the day by eating breakfast family-style. Our little ones
-                cannot wait to explore their classroom, climb on the tunnel
-                climber, and giggle with their friends. Mornings are spent
-                singing nursery rhymes, painting, singing, and dancing. Puppets
-                come out to play with eager students.
-              </p>
-                JOYFUL<br /><br />
-              <p>
-                Our littlest Flamingo students are known as the Busy Bees. This
-                is a sweet, tender environment where every student is loved,
-                nurtured, and supported. Beginning in the morning, students
-                start the day by eating breakfast family-style. Our little ones
-                cannot wait to explore their classroom, climb on the tunnel
-                climber, and giggle with their friends. Mornings are spent
-                singing nursery rhymes, painting, singing, and dancing. Puppets
-                come out to play with eager students.
-              </p>
-            </div>
-            </div>
-            <h1>1-BOSQICH</h1>
-            <div className={style.AnimationUnderNews1}></div>
-            <div className={style.AnimationUnderNews2}></div>
-            <br />
-            <br />
-            <br /> */}
 
             <Container>
               <div className={style.notepad}>
@@ -187,9 +152,7 @@ export default class Bosqich1 extends Component {
             <br />
             <br />
 
-  </header>
             <Footer />
-          </div>
           </div>
 
         )}    </div>
