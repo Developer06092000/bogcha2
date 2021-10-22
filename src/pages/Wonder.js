@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import styles from "../css/mini.module.css";
+import style from "../css/about_us.module.css";
 import kinder1 from "../img/kinder4.jpg";
 import kinder2 from "../img/kinder5.jpg";
 import kinder3 from "../img/kinder6.png";
@@ -85,9 +86,13 @@ export default class Wonder extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                  <h2>Qutichani tashqarida deb o'ylang</h2>
-                  <p>
-                    Flamingo o'ylamasdan o'ylashga bo'lgan munosabatni
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    Qutichani tashqarida deb o'ylang
+                      <br />
+                      <p>
+                      Flamingo o'ylamasdan o'ylashga bo'lgan munosabatni
                     rag'batlantiradi. Ilmiy, texnologiya, muhandislik, san'at va
                     matematikaga e'tiborni qaratib, yosh bolalarga an'anaviy
                     ta'lim usullarini XXI asr loyihalari asosida aralashtirish
@@ -96,10 +101,12 @@ export default class Wonder extends Component {
                     Musiqa, yoga, bog'dorchilik va uy xo'jaligini birlashtirish
                     ham Flamingo talabalarining har tomonlama barkamolligini
                     oshiradi.
-                  </p>
-                  <h2>Qo'llanilishini o'rganish</h2>
-                  <p>
-                    Flamingo o'qituvchilari o'quv muhitini yaratadilar, bu
+                      </p>
+                      <br/>
+                      Qo'llanilishini o'rganish
+                      <br />
+                      <p>
+                      Flamingo o'qituvchilari o'quv muhitini yaratadilar, bu
                     o'quvchilarga tanqidiy fikrlash va muammolarni hal qilishni
                     rivojlantirish uchun keng imkoniyatlar yaratadi. Bizning
                     fikrimizcha, bolalar ta'lim olish yo'llarida noyobdir.
@@ -109,7 +116,9 @@ export default class Wonder extends Component {
                     an'anaviy qalam va qog'oz bilan hissiyotlarni jalb qilishni
                     yoki sinfda birgalikda hikoyani namoyish qilishni anglatishi
                     mumkin.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>

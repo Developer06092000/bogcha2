@@ -106,8 +106,10 @@ export default class Our_story extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                  <div className={styles.text}>
-                    <p>
+                    <div className={styles.notepad}>
+                    <div className={styles.top}></div>
+                    <div className={styles.paper} contenteditable="true"> 
+                      <p>
                       Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
                       edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
                       chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
@@ -115,7 +117,8 @@ export default class Our_story extends Component {
                       niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
                       uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim bilmaydi
                       ... nega bu muhim? Faqat siz qancha masofani bilasiz…
-                    </p>
+                      </p>
+                    </div>
                   </div>
                   <br />
                 </div>

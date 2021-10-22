@@ -107,9 +107,11 @@ componentDidMount() {
                           <div className={styles.AnimationUnderNews1}></div>
                           <div className={styles.AnimationUnderNews2}></div>
                         </div>
-                        <div className={styles.text}>
-                          <p>
-                            Flamingoning talabalari juda yaxshi ko'rishadi. Biz
+                          <div className={styles.notepad}>
+                    <div className={styles.top}></div>
+                    <div className={styles.paper} contenteditable="true"> 
+                      <p>
+                      Flamingoning talabalari juda yaxshi ko'rishadi. Biz
                             o'zimizni bolalar, o'qituvchilar va ma'murlardan
                             iborat g'amxo'r o'quv jamoasini yaratishga
                             bag'ishlaymiz. Bizning ajoyib o'qituvchilar jamoasi
@@ -121,10 +123,11 @@ componentDidMount() {
                             oilangizni maktabimizga qabul qilamiz va sizga
                             yordam kerak bo'lsa, shaxsiy narsalaringiz bilan
                             yordam beramiz.
-                          </p>
+                      </p>
+                    </div>
+                  </div>
                           <br />
                         </div>
-                      </div>
                     </body>
                   </Container>
 

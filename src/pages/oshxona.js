@@ -112,21 +112,23 @@ export default class Oshxona extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                  <h2>
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
                     Maktabgacha yoshdagi bolalarni nima bilan boqish kerak?
-                  </h2>
-                  <p>
-                    3 yoshdan 5 yoshgacha bo'lgan maktabgacha yoshdagi bolalar
+                      <br />
+                      <p>
+                      3 yoshdan 5 yoshgacha bo'lgan maktabgacha yoshdagi bolalar
                     turli xil foydali ovqatlarni iste'mol qilish imkoniyatiga
                     ega. Farzandingizga boshqa oila a'zolari iste'mol qiladigan
                     ovqatni taklif qiling. Turli xil ta'm, to'qima va ranglarga
                     ega ovqatlarni taklif eting
-                  </p>
-                  <h2>
-                    Maktabgacha tarbiyalanuvchi qancha ovqat yeyishi kerak?
-                  </h2>
-                  <p>
-                    Farzandingiz siz taklif qilayotgan ovqatlardan qancha ovqat
+                      </p>
+                      <br/>
+                      Maktabgacha tarbiyalanuvchi qancha ovqat yeyishi kerak?
+                      <br />
+                      <p>
+                      Farzandingiz siz taklif qilayotgan ovqatlardan qancha ovqat
                     iste'mol qilishni hal qilsin. Farzandingizni ovqat eyishga
                     majburlamang yoki unga ruxsat berilgan ovqat miqdorini
                     cheklamang. Ba'zi kunlarda ular ko'proq ovqatlanishlari
@@ -136,7 +138,9 @@ export default class Oshxona extends Component {
                     foydalaning. Ovqatlanish va atıştırmalıklarni har kuni bir
                     vaqtning o'zida rejalashtiring, shunda ovqatlanish vaqti
                     kelganida bolangiz och qoladi.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                   <h2>
                     Maktabgacha yoshdagi bolalar uchun namunaviy ovqatlanish: 3
                     yoshdan 5 yoshgacha

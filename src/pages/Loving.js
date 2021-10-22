@@ -110,24 +110,31 @@ export default class Loving extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                  <h2>Oilalar bilan hamkorlik</h2>
-
-                  <p>
-                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    Oilalar bilan hamkorlik
+                      <br />
+                      <p>
+                      Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
                     o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
                     hamkorlik qiladigan go'zal raqsga o'xshaydi. Biz har bir
                     oila bilan hamkorlik aloqalarini o'rnatish va har bir
                     bolaning o'ziga xos kelib chiqishi haqida bilib olishdan
                     boshlaymiz.
-                  </p>
-                  <h2>Holistik yondashuv</h2>
-                  <p>
-                    Barkamol yondashuv - bu bolaning o'ziga xos shaxsiyati,
+                      </p>
+                      <br/>
+                      Holistik yondashuv
+                      <br />
+                      <p>
+                      Barkamol yondashuv - bu bolaning o'ziga xos shaxsiyati,
                     kelib chiqishi va qiziqishlari mazmunli bo'lib, ularning
                     o'quv tajribasini boyitishi mumkin. Flamingo-da bola
                     o'sadigan poydevor - bu sevgi, g'amxo'rlik, ishonch va
                     hurmat.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
