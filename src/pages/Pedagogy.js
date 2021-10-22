@@ -109,11 +109,14 @@ export default class Wonder extends Component {
                     <h1>Pedagogika</h1>
                     <div className={styles.YogajsColor}> </div>
                   </div>
-                  <h2>
+             
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
                     BOLALARNING ERKAK TA'LIMINI RIVOJLANIShNING KULTIVATSIYASI
-                  </h2>
-                  <p>
-                    Flamingo-da biz o'qitish jarayoni haqida gap ketganda
+                      <br />
+                      <p>
+                      Flamingo-da biz o'qitish jarayoni haqida gap ketganda
                     qasddan. Belgilangan soniyada kunning har bir lahzasi
                     o'qitiladigan moment bo'lishi mumkin. O'quv dasturi va
                     mazmuni o'quvchilarga XXI asrda muvaffaqiyat qozonish uchun
@@ -121,10 +124,12 @@ export default class Wonder extends Component {
                     amaliyotlarni hisobga olgan holda ishlab chiqilgan. Biz
                     foydalanadigan o'qitish strategiyasi va usullari
                     birlashtirilgan, amaliy va eng muhimi, o'ynoqi va quvnoq.
-                  </p>
-                  <h2>YUQORI STANDARTLAR</h2>
-                  <p>
-                    Biz talabalarni yuqori standartlarga rioya qilamiz, chunki
+                      </p>
+                 <br />
+                 YUQORI STANDARTLAR
+                      <br />
+                      <p>
+                      Biz talabalarni yuqori standartlarga rioya qilamiz, chunki
                     hech qanday ikkita bola bir xil narsani o'rganmasligini
                     tushunamiz. Biz o'z maqsadlarimizni ataylab bilamiz va
                     talabalarga yuqori darajadagi intizom, ichki motivatsiya va
@@ -135,7 +140,9 @@ export default class Wonder extends Component {
                     o'lchovlariga taalluqlidir va ularni shaxsiy yo'li qayerda
                     bo'lishidan qat'i nazar, ularni mustahkam poydevor bilan
                     olib boradi.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>

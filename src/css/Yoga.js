@@ -107,9 +107,13 @@ export default class Yoga extends Component {
                     <h1  >Yoga</h1>
                     <div className={styles.YogajsColor}> </div>
                   </div>
-                  <h2>SOG'LOQ UCHUN AQIL VA TANALAR</h2>
-                  <p>
-                    Nafas oling, dam oling, diqqatni jamlang va ... pastga
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    SOG'LIQ UCHUN AQIL VA TANALAR
+                      <br />
+                      <p>
+                      Nafas oling, dam oling, diqqatni jamlang va ... pastga
                     tushgan it! "Flamingo" yoga mashg'ulotlari talabalari
                     cho'zishdan tashqari ko'proq foyda olishadi; umr bo'yi davom
                     etadigan ko'nikmalar. Chuqur nafas olish, o'z
@@ -119,7 +123,9 @@ export default class Yoga extends Component {
                     imkon beradi. Flamingo bolalar yoga mashg'ulotlari ong, tan
                     va butun bolaga foyda keltiradigan qiziqarli, norasmiy,
                     sinfdan tashqari darslardir.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>

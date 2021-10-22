@@ -108,9 +108,13 @@ export default class Musiqa extends Component {
                     <div className={styles.YogajsColor}> </div>
 
                   </div>
-                  <h2>RITMANI HIS QILING</h2>
-                  <p>
-                    Maktabimiz bo'ylab yaxshi tebranishlarni yuborish: musiqani
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    RITMNI HIS QILING
+                      <br />
+                      <p>
+                      Maktabimiz bo'ylab yaxshi tebranishlarni yuborish: musiqani
                     Flamingo Island maktabgacha ta'lim muassasasida hamma joyda
                     topish mumkin. Haftada 3 marotaba talabalar qo'shiq kuylash,
                     raqsga tushish, tebranish va odatdagi bolalar qo'shiqlari,
@@ -119,7 +123,9 @@ export default class Musiqa extends Component {
                     birlashtirilgan musiqa sinflarini o'tkazdilar. Musiqa kichik
                     onglarni boyitadi, bolalarni ritm, ritmga moslashtiradi va
                     hatto bolaning aqliy qobiliyatini oshirishi mumkin.
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>

@@ -110,9 +110,14 @@ export default class Wonder extends Component {
                     <div className={styles.YogajsColor}> </div>
 
                   </div>
-                  <h2>Chayqash va pishirish</h2>
-                  <p>
-                    Uyga olib borish uchun iliq, shirin, pechene? Ha iltimos!
+                  
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    Chayqash va pishirish
+                      <br />
+                      <p>
+                      Uyga olib borish uchun iliq, shirin, pechene? Ha iltimos!
                     Pazandachilik - bu kichik yoshdagi bolalarga o'zlariga xos
                     shokolad, simit, pechene, non, non va boshqa oddiy
                     retseptlar tayyorlashni o'rgatadigan xavfsiz, qiziqarli,
@@ -123,7 +128,9 @@ export default class Wonder extends Component {
                     ichiga olamiz. Aralashtirish, quyish, hidlash va tatib
                     ko'rish barcha o'quvchilarga ko'proq yoqimli xotiralar
                     qoldiradi!
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
