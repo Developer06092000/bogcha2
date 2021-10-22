@@ -59,7 +59,6 @@ export default class About_us extends Component {
           </div>
         ) : (
           <div>
-            <header>
               <div className={styles.headerAbout}>
                 {" "}
                 <Navbar />
@@ -73,13 +72,23 @@ export default class About_us extends Component {
                   showDots={false}
                 >
                   <div>
-                    <img src={about1} className={styles.headerImage} />
+                    <img
+                      src="https://vestikavkaza.ru/upload/2016-02-25/ea3d4df1467f5cee7d2653de33b3ad64.jpg"
+                      src={about1}
+                      className={styles.headerImage}
+                    />
                   </div>
                   <div>
-                    <img src={about2} className={styles.headerImage} />
+                    <img
+                      src="https://static.sof.uz/crop/1/3/826__90_136688611.jpg"
+                      className={styles.headerImage}
+                    />
                   </div>
                   <div>
-                    <img src={about3} className={styles.headerImage} />
+                    <img
+                      src="https://www.gazeta.uz/media/img/2018/01/hisJcS15154774245497_l.jpg"
+                      className={styles.headerImage}
+                    />
                   </div>
                 </Carousel>
                 <div className={styles.HeaderMenu}>
@@ -105,7 +114,6 @@ export default class About_us extends Component {
                   </div>
                 </div>
               </div>
-            </header>
             <Container>
               <body>
                 <div className={styles.body}>

@@ -62,266 +62,266 @@ export default class Tadbirlar extends Component {
           </div>
         ) : (
           <div>
-            <header>
-              <div className={styles.header}>
-                <Navbar />
-                <Carousel
-                  className={styles.sliderHeader}
-                  responsive={responsive}
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={false}
-                  showDots={false}
-                >
-                  <div>
-                    <img src={about1} className={styles.headerImage} />
-                  </div>
-                  <div>
-                    <img src={about2} className={styles.headerImage} />
-                  </div>
-                  <div>
-                    <img src={about3} className={styles.headerImage} />
-                  </div>
-                </Carousel>
-                <div className={style.HeaderMenu}>
-              <div className={style.HeaderMenuItemBox}>
-                <p></p>
-                <p>Bu Sizning Tanlovingiz</p>
-                <p></p>
-              </div>
-              <div className={style.HeaderMenuItemBox1}>
-                <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-              </div>
-              <div className={style.HeaderMenuItemBox2}>
-                <p>
-                  {" "}
-                  Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                  o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
-                  hamkorlik qiladigan go'zal raqsga o'xshaydi
-                </p>
-              </div>
-              <div className={style.HeaderMenuItemBox3}>
-                <p>Ma'lumot Uchun </p>
-                <p>Bog'lanish </p>
+            <div className={styles.header}>
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={false}
+                showDots={false}
+              >
+                <div>
+                  <img src={about1} className={styles.headerImage} />
+                </div>
+                <div>
+                  <img src={about2} className={styles.headerImage} />
+                </div>
+                <div>
+                  <img src={about3} className={styles.headerImage} />
+                </div>
+              </Carousel>
+              <div className={style.HeaderMenu}>
+                <div className={style.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={style.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={style.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={style.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
+                </div>
               </div>
             </div>
-              </div>
-           
+
+            <header>
+              <Container
+                className={styles.cont}
+                style={{
+                  marginTop: "60px",
+                  marginBottom: "100px",
+                }}
+              >
+                <div className={styles.figure__box}>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                            marginTop: "-0px",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginTop: "-20px",
+                          }}
+                        >
+                          133-bog'cha
+                        </span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                            marginTop: "-0px",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginTop: "-20px",
+                          }}
+                        >
+                          133-bog'cha
+                        </span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                            marginTop: "-0px",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginTop: "-20px",
+                          }}
+                        >
+                          133-bog'cha
+                        </span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                            marginTop: "-0px",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginTop: "-20px",
+                          }}
+                        >
+                          133-bog'cha
+                        </span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                          }}
+                        />{" "}
+                        <span>133-bog'cha</span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                  <figure class="image-block">
+                    <img src={news1} alt="" />
+                    <figcaption>
+                      <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
+                      <p style={{ display: "inline" }}>
+                        <FaCalendarAlt
+                          style={{
+                            color: "#FF865E",
+                          }}
+                        />{" "}
+                        <span
+                          style={{
+                            marginRight: "22px",
+                          }}
+                        >
+                          14/08/2020
+                        </span>
+                      </p>
+                      <p style={{ display: "inline" }}>
+                        <BsGeoAlt
+                          style={{
+                            color: "#1597E5",
+                          }}
+                        />{" "}
+                        <span>133-bog'cha</span>
+                      </p>
+                      <button>Batafsil</button>
+                    </figcaption>
+                  </figure>
+                </div>
+              </Container>
             </header>
 
-            <Container
-              className={styles.cont}
-              style={{
-                marginTop: "60px",
-                marginBottom: "100px",
-              }}
-            >
-              <div className={styles.figure__box}>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                          marginTop: "-0px",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginTop: "-20px",
-                        }}
-                      >
-                        133-bog'cha
-                      </span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                          marginTop: "-0px",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginTop: "-20px",
-                        }}
-                      >
-                        133-bog'cha
-                      </span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                          marginTop: "-0px",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginTop: "-20px",
-                        }}
-                      >
-                        133-bog'cha
-                      </span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                          marginTop: "-0px",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginTop: "-20px",
-                        }}
-                      >
-                        133-bog'cha
-                      </span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                        }}
-                      />{" "}
-                      <span>133-bog'cha</span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-                <figure class="image-block">
-                  <img src={news1} alt="" />
-                  <figcaption>
-                    <h3>Bog'chamizga prezident tashrif buyirdi.</h3>
-                    <p style={{ display: "inline" }}>
-                      <FaCalendarAlt
-                        style={{
-                          color: "#FF865E",
-                        }}
-                      />{" "}
-                      <span
-                        style={{
-                          marginRight: "22px",
-                        }}
-                      >
-                        14/08/2020
-                      </span>
-                    </p>
-                    <p style={{ display: "inline" }}>
-                      <BsGeoAlt
-                        style={{
-                          color: "#1597E5",
-                        }}
-                      />{" "}
-                      <span>133-bog'cha</span>
-                    </p>
-                    <button>Batafsil</button>
-                  </figcaption>
-                </figure>
-              </div>
-            </Container>
             <Footer />
           </div>
         )}

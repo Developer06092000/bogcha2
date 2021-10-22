@@ -17,7 +17,6 @@ body{
     width: 100%;
     height: 100vh;
     /*---------------------------- Bu sohta ----------------------------- */
-    margin-top: 260px;
 
     }
 
@@ -47,7 +46,6 @@ body{
     margin: auto;
     text-align: center;
     top: -520px;
-    border: 1px solid black;
 }
 
 .HeaderMenuItemBox {
@@ -123,7 +121,6 @@ body{
     height: 3px;
     width: 100px;
     margin: auto;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
     background-size: 400% 400%;
     border-radius: 20%;
@@ -233,6 +230,7 @@ body{
 }
 .HeaderMenuItemBox3 p:nth-child(2):hover {
     background-color: #FEE440;
+
     transition: .2s;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
@@ -245,9 +243,6 @@ body{
         width: 100%;
         height: 650px;
         }
-.body {
-    border: 1px solid black;
-}
 
 
 
