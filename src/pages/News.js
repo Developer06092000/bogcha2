@@ -108,7 +108,6 @@ export default class Educators extends Component {
               </div>
             </div>
 
-            <header>
               <Container
                 style={{
                   marginTop: "60px",
@@ -320,7 +319,6 @@ export default class Educators extends Component {
                   </figure>
                 </div>
               </Container>
-            </header>
             <Footer />
           </div>
         )}

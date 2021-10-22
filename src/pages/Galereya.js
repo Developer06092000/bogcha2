@@ -103,7 +103,6 @@ export default class Galereya extends Component {
                   </div>
                 </div>
               </div>
-            <header>
             <Container>
               <body>
                 <Dashboardnews />
@@ -168,7 +167,6 @@ export default class Galereya extends Component {
                 <Dashboardtadbir />
               </body>
             </Container>
-            </header>
 
             <Footer />
           </div>

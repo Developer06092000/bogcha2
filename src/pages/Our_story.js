@@ -98,32 +98,29 @@ export default class Our_story extends Component {
                 </div>
               </div>
             </div>
-            <header>
-              <Container>
-                <body>
-                  <div className={styles.body}>
-                    <div className={styles.title}>
-                      <h1>Bizning tarix</h1>
-                      <div className={styles.AnimationUnderNews1}></div>
-                      <div className={styles.AnimationUnderNews2}></div>
-                    </div>
-                    <div className={styles.text}>
-                      <p>
-                        Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
-                        edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
-                        chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
-                        sizga faqat SEVGI kerak. Agar sizning g'oyalaringiz va
-                        niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
-                        uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim
-                        bilmaydi ... nega bu muhim? Faqat siz qancha masofani
-                        bilasiz…
-                      </p>
-                    </div>
-                    <br />
+            <Container>
+              <body>
+                <div className={styles.body}>
+                  <div className={styles.title}>
+                    <h1>Bizning tarix</h1>
+                    <div className={styles.AnimationUnderNews1}></div>
+                    <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                </body>
-              </Container>
-            </header>
+                  <div className={styles.text}>
+                    <p>
+                      Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
+                      edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
+                      chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
+                      sizga faqat SEVGI kerak. Agar sizning g'oyalaringiz va
+                      niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
+                      uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim bilmaydi
+                      ... nega bu muhim? Faqat siz qancha masofani bilasiz…
+                    </p>
+                  </div>
+                  <br />
+                </div>
+              </body>
+            </Container>
 
             <Footer />
           </div>

@@ -99,7 +99,6 @@ componentDidMount() {
                     </div>
                   </div>
                 </div>
-                <header>
                   <Container>
                     <body>
                       <div className={styles.body}>
@@ -128,7 +127,6 @@ componentDidMount() {
                       </div>
                     </body>
                   </Container>
-                </header>
 
                 <Footer />
               </div>

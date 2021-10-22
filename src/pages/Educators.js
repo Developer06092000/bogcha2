@@ -109,7 +109,6 @@ export default class Educators extends Component {
                   </div>
                 </div>
               </div>
-<header>
             <Container>
               <body>
                 <div className={styles.body}>
@@ -393,7 +392,6 @@ export default class Educators extends Component {
                 </div>
               </body>
             </Container>
-            </header>
             <Footer />
           </div>
         )}
