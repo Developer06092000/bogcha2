@@ -108,9 +108,14 @@ export default class Garden extends Component {
                     <div className={styles.YogajsColor}> </div>
 
                   </div>
-                  <h2>MADYBUGLAR, YERDAN QURLISH, BOG'LASH</h2>
-                  <p>
-                    O'simlik bo'lgan go'zal bog'imizni o'rganing, qazib oling,
+                 
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                    MADYBUGLAR, YERDAN QURLISH, BOG'LASH
+                      <br />
+                      <p>
+                      O'simlik bo'lgan go'zal bog'imizni o'rganing, qazib oling,
                     sug'oring va o'z meva va sabzavotlarni o'stiring! Bizning
                     organik bog'imiz oila va do'stlar jamoat loyihasi edi. Biz
                     har yili o'zimiz qulupnay, mersini, makkajo'xori, qovoq,
@@ -121,7 +126,9 @@ export default class Garden extends Component {
                     o'tkazilgan ushbu ajoyib interaktiv dars orqali qat'iyat,
                     fidoyilik va sabr-toqat mukofotlanadi. Bizning mehnatimiz
                     samarasi shunchaki mazali!
-                  </p>
+                      </p>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </Container>
