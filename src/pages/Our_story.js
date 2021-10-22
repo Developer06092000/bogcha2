@@ -57,72 +57,74 @@ export default class Our_story extends Component {
           </div>
         ) : (
           <div>
-            <header>
-              <div className={styles.header}>
-                <Navbar />
-                <Carousel
-                  className={styles.sliderHeader}
-                  responsive={responsive}
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={false}
-                  showDots={false}
-                >
-                  <div>
-                    <img src={story1} className={styles.headerImage} />
-                  </div>
-                  <div>
-                    <img src={story2} className={styles.headerImage} />
-                  </div>
-                </Carousel>
-                <div className={styles.HeaderMenu}>
-                  <div className={styles.HeaderMenuItemBox}>
-                    <p></p>
-                    <p>Bu Sizning Tanlovingiz</p>
-                    <p></p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox1}>
-                    <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox2}>
-                    <p>
-                      {" "}
-                      Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                      o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                      muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi
-                    </p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox3}>
-                    <p>Ma'lumot Uchun </p>
-                    <p>Bog'lanish </p>
-                  </div>
+            <div className={styles.header}>
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={false}
+                showDots={false}
+              >
+                <div>
+                  <img src={story1} className={styles.headerImage} />
+                </div>
+                <div>
+                  <img src={story2} className={styles.headerImage} />
+                </div>
+              </Carousel>
+              <div className={styles.HeaderMenu}>
+                <div className={styles.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={styles.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={styles.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={styles.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
                 </div>
               </div>
+            </div>
+            <header>
+              <Container>
+                <body>
+                  <div className={styles.body}>
+                    <div className={styles.title}>
+                      <h1>Bizning tarix</h1>
+                      <div className={styles.AnimationUnderNews1}></div>
+                      <div className={styles.AnimationUnderNews2}></div>
+                    </div>
+                    <div className={styles.text}>
+                      <p>
+                        Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
+                        edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
+                        chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
+                        sizga faqat SEVGI kerak. Agar sizning g'oyalaringiz va
+                        niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
+                        uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim
+                        bilmaydi ... nega bu muhim? Faqat siz qancha masofani
+                        bilasiz…
+                      </p>
+                    </div>
+                    <br />
+                  </div>
+                </body>
+              </Container>
             </header>
-            <Container>
-              <body>
-                <div className={styles.body}>
-                  <div className={styles.title}>
-                    <h1>Bizning tarix</h1>
-                    <div className={styles.AnimationUnderNews1}></div>
-                    <div className={styles.AnimationUnderNews2}></div>
-                  </div>
-                  <div className={styles.text}>
-                    <p>
-                      Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
-                      edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
-                      chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
-                      sizga faqat SEVGI kerak. Agar sizning g'oyalaringiz va
-                      niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
-                      uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim bilmaydi
-                      ... nega bu muhim? Faqat siz qancha masofani bilasiz…
-                    </p>
-                  </div>
-                  <br />
-                </div>
-              </body>
-            </Container>
+
             <Footer />
           </div>
         )}

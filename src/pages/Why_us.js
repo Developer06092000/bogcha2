@@ -58,78 +58,78 @@ componentDidMount() {
               </div>
             ) : (
               <div>
-                <header>
-                  <div className={styles.header}>
-                    <Navbar />
-                    <Carousel
-                      className={styles.sliderHeader}
-                      responsive={responsive}
-                      infinite={true}
-                      autoPlay={
-                        this.props.deviceType !== "mobile" ? true : false
-                      }
-                      autoPlaySpeed={3000}
-                      keyBoardControl={false}
-                      showDots={false}
-                    >
-                      <div>
-                        <img src={why1} className={styles.headerImage} />
-                      </div>
-                      <div>
-                        <img src={why2} className={styles.headerImage} />
-                      </div>
-                    </Carousel>
-                    <div className={styles.HeaderMenu}>
-                      <div className={styles.HeaderMenuItemBox}>
-                        <p></p>
-                        <p>Bu Sizning Tanlovingiz</p>
-                        <p></p>
-                      </div>
-                      <div className={styles.HeaderMenuItemBox1}>
-                        <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-                      </div>
-                      <div className={styles.HeaderMenuItemBox2}>
-                        <p>
-                          {" "}
-                          Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                          o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                          muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi
-                        </p>
-                      </div>
-                      <div className={styles.HeaderMenuItemBox3}>
-                        <p>Ma'lumot Uchun </p>
-                        <p>Bog'lanish </p>
-                      </div>
+                <div className={styles.header}>
+                  <Navbar />
+                  <Carousel
+                    className={styles.sliderHeader}
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                    autoPlaySpeed={3000}
+                    keyBoardControl={false}
+                    showDots={false}
+                  >
+                    <div>
+                      <img src={why1} className={styles.headerImage} />
+                    </div>
+                    <div>
+                      <img src={why2} className={styles.headerImage} />
+                    </div>
+                  </Carousel>
+                  <div className={styles.HeaderMenu}>
+                    <div className={styles.HeaderMenuItemBox}>
+                      <p></p>
+                      <p>Bu Sizning Tanlovingiz</p>
+                      <p></p>
+                    </div>
+                    <div className={styles.HeaderMenuItemBox1}>
+                      <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                    </div>
+                    <div className={styles.HeaderMenuItemBox2}>
+                      <p>
+                        {" "}
+                        Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                        o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
+                        muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi
+                      </p>
+                    </div>
+                    <div className={styles.HeaderMenuItemBox3}>
+                      <p>Ma'lumot Uchun </p>
+                      <p>Bog'lanish </p>
                     </div>
                   </div>
+                </div>
+                <header>
+                  <Container>
+                    <body>
+                      <div className={styles.body}>
+                        <div className={styles.title}>
+                          <h1>Nega biz</h1>
+                          <div className={styles.AnimationUnderNews1}></div>
+                          <div className={styles.AnimationUnderNews2}></div>
+                        </div>
+                        <div className={styles.text}>
+                          <p>
+                            Flamingoning talabalari juda yaxshi ko'rishadi. Biz
+                            o'zimizni bolalar, o'qituvchilar va ma'murlardan
+                            iborat g'amxo'r o'quv jamoasini yaratishga
+                            bag'ishlaymiz. Bizning ajoyib o'qituvchilar jamoasi
+                            sizning kichkintoyingiz bilan abadiy aloqada bo'ladi
+                            va uni yulduzlarga intilishga undaydi. Bizning
+                            g'amxo'r ma'murlarimiz mijozlarga ajoyib xizmat
+                            ko'rsatishadi, chunki mehmondo'stlik biz uchun juda
+                            muhimdir. Biz har kuni ertalab / kechqurun
+                            oilangizni maktabimizga qabul qilamiz va sizga
+                            yordam kerak bo'lsa, shaxsiy narsalaringiz bilan
+                            yordam beramiz.
+                          </p>
+                          <br />
+                        </div>
+                      </div>
+                    </body>
+                  </Container>
                 </header>
-                <Container>
-                  <body>
-                    <div className={styles.body}>
-                      <div className={styles.title}>
-                        <h1>Nega biz</h1>
-                        <div className={styles.AnimationUnderNews1}></div>
-                        <div className={styles.AnimationUnderNews2}></div>
-                      </div>
-                      <div className={styles.text}>
-                        <p>
-                          Flamingoning talabalari juda yaxshi ko'rishadi. Biz
-                          o'zimizni bolalar, o'qituvchilar va ma'murlardan
-                          iborat g'amxo'r o'quv jamoasini yaratishga
-                          bag'ishlaymiz. Bizning ajoyib o'qituvchilar jamoasi
-                          sizning kichkintoyingiz bilan abadiy aloqada bo'ladi
-                          va uni yulduzlarga intilishga undaydi. Bizning
-                          g'amxo'r ma'murlarimiz mijozlarga ajoyib xizmat
-                          ko'rsatishadi, chunki mehmondo'stlik biz uchun juda
-                          muhimdir. Biz har kuni ertalab / kechqurun oilangizni
-                          maktabimizga qabul qilamiz va sizga yordam kerak
-                          bo'lsa, shaxsiy narsalaringiz bilan yordam beramiz.
-                        </p>
-                        <br />
-                      </div>
-                    </div>
-                  </body>
-                </Container>
+
                 <Footer />
               </div>
             )}
