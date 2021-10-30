@@ -59,61 +59,61 @@ export default class About_us extends Component {
           </div>
         ) : (
           <div>
-              <div className={styles.headerAbout}>
-                {" "}
-                <Navbar />
-                <Carousel
-                  className={styles.sliderHeader}
-                  responsive={responsive}
-                  infinite={true}
-                  autoPlay={this.props.deviceType !== "mobile" ? true : false}
-                  autoPlaySpeed={3000}
-                  keyBoardControl={false}
-                  showDots={false}
-                >
-                  <div>
-                    <img
-                      src="https://vestikavkaza.ru/upload/2016-02-25/ea3d4df1467f5cee7d2653de33b3ad64.jpg"
-                      src={about1}
-                      className={styles.headerImage}
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="https://static.sof.uz/crop/1/3/826__90_136688611.jpg"
-                      className={styles.headerImage}
-                    />
-                  </div>
-                  <div>
-                    <img
-                      src="https://www.gazeta.uz/media/img/2018/01/hisJcS15154774245497_l.jpg"
-                      className={styles.headerImage}
-                    />
-                  </div>
-                </Carousel>
-                <div className={styles.HeaderMenu}>
-                  <div className={styles.HeaderMenuItemBox}>
-                    <p></p>
-                    <p>Bu Sizning Tanlovingiz</p>
-                    <p></p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox1}>
-                    <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox2}>
-                    <p>
-                      {" "}
-                      Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                      o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                      muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi
-                    </p>
-                  </div>
-                  <div className={styles.HeaderMenuItemBox3}>
-                    <p>Ma'lumot Uchun </p>
-                    <p>Bog'lanish </p>
-                  </div>
+            <div className={styles.headerAbout}>
+              {" "}
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={false}
+                showDots={false}
+              >
+                <div>
+                  <img
+                    src="https://vestikavkaza.ru/upload/2016-02-25/ea3d4df1467f5cee7d2653de33b3ad64.jpg"
+                    src={about1}
+                    className={styles.headerImage}
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://static.sof.uz/crop/1/3/826__90_136688611.jpg"
+                    className={styles.headerImage}
+                  />
+                </div>
+                <div>
+                  <img
+                    src="https://www.gazeta.uz/media/img/2018/01/hisJcS15154774245497_l.jpg"
+                    className={styles.headerImage}
+                  />
+                </div>
+              </Carousel>
+              <div className={styles.HeaderMenu}>
+                <div className={styles.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={styles.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={styles.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={styles.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
                 </div>
               </div>
+            </div>
             <Container>
               <body>
                 <div className={styles.body}>
@@ -122,37 +122,41 @@ export default class About_us extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-
-                  <div className={styles.text}>
-                    <p>
+                  <div className={styles.notepad}>
+                    <div className={styles.top}></div>
+                    <div className={styles.paper} contenteditable="true">
                       <strong>UYDAN UYGA</strong>
-                    </p>
-                    <p>
-                      Biz erta yoshdagi bolalar tarbiyasi kuchiga ishonadigan
-                      o'qituvchilar va ma'murlarning ajoyib guruhimiz. Bizning
-                      fidoyi va g'ayratli o'qituvchilar va ma'murlar jamoasi
-                      sizning kichkintoyingizni Flamingo oilasida kutib olishga
-                      tayyor. Siz bizning maktabimizning bir qismiga
-                      aylanganingizdan so'ng, o'rganish turli shakllarda
-                      boshlanadi.
-                    </p>
-                    <p>
+                      <br />
+                      <p>
+                        Biz erta yoshdagi bolalar tarbiyasi kuchiga ishonadigan
+                        o'qituvchilar va ma'murlarning ajoyib guruhimiz. Bizning
+                        fidoyi va g'ayratli o'qituvchilar va ma'murlar jamoasi
+                        sizning kichkintoyingizni Flamingo oilasida kutib
+                        olishga tayyor. Siz bizning maktabimizning bir qismiga
+                        aylanganingizdan so'ng, o'rganish turli shakllarda
+                        boshlanadi.
+                      </p>
+                      <br />
                       <strong>BIZNING OILA VA JAMOAT</strong>
-                    </p>
-                    <p>
-                      Bizning to'rtinchi iyul bayrami, Bog'dorchilik tadbirlari,
-                      Kichik DaVinchi kuni, Buvilar va bobolar partiyalari kabi
-                      yuqori darajada ishtirok etadigan oilaviy
-                      tadbirlarimizdan, har yili ikki yilda bir marta
-                      o'tkaziladigan ota-onalar va o'qituvchilar
-                      konferentsiyalariga qadar, ta'lim va o'sish BUTUN oilani,
-                      eng muhimi, BUTUN bolani o'z ichiga olgan tajribaga
-                      aylanadi. Biz tuzilishga, muntazam va akademiklarga
-                      e'tibor qaratadigan maktabmiz, lekin biz quvonch va o'yin
-                      bo'lgan muvaffaqiyatli o'rganish uchun juda muhim tarkibiy
-                      qismlarga ishonamiz.
-                    </p>
+                      <br />{" "}
+                      <p>
+                        Bizning to'rtinchi iyul bayrami, Bog'dorchilik
+                        tadbirlari, Kichik DaVinchi kuni, Buvilar va bobolar
+                        partiyalari kabi yuqori darajada ishtirok etadigan
+                        oilaviy tadbirlarimizdan, har yili ikki yilda bir marta
+                        o'tkaziladigan ota-onalar va o'qituvchilar
+                        konferentsiyalariga qadar, ta'lim va o'sish BUTUN
+                        oilani, eng muhimi, BUTUN bolani o'z ichiga olgan
+                        tajribaga aylanadi. Biz tuzilishga, muntazam va
+                        akademiklarga e'tibor qaratadigan maktabmiz, lekin biz
+                        quvonch va o'yin bo'lgan muvaffaqiyatli o'rganish uchun
+                        juda muhim tarkibiy qismlarga ishonamiz.
+                      </p>
+                      <br/>
+                    </div>
                   </div>
+
+                 
                 </div>
               </body>
             </Container>

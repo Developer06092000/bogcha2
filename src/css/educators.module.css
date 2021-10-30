@@ -38,7 +38,6 @@ body{
 .headerManager {
     width: 100%;
     height: 650px;
-    border: 1px solid red;
 }
 .title {
     width: 285px;

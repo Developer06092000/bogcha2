@@ -7,10 +7,12 @@ import style from "../css/about_us.module.css";
 import kinder1 from "../img/meal1.jpg";
 import kinder2 from "../img/meal2.jpg";
 import kinder3 from "../img/meal3.jpg";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Button } from "react-bootstrap";
 import Footer from "./Footer";
 import PuffLoader from "react-spinners/PuffLoader";
-
+import Burger from "../img/bogcha2/Burgera.jpg";
+import Burger1 from "../img/bogcha2/Burger1.jpg";
+import Burger2 from "../img/bogcha2/Burger2.jpg";
 export default class Oshxona extends Component {
   state = {
     loader: true,
@@ -58,50 +60,51 @@ export default class Oshxona extends Component {
         ) : (
           <div>
             <div className={styles.headerOshxona}>
-            <Navbar />
-            <Carousel
-              className={styles.sliderHeader}
-              responsive={responsive}
-              infinite={true}
-              autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlaySpeed={3000}
-              keyBoardControl={true}
-              showDots={false}
-            >
-              <div>
-                <img src={kinder1} className={styles.sliderImage} />
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                showDots={false}
+              >
+                <div>
+                  <img src={kinder1} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder2} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder3} className={styles.sliderImage} />
+                </div>
+              </Carousel>
+              <div className={style.HeaderMenu}>
+                <div className={style.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={style.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={style.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={style.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
+                </div>
               </div>
-              <div>
-                <img src={kinder2} className={styles.sliderImage} />
-              </div>
-              <div>
-                <img src={kinder3} className={styles.sliderImage} />
-              </div>
-            </Carousel>
-            <div className={style.HeaderMenu}>
-              <div className={style.HeaderMenuItemBox}>
-                <p></p>
-                <p>Bu Sizning Tanlovingiz</p>
-                <p></p>
-              </div>
-              <div className={style.HeaderMenuItemBox1}>
-                <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-              </div>
-              <div className={style.HeaderMenuItemBox2}>
-                <p>
-                  {" "}
-                  Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                  o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
-                  hamkorlik qiladigan go'zal raqsga o'xshaydi
-                </p>
-              </div>
-              <div className={style.HeaderMenuItemBox3}>
-                <p>Ma'lumot Uchun </p>
-                <p>Bog'lanish </p>
-              </div>
-            </div>
             </div>
             <Container fluid style={{ padding: "0" }}>
+              
               <Row>
                 <Col lg={12} className={styles.text}>
                   <div
@@ -115,29 +118,30 @@ export default class Oshxona extends Component {
                   <div className={style.notepad}>
                     <div className={style.top}></div>
                     <div className={style.paper} contenteditable="true">
-                    Maktabgacha yoshdagi bolalarni nima bilan boqish kerak?
+                      Maktabgacha yoshdagi bolalarni nima bilan boqish kerak?
                       <br />
                       <p>
-                      3 yoshdan 5 yoshgacha bo'lgan maktabgacha yoshdagi bolalar
-                    turli xil foydali ovqatlarni iste'mol qilish imkoniyatiga
-                    ega. Farzandingizga boshqa oila a'zolari iste'mol qiladigan
-                    ovqatni taklif qiling. Turli xil ta'm, to'qima va ranglarga
-                    ega ovqatlarni taklif eting
+                        3 yoshdan 5 yoshgacha bo'lgan maktabgacha yoshdagi
+                        bolalar turli xil foydali ovqatlarni iste'mol qilish
+                        imkoniyatiga ega. Farzandingizga boshqa oila a'zolari
+                        iste'mol qiladigan ovqatni taklif qiling. Turli xil
+                        ta'm, to'qima va ranglarga ega ovqatlarni taklif eting
                       </p>
-                      <br/>
+                      <br />
                       Maktabgacha tarbiyalanuvchi qancha ovqat yeyishi kerak?
                       <br />
                       <p>
-                      Farzandingiz siz taklif qilayotgan ovqatlardan qancha ovqat
-                    iste'mol qilishni hal qilsin. Farzandingizni ovqat eyishga
-                    majburlamang yoki unga ruxsat berilgan ovqat miqdorini
-                    cheklamang. Ba'zi kunlarda ular ko'proq ovqatlanishlari
-                    mumkin. Ba'zi kunlarda ular kamroq ovqatlanishlari mumkin.
-                    Bolaning ishtahasi kundan-kunga o'zgarishi mumkin. Quyidagi
-                    namunaviy taomlardan faqat umumiy ko'rsatmalar sifatida
-                    foydalaning. Ovqatlanish va atıştırmalıklarni har kuni bir
-                    vaqtning o'zida rejalashtiring, shunda ovqatlanish vaqti
-                    kelganida bolangiz och qoladi.
+                        Farzandingiz siz taklif qilayotgan ovqatlardan qancha
+                        ovqat iste'mol qilishni hal qilsin. Farzandingizni ovqat
+                        eyishga majburlamang yoki unga ruxsat berilgan ovqat
+                        miqdorini cheklamang. Ba'zi kunlarda ular ko'proq
+                        ovqatlanishlari mumkin. Ba'zi kunlarda ular kamroq
+                        ovqatlanishlari mumkin. Bolaning ishtahasi kundan-kunga
+                        o'zgarishi mumkin. Quyidagi namunaviy taomlardan faqat
+                        umumiy ko'rsatmalar sifatida foydalaning. Ovqatlanish va
+                        atıştırmalıklarni har kuni bir vaqtning o'zida
+                        rejalashtiring, shunda ovqatlanish vaqti kelganida
+                        bolangiz och qoladi.
                       </p>
                     </div>
                   </div>
@@ -147,6 +151,7 @@ export default class Oshxona extends Component {
                   </h2>
                   <h2 className={styles.heading}>Namuna menyusi 1</h2>
                   <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
+                 
                   <div className={styles.cardchalar}>
                     <div>Nonushta</div>
                     <div style={{ marginLeft: "200px" }}>

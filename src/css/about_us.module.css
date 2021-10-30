@@ -143,7 +143,6 @@ body{
         background-position: 0% 50%;
     }
 }
-
 .HeaderMenuItemBox1 {
     width: 80%;
     height: auto;
@@ -291,6 +290,9 @@ body{
 
 .loader1 {
     size: 140px;
+}
+.body {
+    padding: 5% 0%;
 }
 
 .loader p {
@@ -557,6 +559,30 @@ body{
     background: #333;
     border-radius: 5px 5px 0 0;
 }
+.top {
+    height: 40px;
+    width: 100%;
+    margin: auto;
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+
+    animation: top1 2s ease infinite;
+}
+
+@keyframes top1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .paper {
     width: 100%;
     height: 100%;

@@ -56,26 +56,50 @@ export default class Wonder extends Component {
           </div>
         ) : (
           <div>
-            <Navbar />
-            <Carousel
-              className={styles.sliderHeader}
-              responsive={responsive}
-              infinite={true}
-              autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlaySpeed={3000}
-              keyBoardControl={true}
-              showDots={false}
-            >
-              <div>
-                <img src={kinder1} className={styles.sliderImage} />
+            <div className={styles.wonderHeader}>
+              <Navbar />
+              <Carousel
+                className={styles.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                showDots={false}
+              >
+                <div>
+                  <img src={kinder1} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder2} className={styles.sliderImage} />
+                </div>
+                <div>
+                  <img src={kinder3} className={styles.sliderImage} />
+                </div>
+              </Carousel>
+              <div className={style.HeaderMenu}>
+                <div className={style.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={style.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={style.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={style.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
+                </div>
               </div>
-              <div>
-                <img src={kinder2} className={styles.sliderImage} />
-              </div>
-              <div>
-                <img src={kinder3} className={styles.sliderImage} />
-              </div>
-            </Carousel>
+            </div>
             <Container fluid style={{ padding: "0" }}>
               <Row>
                 <Col lg={12} className={styles.text}>
@@ -89,33 +113,34 @@ export default class Wonder extends Component {
                   <div className={style.notepad}>
                     <div className={style.top}></div>
                     <div className={style.paper} contenteditable="true">
-                    Qutichani tashqarida deb o'ylang
+                      Qutichani tashqarida deb o'ylang
                       <br />
                       <p>
-                      Flamingo o'ylamasdan o'ylashga bo'lgan munosabatni
-                    rag'batlantiradi. Ilmiy, texnologiya, muhandislik, san'at va
-                    matematikaga e'tiborni qaratib, yosh bolalarga an'anaviy
-                    ta'lim usullarini XXI asr loyihalari asosida aralashtirish
-                    imkoniyatlari beriladi. O'qish va yozish faqat ish
-                    sahifalaridan tashqariga chiqadigan asosiy domenlardir.
-                    Musiqa, yoga, bog'dorchilik va uy xo'jaligini birlashtirish
-                    ham Flamingo talabalarining har tomonlama barkamolligini
-                    oshiradi.
+                        Flamingo o'ylamasdan o'ylashga bo'lgan munosabatni
+                        rag'batlantiradi. Ilmiy, texnologiya, muhandislik,
+                        san'at va matematikaga e'tiborni qaratib, yosh bolalarga
+                        an'anaviy ta'lim usullarini XXI asr loyihalari asosida
+                        aralashtirish imkoniyatlari beriladi. O'qish va yozish
+                        faqat ish sahifalaridan tashqariga chiqadigan asosiy
+                        domenlardir. Musiqa, yoga, bog'dorchilik va uy
+                        xo'jaligini birlashtirish ham Flamingo talabalarining
+                        har tomonlama barkamolligini oshiradi.
                       </p>
-                      <br/>
+                      <br />
                       Qo'llanilishini o'rganish
                       <br />
                       <p>
-                      Flamingo o'qituvchilari o'quv muhitini yaratadilar, bu
-                    o'quvchilarga tanqidiy fikrlash va muammolarni hal qilishni
-                    rivojlantirish uchun keng imkoniyatlar yaratadi. Bizning
-                    fikrimizcha, bolalar ta'lim olish yo'llarida noyobdir.
-                    Talabalar uchun yangi kontseptsiyalarni o'rganish uchun bir
-                    nechta va noyob usullarni taqdim etish ajoyib va quvonchli
-                    maktab tajribasini oshiradi. Eskirgan yangi tushunchalar
-                    an'anaviy qalam va qog'oz bilan hissiyotlarni jalb qilishni
-                    yoki sinfda birgalikda hikoyani namoyish qilishni anglatishi
-                    mumkin.
+                        Flamingo o'qituvchilari o'quv muhitini yaratadilar, bu
+                        o'quvchilarga tanqidiy fikrlash va muammolarni hal
+                        qilishni rivojlantirish uchun keng imkoniyatlar
+                        yaratadi. Bizning fikrimizcha, bolalar ta'lim olish
+                        yo'llarida noyobdir. Talabalar uchun yangi
+                        kontseptsiyalarni o'rganish uchun bir nechta va noyob
+                        usullarni taqdim etish ajoyib va quvonchli maktab
+                        tajribasini oshiradi. Eskirgan yangi tushunchalar
+                        an'anaviy qalam va qog'oz bilan hissiyotlarni jalb
+                        qilishni yoki sinfda birgalikda hikoyani namoyish
+                        qilishni anglatishi mumkin.
                       </p>
                     </div>
                   </div>

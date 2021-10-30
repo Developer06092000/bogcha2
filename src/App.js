@@ -1,11 +1,14 @@
 // import logo from './logo.svg';
 import "./App.css";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Dashboard from "./pages/Dashboard";
 import Loving from "./pages/Loving";
 import Wonder from "./pages/Wonder";
 import Leadership from "./pages/Leadership";
 import Changing from "./pages/Changing";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Location from "./pages/Location";
 import Why_us from "./pages/Why_us";
 import Our_story from "./pages/Our_story";

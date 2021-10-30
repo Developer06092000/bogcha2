@@ -29,19 +29,19 @@ export default class Tadbir extends Component {
           <div className={styles.loader}>
             <PuffLoader
               className={styles.loader1}
-              color={"#2C0091"}              size={100}
-
+              color={"#2C0091"}
+              size={100}
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
-          <div>
+          <div style={{ pading: "1px 0px" }}>
             <header className={styles.newbg}>
               <Navbar />
             </header>
             <div className={styles.newsItem}>
-              <div data-aos="fade-up" className={styles.newtitle}>
+              <div className={styles.newtitle}>
                 <h1>So'nggi Tadbir</h1>
                 <div
                   style={{ width: "80%", margin: "auto" }}
@@ -53,15 +53,15 @@ export default class Tadbir extends Component {
                 ></div>
               </div>
 
-              <section style={{ padding: "5%" }} className={styles.NewSection}>
+              <section  className={styles.NewSection}>
                 <Container>
-                  <Row>
+                  <Row className={styles.SectionRowNew}>
                     <Col lg={6} className={styles.img}>
                       <img src={news1} />
                     </Col>
                     <Col lg={6} className={styles.text}>
                       <h1>Bog'chaga Prezident tashrif buyirdi</h1>
-                      <div >
+                      <div>
                         <p>
                           <FaCalendarAlt
                             style={{ fontSize: "17px", color: "#FF865E" }}

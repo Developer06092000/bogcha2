@@ -28,26 +28,26 @@ export default class New extends Component {
           <div className={styles.loader}>
             <PuffLoader
               className={styles.loader1}
-              color={"#2C0091"}              size={100}
-
+              color={"#2C0091"}
+              size={100}
               loading={this.state.loader}
             />
             <p> Sayt Test Rejimida Ishlamoqda!</p>
           </div>
         ) : (
-          <div>
+          <div style={{ padding: "1px 0%" }}>
             <header className={styles.newbg}>
               <Navbar />
             </header>
             <div className={styles.newsItem}>
-              <div data-aos="fade-up" className={styles.newtitle}>
+              <div className={styles.newtitle}>
                 <h1>So'nggi Yangilik</h1>
                 <div className={styles.AnimationUnderNews1}></div>
                 <div className={styles.AnimationUnderNews2}></div>
               </div>
               <section>
                 <Container>
-                  <Row>
+                  <Row className={styles.SectionRowNew}>
                     <Col lg={6} className={styles.img}>
                       <img src={news1} />
                     </Col>

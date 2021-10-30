@@ -12,9 +12,16 @@
 }
 .newsItem {
   height: auto;
-  padding: 10%;
+  padding: 5% 0%;
+  margin-top: 10%;
 }
-
+.newbg {
+  width: 100%;
+  height: 20vh;
+  padding: 5% 0%;
+  /* background-image: url(../img/loader-bg.png); */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 .loader1 {
   size: 140px;
 }
@@ -54,9 +61,6 @@ body{
     padding: 10px 0;
     font-weight: 400;
     text-align: center;
-}
-.NewSection {
-  margin-top: 120px;
 }
 .AnimationUnderTadbir1 {
   height: 3px;
@@ -178,25 +182,23 @@ body{
     }
 
 /* New-------------------------- */
-.newbg{
-    width: 100%;
-    height: 20vh;
-    /* background-image: url(../img/loader-bg.png); */
- box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
 
 .newtitle {
-    width: 285px;
+    width: auto;
+    padding: 3% 10%;
     margin: auto;
+    }
+
+    .SectionRowNew {
+      border-radius: 10px;
+      background-color: #FEF9EF;
 }
 .newtitle h1{
     letter-spacing: 1px;
     font-size: 36px;
     color: #585959;
     margin: 0;
-    margin-bottom: 10px;
-   
-    padding: 10px 0;
+
     font-weight: 400;
     text-align: center;
 }
@@ -357,14 +359,6 @@ body{
   .text div {
     display: flex;
 }
-
-
-
-
-
-
-
-
 .sliderHeader {
   width: 100%;
 }
@@ -473,16 +467,6 @@ margin: auto;
   top: -275px;
   margin-bottom: -250px;
 }
-
-
-
-
-
-
-
-
-
-
  figure {
 	 position: relative;
 	 display: flex;
