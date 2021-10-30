@@ -19,6 +19,7 @@ body{
     font-size: 30px;  
     position: relative;  
     font-weight: 400;
+    margin-top: 100px;
 }
 /* -------------Yoga.js for it is */
 .HeaderYoga {
@@ -65,7 +66,7 @@ body{
 /* ------------------------------ */
 .AnimationUnderNews1 {
     height: 3px;
-    width: 25%;
+    width: 100%;
     margin: auto;
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
@@ -90,6 +91,7 @@ body{
 }
 
 .text1 {
+    width: 50%;
     margin: auto;
     text-align: center;
 
@@ -97,7 +99,7 @@ body{
 
 .AnimationUnderNews2 {
     height: 3px;
-    width: 16%;
+    width: 70%;
     margin: auto;
     border-radius: 8px;
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
@@ -158,6 +160,14 @@ body{
     font-size: 23px;
     font-weight: 700;
 
+}
+
+.PaperItem div {
+    font-weight: bolder;
+}
+
+.TextH2 {
+    color: rgba(0, 0, 0, 0.8);
 }
 .text p{
     margin-top: 20px;
@@ -226,10 +236,41 @@ body{
     color: #3d1699;
 
 }
+@media(max-width:767px) {
+    .AnimationUnderNews1 {
+        width: 60%;
+        height: 2px;
+    }
 
+    .YogajsColor {
+        width: 50%;
+    }
+
+    .AnimationUnderNews2 {
+        width: 40%;
+        height: 2px;
+
+    }
+    }
 @media(max-width:400px) {
+    .AnimationUnderNews1 {
+        width: 100%;
+    }
+
+    .AnimationUnderNews2 {
+        width: 75%;
+    }
     .loader1 {
         size: 100px;
+    }
+    .text h1 {
+        font-weight: bold !important;
+        font-size: 22px !important;
+
+    }
+
+    .YogajsColor {
+        width: 90%;
     }
 
     .loader p {
@@ -243,18 +284,7 @@ body{
     align-items: center;
     margin:30px 0;
 }
-@media(max-width:767px) {
-    .AnimationUnderNews1 {
-        width: 60%;
-        height: 2px;
-    }
 
-    .AnimationUnderNews2 {
-        width: 40%;
-        height: 2px;
-
-    }
-}
 @media screen and (max-width:566px) {
     .text h1{
         display: inline-block;

@@ -62,59 +62,56 @@ export default class Bosqich1 extends Component {
         ) : (
           <div>
             <div className={style.HeaderForBosqich}>
-            <Navbar />
-            <Carousel
-              className={style.sliderHeader}
-              responsive={responsive}
-              infinite={true}
-              autoPlay={this.props.deviceType !== "mobile" ? true : false}
-              autoPlaySpeed={3000}
-              keyBoardControl={true}
-              showDots={false}
-            >
-              <div>
-                <img src={img1} className={style.sliderImage} />
+              <Navbar />
+              <Carousel
+                className={style.sliderHeader}
+                responsive={responsive}
+                infinite={true}
+                autoPlay={this.props.deviceType !== "mobile" ? true : false}
+                autoPlaySpeed={3000}
+                keyBoardControl={true}
+                showDots={false}
+              >
+                <div>
+                  <img src={img1} className={style.sliderImage} />
+                </div>
+                <div>
+                  <img src={img4} className={style.sliderImage} />
+                </div>
+                <div>
+                  <img src={img5} className={style.sliderImage} />
+                </div>
+              </Carousel>
+              <div className={styles.HeaderMenu}>
+                <div className={styles.HeaderMenuItemBox}>
+                  <p></p>
+                  <p>Bu Sizning Tanlovingiz</p>
+                  <p></p>
+                </div>
+                <div className={styles.HeaderMenuItemBox1}>
+                  <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+                </div>
+                <div className={styles.HeaderMenuItemBox2}>
+                  <p>
+                    {" "}
+                    Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                    o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                    hamkorlik qiladigan go'zal raqsga o'xshaydi
+                  </p>
+                </div>
+                <div className={styles.HeaderMenuItemBox3}>
+                  <p>Ma'lumot Uchun </p>
+                  <p>Bog'lanish </p>
+                </div>
               </div>
-              <div>
-                <img src={img4} className={style.sliderImage} />
-              </div>
-              <div>
-                <img src={img5} className={style.sliderImage} />
-              </div>
-            </Carousel>
-            <div className={styles.HeaderMenu}>
-              <div className={styles.HeaderMenuItemBox}>
-                <p></p>
-                <p>Bu Sizning Tanlovingiz</p>
-                <p></p>
-              </div>
-              <div className={styles.HeaderMenuItemBox1}>
-                <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-              </div>
-              <div className={styles.HeaderMenuItemBox2}>
-                <p>
-                  {" "}
-                  Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                  o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
-                  hamkorlik qiladigan go'zal raqsga o'xshaydi
-                </p>
-              </div>
-              <div className={styles.HeaderMenuItemBox3}>
-                <p>Ma'lumot Uchun </p>
-                <p>Bog'lanish </p>
-              </div>
-              </div>
+            </div>
+            <div className={style.BodyGroup1Bosqich}>
 
-								</div>
-
-              
-  <h1>1-BOSQICH</h1>
-              <div className={style.AnimationUnderNews1}></div>
-              <div className={style.AnimationUnderNews2}></div>
-          <br/>
-          <br/>
-          <br/>
-
+            <h1>1-BOSQICH</h1>
+            <div className={style.AnimationUnderNews1}></div>
+            <div className={style.AnimationUnderNews2}></div>
+            <br />
+            
 
             <Container>
               <div className={style.notepad}>
@@ -135,8 +132,8 @@ export default class Bosqich1 extends Component {
                   </p>
                   JOYFUL
                   <br />
-                  <br />
-                  <p>
+              
+                  <p >
                     Our littlest Flamingo students are known as the Busy Bees.
                     This is a sweet, tender environment where every student is
                     loved, nurtured, and supported. Beginning in the morning,
@@ -149,14 +146,14 @@ export default class Bosqich1 extends Component {
                 </div>
               </div>
             </Container>
+            </div>
             <br />
             <br />
 
             <Footer />
           </div>
-
-        )}    </div>
-
+        )}{" "}
+      </div>
     );
 
   }

@@ -13,7 +13,9 @@
 .newsItem {
   height: auto;
   padding: 5% 0%;
-  margin-top: 10%;
+  margin-top: 5%;
+  border: 1px solid black;
+
 }
 .newbg {
   width: 100%;
@@ -177,7 +179,7 @@ body{
 
     .card:hover {
       cursor: pointer;
-      transition: .1s;
+      transition: .3s;
       box-shadow: rgba(99, 99, 99, 0.25) 0px 2px 8px 0px;
     }
 
@@ -306,6 +308,9 @@ body{
       position: relative;
       top: 100px;
     }
+    .newsItem {
+      margin-top: 5%;
+    }
   }
 
   @media(max-width:450px) {
@@ -334,6 +339,11 @@ body{
       border-top-right-radius: 10px;
       border: .2px solid rgb(207, 202, 192);
     }
+.newsItem {
+  padding: 15px;
+
+
+}
     .cont {
       position: relative;
       top: 100px;

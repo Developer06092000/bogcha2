@@ -29,66 +29,65 @@ export default class Qabul extends Component {
     };
     return (
       <div>
-                    <div className={styles.HeaderForBosqich}>
-
-        <Navbar />
-        {/* <div className="registratsiya"></div> */}
-        <Carousel
-          className={styles.sliderHeader}
-          responsive={responsive}
-          infinite={true}
-          autoPlay={this.props.deviceType !== "mobile" ? true : false}
-          autoPlaySpeed={3000}
-          keyBoardControl={false}
-          showDots={false}
-        >
-          <div>
-            <img
-              src="https://vestikavkaza.ru/upload/2016-02-25/ea3d4df1467f5cee7d2653de33b3ad64.jpg"
-              className={styles.headerImage}
-            />
+        <div className={styles.HeaderForBosqich}>
+          <Navbar />
+          {/* <div className="registratsiya"></div> */}
+          <Carousel
+            className={styles.sliderHeader}
+            responsive={responsive}
+            infinite={true}
+            autoPlay={this.props.deviceType !== "mobile" ? true : false}
+            autoPlaySpeed={3000}
+            keyBoardControl={false}
+            showDots={false}
+          >
+            <div>
+              <img
+                src="https://vestikavkaza.ru/upload/2016-02-25/ea3d4df1467f5cee7d2653de33b3ad64.jpg"
+                className={styles.headerImage}
+              />
+            </div>
+            <div>
+              <img
+                src="https://static.sof.uz/crop/1/3/826__90_136688611.jpg"
+                className={styles.headerImage}
+              />
+            </div>
+            <div>
+              <img
+                src="https://www.gazeta.uz/media/img/2018/01/hisJcS15154774245497_l.jpg"
+                className={styles.headerImage}
+              />
+            </div>
+            <div>
+              <img
+                src="https://storage.kun.uz/source/1/F4BKZ2fMcNyGRzMtCQqYoFk-5P4oN2_V.jpg"
+                className={styles.headerImage}
+              />
+            </div>
+          </Carousel>
+          <div className={styles.HeaderMenu}>
+            <div className={styles.HeaderMenuItemBox}>
+              <p></p>
+              <p>Bu Sizning Tanlovingiz</p>
+              <p></p>
+            </div>
+            <div className={styles.HeaderMenuItemBox1}>
+              <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
+            </div>
+            <div className={styles.HeaderMenuItemBox2}>
+              <p>
+                {" "}
+                Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
+                o'quvchilar mehribon va mehribon, ilmiy jihatdan boy muhitda
+                hamkorlik qiladigan go'zal raqsga o'xshaydi
+              </p>
+            </div>
+            <div className={styles.HeaderMenuItemBox3}>
+              <p>Ma'lumot Uchun </p>
+              <p>Bog'lanish </p>
+            </div>
           </div>
-          <div>
-            <img
-              src="https://static.sof.uz/crop/1/3/826__90_136688611.jpg"
-              className={styles.headerImage}
-            />
-          </div>
-          <div>
-            <img
-              src="https://www.gazeta.uz/media/img/2018/01/hisJcS15154774245497_l.jpg"
-              className={styles.headerImage}
-            />
-          </div>
-          <div>
-            <img
-              src="https://storage.kun.uz/source/1/F4BKZ2fMcNyGRzMtCQqYoFk-5P4oN2_V.jpg"
-              className={styles.headerImage}
-            />
-          </div>
-        </Carousel>
-        <div className={styles.HeaderMenu}>
-          <div className={styles.HeaderMenuItemBox}>
-            <p></p>
-            <p>Bu Sizning Tanlovingiz</p>
-            <p></p>
-          </div>
-          <div className={styles.HeaderMenuItemBox1}>
-            <p>Farzandingiz Eng yaxshi Mehrga Loyiq</p>
-          </div>
-          <div className={styles.HeaderMenuItemBox2}>
-            <p>
-              {" "}
-              Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va o'quvchilar
-              mehribon va mehribon, ilmiy jihatdan boy muhitda hamkorlik
-              qiladigan go'zal raqsga o'xshaydi
-            </p>
-          </div>
-          <div className={styles.HeaderMenuItemBox3}>
-            <p>Ma'lumot Uchun </p>
-            <p>Bog'lanish </p>
-          </div>
-</div>
         </div>
 
         <div className="anima"></div>

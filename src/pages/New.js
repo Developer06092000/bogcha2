@@ -36,9 +36,9 @@ export default class New extends Component {
           </div>
         ) : (
           <div style={{ padding: "1px 0%" }}>
-            <header className={styles.newbg}>
+            <div className={styles.newbg}>
               <Navbar />
-            </header>
+            </div>
             <div className={styles.newsItem}>
               <div className={styles.newtitle}>
                 <h1>So'nggi Yangilik</h1>

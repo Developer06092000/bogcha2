@@ -104,7 +104,6 @@ export default class Oshxona extends Component {
               </div>
             </div>
             <Container fluid style={{ padding: "0" }}>
-              
               <Row>
                 <Col lg={12} className={styles.text}>
                   <div
@@ -145,79 +144,69 @@ export default class Oshxona extends Component {
                       </p>
                     </div>
                   </div>
-                  <h2>
+                  <h2 className={styles.TextH2}>
                     Maktabgacha yoshdagi bolalar uchun namunaviy ovqatlanish: 3
                     yoshdan 5 yoshgacha
                   </h2>
-                  <h2 className={styles.heading}>Namuna menyusi 1</h2>
-                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
-                 
-                  <div className={styles.cardchalar}>
-                    <div>Nonushta</div>
-                    <div style={{ marginLeft: "200px" }}>
-                      Mini qo'ziqorinli omletlar yoki nonushta stakanlari
-                      Qulupnay va banan bo'laklari Sut
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Ertalabki tamaddi</div>
-                    <div style={{ marginLeft: "150px" }}>
-                      Quark va reza mevalari, Suv
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Tushlik</div>
-                    <div style={{ marginLeft: "210px" }}>
-                      Parsnip va sabzi sho'rvasining qaymog'i 100% to'liq
-                      bug'doy tuzsiz kraker yoki pita non Cho'mish uchun salat
-                      kiyimi bilan xom sabzavotlar (sabzi, selderey
-                      tayoqchalari, qizil qalampir bo'laklari) Sut
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Peshindan keyin tamaddi</div>
-                    <div style={{ marginLeft: "100px" }}>
-                      Yong'oq moyi yoki keddar pishloqli olma bo'laklari Suv
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#F76B6A", height: "2px" }} />
 
-                  <h2 className={styles.heading}>Namuna menyusi 2</h2>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Nonushta</div>
-                    <div style={{ marginLeft: "200px" }}>
-                      Olma sousi bilan jo'xori uni krep Sut
+                  <div className={styles.AnimationUnderNews1}></div>
+                  <div className={styles.AnimationUnderNews2}></div>
+                  <div className={style.notepad}>
+                    <div className={style.top}></div>
+                    <div className={style.paper} contenteditable="true">
+                      <h3
+                        style={{
+                          color: "black",
+                          textAlign: "center",
+                          marginTop: "1px",
+                        }}
+                      >
+                        Namuna menyusi 1
+                      </h3>
+                      <p className={styles.PaperItem}>
+                        {" "}
+                        <div>Nonushta</div>
+                        Mini qo'ziqorinli omletlar yoki nonushta stakanlari
+                        Qulupnay va banan bo'laklari Sut{" "}
+                        <div>Ertalabki tamaddi</div>
+                        Quark va reza mevalari, Suv
+                        <div>Tushlik</div>
+                        Parsnip va sabzi sho'rvasining qaymog'i 100% to'liq
+                        bug'doy tuzsiz kraker yoki pita non Cho'mish uchun salat
+                        kiyimi bilan xom sabzavotlar (sabzi, selderey
+                        tayoqchalari, qizil qalampir bo'laklari) Sut
+                        <div>Peshindan keyin tamaddi</div>
+                        Yong'oq moyi yoki keddar pishloqli olma bo'laklari Suv
+                      </p>
+                      <br/>
+                      <h4
+                        style={{
+                          color: "black",
+                          textAlign: "center",
+                          marginTop: "10px",
+                        }}
+                      >
+                        Namuna menyusi 2{" "}
+                      </h4>
+                      <p className={styles.PaperItem}>
+                        {" "}
+                        <div>Nonushta</div>
+                        Olma sousi bilan jo'xori uni krep Sut
+                        <div>Ertalabki tamaddi</div>
+                        Yogurt va mevali smuzi
+                        <div>Tushlik</div>
+                        Ko'p donli non yoki bug'doy krakerida orkinos
+                        pishirilgan pishloq yoki mini sendvich Qovurilgan
+                        bodring bo'laklari To'q rangli takozlar Sut{" "}
+                        <div>Peshindan keyin tamaddi</div>
+                        Xom sabzavotli sabzi (sabzi, selderey tayoqchalari,
+                        qizil qalampir bo'laklari) pishirilgan tortilla chiplari
+                        yoki bug'doy pita noni Suv{" "}
+                      </p>
                     </div>
                   </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Ertalabki tamaddi</div>
-                    <div style={{ marginLeft: "150px" }}>
-                      Yogurt va mevali smuzi
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Tushlik</div>
-                    <div style={{ marginLeft: "210px" }}>
-                      Ko'p donli non yoki bug'doy krakerida orkinos pishirilgan
-                      pishloq yoki mini sendvich Qovurilgan bodring bo'laklari
-                      To'q rangli takozlar Sut
-                    </div>
-                  </div>
-                  <hr style={{ backgroundColor: "#FF865F", height: "2px" }} />
-                  <div className={styles.cardchalar}>
-                    <div>Peshindan keyin tamaddi</div>
-                    <div style={{ marginLeft: "100px" }}>
-                      Xom sabzavotli sabzi (sabzi, selderey tayoqchalari, qizil
-                      qalampir bo'laklari) pishirilgan tortilla chiplari yoki
-                      bug'doy pita noni Suv
-                    </div>
-                  </div>
+
+                 
                 </Col>
               </Row>
             </Container>
