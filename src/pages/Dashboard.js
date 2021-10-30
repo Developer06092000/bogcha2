@@ -52,19 +52,29 @@ import { Button } from "antd";
 import OutlineRasm from "../img/bogcha2/Dashboard/circleOut.png";
 import { GiTeacher } from "react-icons/gi";
 import { FaPeopleArrows } from "react-icons/fa";
-
+import { getBogcha } from "../host/Config";
 export default class Dashboard extends Component {
   state = {
     loader: true,
+    bogcha: [],
   };
-
-  // -----------------------------
+  getBogchas = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          bogcha: res.data,
+        });
+        console.log(res.data);
+        setInterval(() => {
+          this.setState({
+            loader: false,
+          });
+        }, 2000);
+      })
+      .catch((err) => console.log(err));
+  };
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        loader: false,
-      });
-    }, 2000);
+    this.getBogchas();
   }
 
   render() {
@@ -259,18 +269,18 @@ export default class Dashboard extends Component {
                 </div>
               </div>
             </div>
-           <div>
-           <Container fluid>
-              <Row>
-                <Col lg={12} className={styles.tourCard}>
-                  {/* <button>Turni rejalashtirish</button> */}
-                  <Button className={styles.ButtonMenuHeadUnder} danger>
-                    Turni rejalashtirish
-                  </Button>
-                </Col>
-              </Row>
-            </Container>
-           </div>
+            <div>
+              <Container fluid>
+                <Row>
+                  <Col lg={12} className={styles.tourCard}>
+                    {/* <button>Turni rejalashtirish</button> */}
+                    <Button className={styles.ButtonMenuHeadUnder} danger>
+                      Turni rejalashtirish
+                    </Button>
+                  </Col>
+                </Row>
+              </Container>
+            </div>
             <div className={styles.second}>
               <div>
                 <Container fluid>
@@ -343,8 +353,7 @@ export default class Dashboard extends Component {
                 </Container>
               </div>
               <div>
-              <Dashboardnews />
-
+                <Dashboardnews />
               </div>
               <div>
                 <Container fluid>
@@ -402,8 +411,7 @@ export default class Dashboard extends Component {
                 </Container>
               </div>
               <div>
-              <Dashboardtadbir />
-
+                <Dashboardtadbir />
               </div>
 
               <div>
@@ -471,9 +479,7 @@ export default class Dashboard extends Component {
                   </div>
                 </Container>
               </div>
-
-           
-            </div> 
+            </div>
             <div style={{ padding: "10px 0 30px" }}>
               <h1 className={styles.sarlavha}> Bizning hamkorlarimiz</h1>
               <div className={styles.AnimationPartnerOn}></div>
