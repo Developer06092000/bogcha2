@@ -14,7 +14,6 @@
   height: auto;
   padding: 5% 0%;
   margin-top: 5%;
-  border: 1px solid black;
 
 }
 .newbg {
@@ -266,6 +265,107 @@ body{
         box-shadow: 0 0 0 5px hsl(52, 74%, 79%), 0 0 0 10px hsl(52, 73%, 88%);
     }
 }
+.CardGroupNew {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.CardGroupNew:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.CardGroupTadbir {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-sizing: border-box;
+  margin-top: 1%;
+  cursor: pointer;
+}
+
+.CardGroupTadbir:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.CardGroupNewImg {
+  width: 50%;
+  height: 100%;
+}
+
+.CardGroupNewImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.CardGroupNewText {
+  width: 50%;
+  height: 100%;
+  background-color: #EEF1F7;
+  padding: 3% 1.5%;
+}
+
+.CardGroupTadbirImg {
+  width: 50%;
+  height: 100%;
+}
+
+.CardGroupTadbirImg img {
+  width: 100%;
+  height: 100%;
+}
+
+.CardGroupTadbirText {
+  width: 50%;
+  height: 100%;
+  background-color: #EEF1F7;
+  padding: 3% 1.5%;
+}
+
+.CardGroupNewText p:nth-child(1) {
+  width: 100%;
+  display: flex;
+
+}
+
+.CardGroupNewText p:nth-child(1) i:nth-child(2) {
+  margin-left: 10px;
+}
+
+.CardGroupNewText p:nth-child(2) {
+  width: 100%;
+  font-weight: bold;
+  font-size: 22px;
+
+}
+
+.CardGroupNewText p:nth-child(3) {
+  width: 100%;
+  font-size: 16px;
+
+}
+
+.CardGroupTadbirText p:nth-child(3) {
+  display: block;
+  border: 1px solid red;
+}
+
+.CardGroupTadbirText p:nth-child(3) i:nth-child(1) {
+  width: 100%;
+  border: 1px solid green;
+}
+
+.CardGroupTadbirText p:nth-child(3) i:nth-child(2) {
+  width: 100%;
+  border: 1px solid green;
+}
 
 
 @media(min-width:1024px){
@@ -311,6 +411,43 @@ body{
     .newsItem {
       margin-top: 5%;
     }
+.CardGroupNew {
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
+.CardGroupTadbir {
+  height: auto;
+  display: block;
+  justify-content: center;
+}
+
+.CardGroupNewImg {
+  width: 95%;
+  height: 300px;
+  margin: auto;
+
+}
+
+.CardGroupNewText {
+  width: 95%;
+  height: 350px;
+  margin: auto
+}
+
+.CardGroupTadbirImg {
+  width: 95%;
+  height: 300px;
+  margin: auto;
+
+}
+
+.CardGroupTadbirText {
+  width: 95%;
+  height: 350px;
+  margin: auto
+}
   }
 
   @media(max-width:450px) {
@@ -320,6 +457,13 @@ body{
       font-size: 17px;
       font-weight: bolder;
       margin-top: 10px;
+    }
+    .CardGroupNewText p:nth-child(2) {
+      font-size: 19px;
+    }
+
+    .CardGroupNewText p:nth-child(3) {
+      font-size: 14px;
     }
     .cont {
       position: relative;
@@ -341,8 +485,19 @@ body{
     }
 .newsItem {
   padding: 15px;
+}
 
+.CardGroupNewText p:nth-child(1) i:nth-child(2) {
+  font-size: 12px;
+  margin-top: 3px;
+}
 
+.CardGroupNewText p:nth-child(2) {
+  font-size: 17px;
+}
+
+.CardGroupNewText p:nth-child(3) {
+  font-size: 13px;
 }
     .cont {
       position: relative;
@@ -351,6 +506,43 @@ body{
   }
 
   @media(max-width:350px) {
+    .newtitle h1 {
+      font-size: 25px !important;
+    }
+
+    .CardGroupNewText p:nth-child(2) {
+      font-size: 15px;
+    }
+
+    .CardGroupNewText {
+      width: 100%;
+
+    }
+
+    .CardGroupTadbirText {
+      width: 100%;
+
+    }
+
+    .CardGroupNew {
+      margin-top: 3%;
+    }
+
+    .CardGroupTadbir {
+      margin-top: 3%;
+    }
+
+    .CardGroupNewImg {
+      width: 100%;
+    }
+
+    .CardGroupTadbirImg {
+      width: 100%;
+    }
+
+    .CardGroupNewText p:nth-child(3) {
+      font-size: 12px;
+    }
     .text h1 {
       margin: auto;
       text-align: center;

@@ -64,7 +64,7 @@ export default class Dashboard extends Component {
         this.setState({
           bogcha: res.data,
         });
-        console.log(res.data);
+        // console.log("ThisDashboard", res.data.rahbariyat);
         setInterval(() => {
           this.setState({
             loader: false,
@@ -73,6 +73,7 @@ export default class Dashboard extends Component {
       })
       .catch((err) => console.log(err));
   };
+
   componentDidMount() {
     this.getBogchas();
   }

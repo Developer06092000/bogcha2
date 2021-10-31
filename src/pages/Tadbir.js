@@ -1,26 +1,37 @@
 import React, { Component } from "react";
-
 import news1 from "../img/kinder6.png";
 import styles from "../css/news.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import { BsGeoAlt } from "react-icons/bs";
-import { FaCalendarAlt } from "react-icons/fa";
+import { MdOutlineDateRange } from "react-icons/md";
+
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+import { getBogcha } from "../host/Config";
 export default class Tadbir extends Component {
   state = {
     loader: true,
+    TadbirGet: [],
   };
-
+  GetTadbir = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          TadbirGet: res.data.tadbir,
+        });
+        console.log("ThisTadbir", res.data.tadbir);
+        setInterval(() => {
+          this.setState({
+            loader: false,
+          });
+        }, 2000);
+      })
+      .catch((err) => console.log(err));
+  };
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        loader: false,
-      });
-    }, 2000);
+    this.GetTadbir();
   }
   render() {
     return (
@@ -37,9 +48,9 @@ export default class Tadbir extends Component {
           </div>
         ) : (
           <div style={{ pading: "1px 0px" }}>
-            <header className={styles.newbg}>
+            <div className={styles.newbg}>
               <Navbar />
-            </header>
+            </div>
             <div className={styles.newsItem}>
               <div className={styles.newtitle}>
                 <h1>So'nggi Tadbir</h1>
@@ -53,51 +64,32 @@ export default class Tadbir extends Component {
                 ></div>
               </div>
 
-              <section  className={styles.NewSection}>
+              <section className={styles.NewSection}>
                 <Container>
-                  <Row className={styles.SectionRowNew}>
-                    <Col lg={6} className={styles.img}>
-                      <img src={news1} />
-                    </Col>
-                    <Col lg={6} className={styles.text}>
-                      <h1>Bog'chaga Prezident tashrif buyirdi</h1>
-                      <div>
-                        <p>
-                          <FaCalendarAlt
-                            style={{ fontSize: "17px", color: "#FF865E" }}
-                          />{" "}
-                          <span>14/08/2020</span>
-                        </p>
-                        <p>
-                          <BsGeoAlt
-                            style={{ fontSize: "17px", color: "#1A73E8" }}
-                          />{" "}
-                          <span>133-bog'cha</span>
-                        </p>
+                  {this.state.TadbirGet.map((item) => {
+                    return (
+                      <div key={item.id} className={styles.CardGroupTadbir}>
+                        <div className={styles.CardGroupTadbirImg}>
+                          <img src={item.image} />
+                        </div>
+                        <div className={styles.CardGroupTadbirText}>
+                          <p>{item.name}</p>
+                          <p>{item.text}</p>
+                          <div>
+                            <p>
+                              <MdOutlineDateRange />
+                              {item.date}
+                            </p>
+
+                            <p>
+                              <BsGeoAlt />
+                              {item.address}
+                            </p>
+                          </div>
+                        </div>
                       </div>
-                      <p className={styles.textP3}>
-                        Joriy yilning 3-iyun kuni HUAWEI kompaniyasining
-                        O‘zbekistondagi vakili Liu Jiaxin ishtirokida
-                        “Al-Xorazmiy avlodlari” festivali bo'lib o'tdi.
-                        Prezident, Ijod va ixtisoslashtirilgan maktablarni
-                        rivojlantirish agentligi direktori Hilola Umarova
-                        festivalni ochib berib, ishtirokchilarni tabrikladi: -
-                        Tashkil etilgan mazkur festivalda Prezident, ijod va
-                        ixtisoslashtirilgan maktablar o‘quvchilari o‘zlarining
-                        loyihalari bilan qatnashishmoqda. O’ylaymanki, bugungi
-                        festival o‘quvchilarimizning nafaqat o‘z mehnat va
-                        iqtidorlarini namoyish etish, balki o‘zaro fikr
-                        almashishlariga ham imkon yaratdi. Aytib o‘tish kerakki,
-                        Huawei kompaniyasi yoshlarni axborot-texnologiyalari
-                        sohasiga qiziqtirishni doimo rag‘batlantirib kelmoqda.
-                        Bu kabi hamkorlikda olib borilayotgan ishlarimiz
-                        yoshlarni zamonaviy kasblarga yo‘naltirishda katta
-                        ahamiyatga ega. Ushbu festival ishtirokchilarini
-                        tabriklayman, kelgusidagi yangidan yangi loyihalarida
-                        omad tilayman.
-                      </p>
-                    </Col>
-                  </Row>
+                    );
+                  })}
                 </Container>
               </section>
             </div>

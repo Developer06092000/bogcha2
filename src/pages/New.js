@@ -1,26 +1,39 @@
 import React, { Component } from "react";
-
 import news1 from "../img/kinder6.png";
 import styles from "../css/news.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PuffLoader from "react-spinners/PuffLoader";
-
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+import { MdOutlineDateRange } from "react-icons/md";
+import { getBogcha } from "../host/Config";
 export default class New extends Component {
   state = {
     loader: true,
+    yangilik: [],
+  };
+
+  getBogchas = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          yangilik: res.data.yangilik,
+        });
+        console.log("ThisDashboard", res.data.yangilik);
+        setInterval(() => {
+          this.setState({
+            loader: false,
+          });
+        }, 2000);
+      })
+      .catch((err) => console.log(err));
   };
 
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        loader: false,
-      });
-    }, 2000);
+    this.getBogchas();
   }
+
   render() {
     return (
       <div>
@@ -47,42 +60,25 @@ export default class New extends Component {
               </div>
               <section>
                 <Container>
-                  <Row className={styles.SectionRowNew}>
-                    <Col lg={6} className={styles.img}>
-                      <img src={news1} />
-                    </Col>
-                    <Col lg={6} className={styles.text}>
-                      <h1>Bog'chaga Prezident tashrif buyirdi</h1>
-                      <p>
-                        <i
-                          style={{ color: "#FF865F" }}
-                          class="fas fa-calendar-alt"
-                        ></i>{" "}
-                        14/08/2020
-                      </p>
-                      <p>
-                        Joriy yilning 3-iyun kuni HUAWEI kompaniyasining
-                        O‘zbekistondagi vakili Liu Jiaxin ishtirokida
-                        “Al-Xorazmiy avlodlari” festivali bo'lib o'tdi.
-                        Prezident, Ijod va ixtisoslashtirilgan maktablarni
-                        rivojlantirish agentligi direktori Hilola Umarova
-                        festivalni ochib berib, ishtirokchilarni tabrikladi: -
-                        Tashkil etilgan mazkur festivalda Prezident, ijod va
-                        ixtisoslashtirilgan maktablar o‘quvchilari o‘zlarining
-                        loyihalari bilan qatnashishmoqda. O’ylaymanki, bugungi
-                        festival o‘quvchilarimizning nafaqat o‘z mehnat va
-                        iqtidorlarini namoyish etish, balki o‘zaro fikr
-                        almashishlariga ham imkon yaratdi. Aytib o‘tish kerakki,
-                        Huawei kompaniyasi yoshlarni axborot-texnologiyalari
-                        sohasiga qiziqtirishni doimo rag‘batlantirib kelmoqda.
-                        Bu kabi hamkorlikda olib borilayotgan ishlarimiz
-                        yoshlarni zamonaviy kasblarga yo‘naltirishda katta
-                        ahamiyatga ega. Ushbu festival ishtirokchilarini
-                        tabriklayman, kelgusidagi yangidan yangi loyihalarida
-                        omad tilayman.
-                      </p>
-                    </Col>
-                  </Row>
+                  {this.state.yangilik.map((item) => {
+                    return (
+                      <div key={item.id} className={styles.CardGroupNew}>
+                        <div className={styles.CardGroupNewImg}>
+                          <img src={item.image} />
+                        </div>
+                        <div className={styles.CardGroupNewText}>
+                          <p>
+                            <i>
+                              <MdOutlineDateRange />
+                            </i>
+                            <i>{item.date}</i>
+                          </p>
+                          <p>{item.title}</p>
+                          <p>{item.text}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </Container>
               </section>
             </div>

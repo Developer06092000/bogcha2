@@ -236,6 +236,10 @@ body{
     color: #3d1699;
 
 }
+
+.MenuGroup {
+    margin-top: 10%;
+}
 @media(max-width:767px) {
     .AnimationUnderNews1 {
         width: 60%;

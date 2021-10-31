@@ -7,22 +7,36 @@ import style from "../css/about_us.module.css";
 import kinder1 from "../img/meal1.jpg";
 import kinder2 from "../img/meal2.jpg";
 import kinder3 from "../img/meal3.jpg";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Table } from "react-bootstrap";
 import Footer from "./Footer";
 import PuffLoader from "react-spinners/PuffLoader";
-import Burger from "../img/bogcha2/Burgera.jpg";
-import Burger1 from "../img/bogcha2/Burger1.jpg";
-import Burger2 from "../img/bogcha2/Burger2.jpg";
+import { getBogcha } from "../host/Config";
 export default class Oshxona extends Component {
   state = {
     loader: true,
+    oshxonaGet: [],
+    Menu: [],
+  };
+
+  GetOshxona = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          oshxonaGet: res.data,
+          // Menu: res.data.menu,
+        });
+        console.log("ThisOshxona", res.data.oshxona);
+        console.log("ThisMenu", res.data.menu);
+        setInterval(() => {
+          this.setState({
+            loader: false,
+          });
+        }, 2000);
+      })
+      .catch((err) => console.log(err));
   };
   componentDidMount() {
-    setInterval(() => {
-      this.setState({
-        loader: false,
-      });
-    }, 2000);
+    this.GetOshxona();
   }
 
   render() {
@@ -151,62 +165,51 @@ export default class Oshxona extends Component {
 
                   <div className={styles.AnimationUnderNews1}></div>
                   <div className={styles.AnimationUnderNews2}></div>
-                  <div className={style.notepad}>
-                    <div className={style.top}></div>
-                    <div className={style.paper} contenteditable="true">
-                      <h3
-                        style={{
-                          color: "black",
-                          textAlign: "center",
-                          marginTop: "1px",
-                        }}
-                      >
-                        Namuna menyusi 1
-                      </h3>
-                      <p className={styles.PaperItem}>
-                        {" "}
-                        <div>Nonushta</div>
-                        Mini qo'ziqorinli omletlar yoki nonushta stakanlari
-                        Qulupnay va banan bo'laklari Sut{" "}
-                        <div>Ertalabki tamaddi</div>
-                        Quark va reza mevalari, Suv
-                        <div>Tushlik</div>
-                        Parsnip va sabzi sho'rvasining qaymog'i 100% to'liq
-                        bug'doy tuzsiz kraker yoki pita non Cho'mish uchun salat
-                        kiyimi bilan xom sabzavotlar (sabzi, selderey
-                        tayoqchalari, qizil qalampir bo'laklari) Sut
-                        <div>Peshindan keyin tamaddi</div>
-                        Yong'oq moyi yoki keddar pishloqli olma bo'laklari Suv
-                      </p>
-                      <br/>
-                      <h4
-                        style={{
-                          color: "black",
-                          textAlign: "center",
-                          marginTop: "10px",
-                        }}
-                      >
-                        Namuna menyusi 2{" "}
-                      </h4>
-                      <p className={styles.PaperItem}>
-                        {" "}
-                        <div>Nonushta</div>
-                        Olma sousi bilan jo'xori uni krep Sut
-                        <div>Ertalabki tamaddi</div>
-                        Yogurt va mevali smuzi
-                        <div>Tushlik</div>
-                        Ko'p donli non yoki bug'doy krakerida orkinos
-                        pishirilgan pishloq yoki mini sendvich Qovurilgan
-                        bodring bo'laklari To'q rangli takozlar Sut{" "}
-                        <div>Peshindan keyin tamaddi</div>
-                        Xom sabzavotli sabzi (sabzi, selderey tayoqchalari,
-                        qizil qalampir bo'laklari) pishirilgan tortilla chiplari
-                        yoki bug'doy pita noni Suv{" "}
-                      </p>
-                    </div>
+                  <div className={styles.MenuGroup}>
+                   
+                    <Table striped bordered hover>
+                      <thead>
+                        <tr
+                          variant="dark"
+                          style={{ backgroundColor: "black", color: "white" }}
+                        >
+                          <th colSpan="5" style={{ textAlign: "center" }}>
+                            Menu
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>Id</th>
+                          <th>Ovqatlanish Vaqti</th>
+                          <th>1-Ovqat</th>
+                          <th>2-ovqat</th>
+                          <th>2-ovqat</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>1</td>
+                          <td>Nonushta</td>
+                          <td>Otto</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <td>2</td>
+                          <td>Tushlik</td>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>Kechlik</td>
+                          <td>Larry the Bird</td>
+                          <td>@twitter</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </Table>
                   </div>
-
-                 
                 </Col>
               </Row>
             </Container>
