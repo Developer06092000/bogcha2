@@ -1,9 +1,7 @@
 // import logo from './logo.svg';
 import "./App.css";
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import Dashboard from "./pages/Dashboard";
 import Loving from "./pages/Loving";
 import Wonder from "./pages/Wonder";
@@ -22,7 +20,6 @@ import Oshxona from "./pages/oshxona";
 import Login from "./pages/Login";
 import CabinetEducator from "./pages/cabinetEducator";
 import Yoga from "./css/Yoga";
-import Kids from "./pages/kids";
 import Musiqa from "./pages/Musiqa";
 import Garden from "./pages/Garden";
 import Steam from "./pages/Steam";
@@ -33,7 +30,6 @@ import New from "./pages/New";
 import Tadbirlar from "./pages/Tadbirlar";
 import Tadbir from "./pages/Tadbir";
 import Rahbariyat from "./pages/Rahbariyat";
-
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Qabul from "./pages/Qabul";
 import Galereya from "./pages/Galereya";

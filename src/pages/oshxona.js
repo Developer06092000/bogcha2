@@ -25,8 +25,8 @@ export default class Oshxona extends Component {
           oshxonaGet: res.data,
           // Menu: res.data.menu,
         });
-        console.log("ThisOshxona", res.data.oshxona);
-        console.log("ThisMenu", res.data.menu);
+        // console.log("ThisOshxona", res.data.oshxona);
+        // console.log("ThisMenu", res.data.menu);
         setInterval(() => {
           this.setState({
             loader: false,

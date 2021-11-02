@@ -56,26 +56,26 @@ import { getBogcha } from "../host/Config";
 export default class Dashboard extends Component {
   state = {
     loader: true,
-    bogcha: [],
+    bogchaGEt: [],
   };
-  getBogchas = () => {
+  getBogchaGroup = () => {
     getBogcha()
       .then((res) => {
         this.setState({
-          bogcha: res.data,
+          bogchaGEt: res.data,
         });
-        // console.log("ThisDashboard", res.data.rahbariyat);
-        setInterval(() => {
-          this.setState({
-            loader: false,
-          });
-        }, 2000);
+        console.log("ThisMedia", res.data.xodim);
       })
       .catch((err) => console.log(err));
   };
 
   componentDidMount() {
-    this.getBogchas();
+    this.getBogchaGroup();
+    setInterval(() => {
+      this.setState({
+        loader: false,
+      });
+    }, 2000);
   }
 
   render() {

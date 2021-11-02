@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import { BsGeoAlt } from "react-icons/bs";
 import { MdOutlineDateRange } from "react-icons/md";
-
+import { url } from "../host/Host";
 import { Col, Container, Row } from "react-bootstrap";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -15,13 +15,13 @@ export default class Tadbir extends Component {
     loader: true,
     TadbirGet: [],
   };
+
   GetTadbir = () => {
     getBogcha()
       .then((res) => {
         this.setState({
           TadbirGet: res.data.tadbir,
         });
-        console.log("ThisTadbir", res.data.tadbir);
         setInterval(() => {
           this.setState({
             loader: false,
@@ -53,6 +53,7 @@ export default class Tadbir extends Component {
             </div>
             <div className={styles.newsItem}>
               <div className={styles.newtitle}>
+               
                 <h1>So'nggi Tadbir</h1>
                 <div
                   style={{ width: "80%", margin: "auto" }}
@@ -70,19 +71,35 @@ export default class Tadbir extends Component {
                     return (
                       <div key={item.id} className={styles.CardGroupTadbir}>
                         <div className={styles.CardGroupTadbirImg}>
-                          <img src={item.image} />
+                          <img src={url + item.image} />
                         </div>
                         <div className={styles.CardGroupTadbirText}>
-                          <p>{item.name}</p>
-                          <p>{item.text}</p>
-                          <div>
+                          <p className={styles.CardGroupTadbirText1}>
+                            {item.name}
+                          </p>
+                          <p className={styles.CardGroupTadbirText2}>
+                            {item.text}
+                          </p>
+                          <div className={styles.CardGroupTadbirTextInDiv}>
                             <p>
-                              <MdOutlineDateRange />
+                              <MdOutlineDateRange
+                                style={{
+                                  marginRight: "5px",
+                                  color: "#FF865E",
+                                  fontSize: "19px",
+                                }}
+                              />
                               {item.date}
                             </p>
 
                             <p>
-                              <BsGeoAlt />
+                              <BsGeoAlt 
+                                style={{
+                                  marginRight: "5px",
+                                  color: "#1A73E8",
+                                  fontSize: "19px",
+                                }}
+                              />
                               {item.address}
                             </p>
                           </div>

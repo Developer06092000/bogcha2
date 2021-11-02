@@ -8,6 +8,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import { MdOutlineDateRange } from "react-icons/md";
 import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 export default class New extends Component {
   state = {
     loader: true,
@@ -20,7 +21,6 @@ export default class New extends Component {
         this.setState({
           yangilik: res.data.yangilik,
         });
-        console.log("ThisDashboard", res.data.yangilik);
         setInterval(() => {
           this.setState({
             loader: false,
@@ -64,7 +64,7 @@ export default class New extends Component {
                     return (
                       <div key={item.id} className={styles.CardGroupNew}>
                         <div className={styles.CardGroupNewImg}>
-                          <img src={item.image} />
+                          <img src={url + item.image} />
                         </div>
                         <div className={styles.CardGroupNewText}>
                           <p>

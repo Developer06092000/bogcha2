@@ -326,7 +326,7 @@ body{
   width: 50%;
   height: 100%;
   background-color: #EEF1F7;
-  padding: 3% 1.5%;
+  padding: 2% 1.5%;
 }
 
 .CardGroupNewText p:nth-child(1) {
@@ -351,23 +351,21 @@ body{
   font-size: 16px;
 
 }
-
-.CardGroupTadbirText p:nth-child(3) {
-  display: block;
-  border: 1px solid red;
-}
-
-.CardGroupTadbirText p:nth-child(3) i:nth-child(1) {
+.CardGroupTadbirText1 {
   width: 100%;
-  border: 1px solid green;
+  font-size: 22px;
+  font-weight: bold;
 }
-
-.CardGroupTadbirText p:nth-child(3) i:nth-child(2) {
+.CardGroupTadbirText2 {
   width: 100%;
-  border: 1px solid green;
+  height: 60%;
+  font-size: 17px;
 }
-
-
+.CardGroupTadbirTextInDiv {
+  align-items: flex-end;
+  width: 100%;
+  line-height: 1px;
+}
 @media(min-width:1024px){
   .svg {
     position: absolute !important;
@@ -483,6 +481,9 @@ body{
       border-top-right-radius: 10px;
       border: .2px solid rgb(207, 202, 192);
     }
+    .CardGroupTadbirTextInDiv p:nth-child(2) {
+      font-size: 12px;
+    }
 .newsItem {
   padding: 15px;
 }
@@ -556,6 +557,9 @@ body{
     .cont {
       position: relative;
       top: 100px;
+    }
+    .CardGroupTadbirTextInDiv p:nth-child(2) {
+      font-size: 11px;
     }
   }
   .text div {
