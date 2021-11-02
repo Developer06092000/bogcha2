@@ -22,8 +22,8 @@ export default class Oshxona extends Component {
     getBogcha()
       .then((res) => {
         this.setState({
-          oshxonaGet: res.data,
-          // Menu: res.data.menu,
+          oshxonaGet: res.data.oshxona,
+          Menu: res.data.menu,
         });
         // console.log("ThisOshxona", res.data.oshxona);
         // console.log("ThisMenu", res.data.menu);
@@ -165,51 +165,54 @@ export default class Oshxona extends Component {
 
                   <div className={styles.AnimationUnderNews1}></div>
                   <div className={styles.AnimationUnderNews2}></div>
-                  <div className={styles.MenuGroup}>
-                   
-                    <Table striped bordered hover>
-                      <thead>
-                        <tr
-                          variant="dark"
-                          style={{ backgroundColor: "black", color: "white" }}
-                        >
-                          <th colSpan="5" style={{ textAlign: "center" }}>
-                            Menu
-                          </th>
-                        </tr>
-                        <tr>
-                          <th>Id</th>
-                          <th>Ovqatlanish Vaqti</th>
-                          <th>1-Ovqat</th>
-                          <th>2-ovqat</th>
-                          <th>2-ovqat</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>1</td>
-                          <td>Nonushta</td>
-                          <td>Otto</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
-                        </tr>
-                        <tr>
-                          <td>2</td>
-                          <td>Tushlik</td>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <td>3</td>
-                          <td>Kechlik</td>
-                          <td>Larry the Bird</td>
-                          <td>@twitter</td>
-                          <td>@twitter</td>
-                        </tr>
-                      </tbody>
-                    </Table>
-                  </div>
+                  {this.state.oshxonaGet !== null
+                    ? this.state.oshxonaGet.map((item) => {
+                        return (
+                          <div className={styles.MenuGroup}>
+                            <Table striped bordered hover>
+                              <thead>
+                                <tr
+                                  variant="dark"
+                                  style={{
+                                    backgroundColor: "black",
+                                    color: "white",
+                                  }}
+                                >
+                                  <th
+                                    colSpan="5"
+                                    style={{ textAlign: "center" }}
+                                  >
+                                    {item.name}
+                                  </th>
+                                </tr>
+                                <tr>
+                                  <th>T/r</th>
+                                  <th>Menu nomi</th>
+                                  <th>Menu tarkibi</th>
+                                  {/* <th>2-ovqat</th>
+                                  <th>3-ovqat</th> */}
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {this.state.Menu !== null
+                                  ? this.state.Menu.map((item1, key) => {
+                                      return item.id === item1.oshxona ? (
+                                        <tr>
+                                          <td>{key + 1}</td>
+                                          <td>{item1.name}</td>
+                                          <td>{item1.tarkib}</td>
+                                        </tr>
+                                      ) : (
+                                        ""
+                                      );
+                                    })
+                                  : ""}
+                              </tbody>
+                            </Table>
+                          </div>
+                        );
+                      })
+                    : ""}
                 </Col>
               </Row>
             </Container>

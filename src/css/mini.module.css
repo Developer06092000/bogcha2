@@ -1,304 +1,298 @@
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
-.sliderHeader{
-    width: 100vw;
-    height: 100vh;
+.sliderHeader {
+  width: 100vw;
+  height: 100vh;
 }
-.sliderHeader img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+.sliderHeader img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
 }
-.text{
-    text-align: left;
-    padding:3% 10%;
+.text {
+  text-align: left;
+  padding: 3% 10%;
 }
-.text h1{
-    display: inline-block;
-    font-size: 30px;  
-    position: relative;  
-    font-weight: 400;
-    margin-top: 100px;
+.text h1 {
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  font-weight: 400;
+  margin-top: 100px;
 }
 /* -------------Yoga.js for it is */
 .HeaderYoga {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 /* -------------Musiqa.js for it is */
 .HeaderMusiqa {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 /* -------------Garden.js for it is */
 .HeaderGarden {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 
 /* -------------Cooking.js for it is */
 .HeaderCooking {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 /* -------------Wonder.js for it is */
 .wonderHeader {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 /* -------------Pedagogy.js for it is */
 .HeaderPedagogy {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 /* -------------Loving.js for it is */
 .HeaderLoving {
-    height: 650px;
+  height: 650px;
 }
 
 /* ------------------------------ */
 .AnimationUnderNews1 {
-    height: 3px;
-    width: 100%;
-    margin: auto;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
-    background-size: 400% 400%;
-    border-radius: 20%;
+  height: 3px;
+  width: 100%;
+  margin: auto;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #729dc5, #dfd2b9, #ff865e, #fee440);
+  background-size: 400% 400%;
+  border-radius: 20%;
 
-    animation: AnimationUnderNews1 2s ease infinite;
+  animation: AnimationUnderNews1 2s ease infinite;
 }
 
 @keyframes AnimationUnderNews1 {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .text1 {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
 
 .AnimationUnderNews2 {
-    height: 3px;
-    width: 70%;
-    margin: auto;
-    border-radius: 8px;
-    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-    background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
-    background-size: 400% 400%;
-    margin-top: 5px;
+  height: 3px;
+  width: 70%;
+  margin: auto;
+  border-radius: 8px;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #fee440, #ff865e, #dfd2b9, #729dc5);
+  background-size: 400% 400%;
+  margin-top: 5px;
 
-    animation: AnimationUnderNews2 2s ease infinite;
+  animation: AnimationUnderNews2 2s ease infinite;
 }
 
 @keyframes AnimationUnderNews2 {
-    0% {
-        background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
+  }
 
-    50% {
-        background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 
-    100% {
-        background-position: 0% 50%;
-    }
-    }
-
-    .YogajsColor {
-        height: 3px;
-        width: 20%;
-        margin: auto;
-        /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-        background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
-        background-size: 400% 400%;
-
-        animation: YogajsColor1 2s ease infinite;
-    }
-
-    @keyframes YogajsColor1 {
-        0% {
-            background-position: 0% 50%;
-        }
-
-        50% {
-            background-position: 100% 50%;
-        }
-
-    100% {
-        background-position: 0% 50%;
-    }
+  100% {
+    background-position: 0% 50%;
+  }
 }
-.text h1::after{
-    content:'';
-    position: absolute;
-    top: 140%;
-    left: 25%;
-    width: 50%;
-}
-.text h2{
-    margin-top: 50px;
-    font-size: 23px;
-    font-weight: 700;
 
+.YogajsColor {
+  height: 3px;
+  width: 20%;
+  margin: auto;
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+  background: linear-gradient(-45deg, #fee440, #ff865e, #dfd2b9, #729dc5);
+  background-size: 400% 400%;
+
+  animation: YogajsColor1 2s ease infinite;
+}
+
+@keyframes YogajsColor1 {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.text h1::after {
+  content: "";
+  position: absolute;
+  top: 140%;
+  left: 25%;
+  width: 50%;
+}
+.text h2 {
+  margin-top: 50px;
+  font-size: 23px;
+  font-weight: 700;
 }
 
 .PaperItem div {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .TextH2 {
-    color: rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
-.text p{
-    margin-top: 20px;
-    color:rgba(0,0,0,0.8);
-    font-size:18px;
+.text p {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 18px;
 }
-.text ul li{
-    font-size: 18px;
+.text ul li {
+  font-size: 18px;
 }
-.btn1{
-    background-color: #FF865F;
-    color:white;
-    border-radius: 5px;
-    padding:5px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    border:1px solid black;
-    margin-right: 20px;
+.btn1 {
+  background-color: #ff865f;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid black;
+  margin-right: 20px;
 }
-.btn2{
-    border:none;
-    background-color: #FF865F;
-    color:white;
-    border-radius: 5px;
-    padding:5px 30px;
-    font-size: 16px;
-    font-weight: 600;
-    margin-right: 20px;
+.btn2 {
+  border: none;
+  background-color: #ff865f;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 20px;
 }
 .headerOshxona {
-    height: 650px
+  height: 650px;
 }
-.header{
-    width: 100%;
-    height:100vh;
-    position: relative;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
+.header {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.header video{
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.header video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.loader{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .loader1 {
-    size: 140px;
+  size: 140px;
 }
 
 .loader p {
-    margin-left: 10px;
-    font-size: 18px;
-    color: #3d1699;
-
+  margin-left: 10px;
+  font-size: 18px;
+  color: #3d1699;
 }
 
 .MenuGroup {
-    margin-top: 10%;
+  margin-top: 50px;
 }
-@media(max-width:767px) {
-    .AnimationUnderNews1 {
-        width: 60%;
-        height: 2px;
-    }
+@media (max-width: 767px) {
+  .AnimationUnderNews1 {
+    width: 60%;
+    height: 2px;
+  }
 
-    .YogajsColor {
-        width: 50%;
-    }
+  .YogajsColor {
+    width: 50%;
+  }
 
-    .AnimationUnderNews2 {
-        width: 40%;
-        height: 2px;
-
-    }
-    }
-@media(max-width:400px) {
-    .AnimationUnderNews1 {
-        width: 100%;
-    }
-
-    .AnimationUnderNews2 {
-        width: 75%;
-    }
-    .loader1 {
-        size: 100px;
-    }
-    .text h1 {
-        font-weight: bold !important;
-        font-size: 22px !important;
-
-    }
-
-    .YogajsColor {
-        width: 90%;
-    }
-
-    .loader p {
-        font-size: 15px;
-    }
+  .AnimationUnderNews2 {
+    width: 40%;
+    height: 2px;
+  }
 }
-.cardchalar{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin:30px 0;
+@media (max-width: 400px) {
+  .AnimationUnderNews1 {
+    width: 100%;
+  }
+
+  .AnimationUnderNews2 {
+    width: 75%;
+  }
+  .loader1 {
+    size: 100px;
+  }
+  .text h1 {
+    font-weight: bold !important;
+    font-size: 22px !important;
+  }
+
+  .YogajsColor {
+    width: 90%;
+  }
+
+  .loader p {
+    font-size: 15px;
+  }
+}
+.cardchalar {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 30px 0;
 }
 
-@media screen and (max-width:566px) {
-    .text h1{
-        display: inline-block;
-        font-size: 26px;  
-        position: relative;  
-        font-weight: 400;
-    }
+@media screen and (max-width: 566px) {
+  .text h1 {
+    display: inline-block;
+    font-size: 26px;
+    position: relative;
+    font-weight: 400;
+  }
 }
-@media(max-width:450px) {
-    .text h1 {
-        font-size: 17px;
-    }
+@media (max-width: 450px) {
+  .text h1 {
+    font-size: 17px;
+  }
 }
