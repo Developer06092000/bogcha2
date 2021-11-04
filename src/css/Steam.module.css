@@ -9,8 +9,13 @@
     height: auto;
 }
 .BodyGroup1Bosqich {
-    margin-top: 10%;
+    margin-top: 1%;
     padding: 5%;
+}
+.BodyGroup1BosqichItem {
+    width: 50%;
+    margin: auto;
+    padding: 3% 1px;
 }
 .SteamChangeColor {
     height: 3px;
@@ -39,7 +44,7 @@
 }
 .AnimationUnderNews1 {
     height: 3px;
-    width: 285px;
+    width: 100%;
     margin: auto;
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
     background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
@@ -65,7 +70,7 @@
 
 .AnimationUnderNews2 {
     height: 3px;
-    width: 200px;
+    width: 70%;
     margin: auto;
     border-radius: 8px;
     /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
@@ -98,6 +103,42 @@ h1{
     padding: 34px 0px 8px 0px;
     
 }
+.LevelGroup {
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.LevelGroup:hover {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.LevelItemImg {
+    width: 50%;
+    height: 100%;
+}
+
+.LevelItemImg img {
+    height: 100%;
+    width: auto;
+}
+
+.LevelItemText {
+    width: 50%;
+    height: 100%;
+    background-color: #EFF2F8;
+
+    padding: 4% 3%;
+}
+
+.LevelItemText p:nth-child(1) h1 {
+    text-align: start;
+}
+
 
 @media screen and (max-width:1300px){
     h1{
@@ -122,7 +163,60 @@ h1{
     color: #3d1699;
 
 }
+@media(min-width:768px) and (max-width:1024px) {
+    .LevelGroup {
+        height: auto;
+        display: block;
+        justify-content: center;
 
+    }
+
+    .LevelItemImg {
+        width: 60%;
+        height: 350px;
+        margin: auto;
+    }
+
+    .LevelItemImg img {
+        width: 100%;
+
+    }
+
+    .LevelItemText {
+        width: 60%;
+        margin: auto;
+    }
+    }
+
+    @media(max-width:767px) {
+        .LevelItemImg {
+            width: 100%;
+            height: 350px;
+            margin: auto;
+        }
+
+        .LevelGroup {
+            height: auto;
+            display: block;
+            justify-content: center;
+
+        }
+
+        .LevelItemImg img {
+            width: 100%;
+
+        }
+
+        .LevelItemText {
+            width: 100%;
+            margin: auto;
+        }
+
+        .BodyGroup1BosqichItem {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
 @media(max-width:400px) {
     .loader1 {
         size: 100px;
@@ -137,6 +231,24 @@ h1{
     .paper p:nth-child(2) {
         position: absolute;
         margin-top: 3px;
+    }
+    .LevelItemImg {
+        width: auto;
+        overflow: hidden;
+        height: 280px;
+    }
+
+    .BodyGroup1Bosqich {
+        margin-top: 15%;
+    }
+
+    .LevelItemText p:nth-child(1) h1 {
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+
+    .LevelItemText p:nth-child(2) {
+        font-size: 13px;
     }
 }
 .sliderHeader{

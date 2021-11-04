@@ -11,12 +11,26 @@ import why2 from "../img/whyus3.jpg";
 import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+import { url } from "../host/Host";
+import { getBogcha } from "../host/Config";
 export default class Why_us extends Component {
   state = {
     loader: true,
+    WhyUsGet: [],
+  };
+  GetWhUs = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          WhyUsGet: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   componentDidMount() {
+    this.GetWhUs()
     setInterval(() => {
       this.setState({
         loader: false,
@@ -110,17 +124,7 @@ export default class Why_us extends Component {
                     <div className={styles.top}></div>
                     <div className={styles.paper} contenteditable="true">
                       <p>
-                        Flamingoning talabalari juda yaxshi ko'rishadi. Biz
-                        o'zimizni bolalar, o'qituvchilar va ma'murlardan iborat
-                        g'amxo'r o'quv jamoasini yaratishga bag'ishlaymiz.
-                        Bizning ajoyib o'qituvchilar jamoasi sizning
-                        kichkintoyingiz bilan abadiy aloqada bo'ladi va uni
-                        yulduzlarga intilishga undaydi. Bizning g'amxo'r
-                        ma'murlarimiz mijozlarga ajoyib xizmat ko'rsatishadi,
-                        chunki mehmondo'stlik biz uchun juda muhimdir. Biz har
-                        kuni ertalab / kechqurun oilangizni maktabimizga qabul
-                        qilamiz va sizga yordam kerak bo'lsa, shaxsiy
-                        narsalaringiz bilan yordam beramiz.
+                        {this.state.WhyUsGet.why_us}
                       </p>
                     </div>
                   </div>

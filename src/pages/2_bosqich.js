@@ -15,11 +15,27 @@ import styles from "../css/about_us.module.css";
 import PuffLoader from "react-spinners/PuffLoader";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import {url} from '../host/Host'
+import { getBogcha } from "../host/Config";
 export default class Bosqich2 extends Component {
   state = {
     loader: true,
+    Bosqich2Get:[],
   };
+  GetBosqichTwo=()=>{
+    getBogcha()
+    .then((res)=>{
+      this.setState({
+        Bosqich2Get:res.data,
+      })
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+
+  }
   componentDidMount() {
+    this.GetBosqichTwo()
     setInterval(() => {
       this.setState({
         loader: false,
@@ -106,48 +122,25 @@ export default class Bosqich2 extends Component {
               </div>
             </div>
             <div className={style.BodyGroup1Bosqich}>
-              <h1>2-BOSQICH</h1>
-              <div className={style.AnimationUnderNews1}></div>
-              <div className={style.AnimationUnderNews2}></div>
-              <br />
+            <div className={style.BodyGroup1BosqichItem}>
+                <h1>2-BOSQICH</h1>
+                <div className={style.AnimationUnderNews1}></div>
+                <div className={style.AnimationUnderNews2}></div>
+              </div>
             
 
               <Container>
-                <div className={style.notepad}>
-                  <div className={style.top}></div>
-                  <div className={style.paper} contenteditable="true">
-                    HANDS-ON LEARNING
-                    <br />
-                    <br />
+              <div className={style.LevelGroup}>
+                  <div className={style.LevelItemImg}>
+                    <img src={url + this.state.Bosqich2Get.program2_img} />
+                  </div>
+                  <div className={style.LevelItemText}>
                     <p>
-                      At Flamingo we begin by providing a loving, nurturing
-                      environment to support the development of our now very
-                      mobile and active toddlers. Academics is hands-on,
-                      playful, and more importantly, structured and consistent.
+                      <h1>2-Bosqich</h1>{" "}
+                      <div className={style.AnimationUnderNews1}></div>
                     </p>
-                    BIG CONCEPTS, SMALL RATIOS
-                    <br />
-                    <br />
-                    <p>
-                      Weekly lesson plans are carefully crafted to engage our
-                      toddlers as they demand opportunities for exploration and
-                      play. We integrate our rich curriculum such as Hand
-                      Writing Without Tears in a joyful, playful manner. We
-                      begin identifying both upper and lowercase letters through
-                      multiple ways of touch, learn, and discovery. Mathematics
-                      is integrated via hands-on manipulative and small group
-                      learning formats of 6-8 students. Two very special
-                      studios-an Art Studio and Sensory Studio-meet the needs of
-                      our busy toddlers.
-                    </p>
-                    <br />
-                    <p>
-                      Our small student-teacher ratios complement high-quality
-                      learning. The results are brilliant, curious, eager little
-                      minds that truly develop a love for learning! Did we
-                      mention too: potty-training is a big milestone achieved
-                      between 24-36 months. Hip Hip Hooray!
-                    </p>
+
+                    <p>{this.state.Bosqich2Get.program2}</p>
                   </div>
                 </div>
               </Container>

@@ -7,20 +7,33 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import img1 from "../img/r3.jpg";
 import styles from "../css/about_us.module.css";
-import star from "../img/star.png"
-import delivery from "../img/delivery.png"
-import frame from "../img/frame.png"
+import star from "../img/star.png";
+import delivery from "../img/delivery.png";
+import frame from "../img/frame.png";
 import { Container, Button } from "react-bootstrap";
 import img4 from "../img/r4.jpeg";
 import img5 from "../img/r5.jpeg";
 import PuffLoader from "react-spinners/PuffLoader";
-
+import { url } from "../host/Host";
+import { getBogcha } from "../host/Config";
 export default class Bosqich3 extends Component {
   state = {
     loader: true,
+    Bosqich3Get: [],
   };
-
+  GetBosqichThree = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          Bosqich3Get: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   componentDidMount() {
+    this.GetBosqichThree();
     setInterval(() => {
       this.setState({
         loader: false,
@@ -107,42 +120,24 @@ export default class Bosqich3 extends Component {
               </div>
             </div>
             <div className={style.BodyGroup1Bosqich}>
-              <h1>3-BOSQICH</h1>
-              <div className={style.AnimationUnderNews1}></div>
-              <div className={style.AnimationUnderNews2}></div>
-              <br />
-              
+              <div className={style.BodyGroup1BosqichItem}>
+                <h1>3-BOSQICH</h1>
+                <div className={style.AnimationUnderNews1}></div>
+                <div className={style.AnimationUnderNews2}></div>
+              </div>
 
               <Container>
-                <div className={style.notepad}>
-                  <div className={style.top}></div>
-                  <div className={style.paper} contenteditable="true">
-                    A GREAT BIG WORLD
-                    <br />
-                    <br />
+                <div className={style.LevelGroup}>
+                  <div className={style.LevelItemImg}>
+                    <img src={url + this.state.Bosqich3Get.program3_img} />
+                  </div>
+                  <div className={style.LevelItemText}>
                     <p>
-                      Entering the magical, fantastical world, are our newly
-                      minted three’s. Is there a monster under my bed?
-                      Absolutely! Can superhero ﬂy and ﬁght bad guys? Yes and
-                      yes again! This is an exciting time of a child’s life as
-                      they discover a greater sense of identity and begin to
-                      distinguish fantasy from reality. At Flamingo, we nurture
-                      a child’s creative imagination while building a strong,
-                      healthy, academic background.
+                      <h1>3-Bosqich</h1>{" "}
+                      <div className={style.AnimationUnderNews1}></div>
                     </p>
-                    WELL-ROUNDED EDUCATION
-                    <br />
-                    <br />
-                    <p>
-                      Yoga, gardening, and cooking become possible as we have
-                      now mastered pottytraining! Flamingo students learn about
-                      the world in which they live, the continents on planet
-                      Earth, and impress us by being able to write and identify
-                      their own names! With much love, support, and
-                      encouragement, Flamingo oﬀers a well-rounded rich learning
-                      experience that will leave you sometimes jaw dropped when
-                      they come home saying the newest NASA discoveries.
-                    </p>
+
+                    <p>{this.state.Bosqich3Get.program3}</p>
                   </div>
                 </div>
               </Container>

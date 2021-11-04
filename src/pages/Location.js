@@ -36,7 +36,8 @@ import {
 import { GoMail } from "react-icons/go";
 import { MdPlace } from "react-icons/md";
 import { BsFillTelephoneFill } from "react-icons/bs";
-
+import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 import { AiOutlineClose } from "react-icons/ai";
 // const AnyReactComponent = ({ text }) => <div>{text}</div>;
 export default class Location extends Component {
@@ -45,6 +46,7 @@ export default class Location extends Component {
     nav: false,
     open: false,
     close: false,
+    ManzilGet: [],
   };
 
   openNav = () => {
@@ -71,7 +73,19 @@ export default class Location extends Component {
       });
     }
   };
+  LocationGet = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          ManzilGet: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
   componentDidMount() {
+    this.LocationGet();
     setInterval(() => {
       this.setState({
         loader: false,
@@ -102,7 +116,11 @@ export default class Location extends Component {
                   className={this.state.nav ? styles.nav1_active : styles.nav1}
                 >
                   <div className={this.state.nav ? styles.logo1 : styles.logo}>
-                    {this.state.nav ? <img src={rasm5} /> : <img src={rasm5} />}
+                    {this.state.nav ? (
+                      <img src={url + this.state.ManzilGet.logo} />
+                    ) : (
+                      <img src={url + this.state.ManzilGet.logo} />
+                    )}
                     <div className={styles.navbar}>
                       <span>
                         <Link to="/dashboard/uz">
@@ -172,28 +190,28 @@ export default class Location extends Component {
                         <Link to="/tadbirlar/uz">Tadbirlar</Link>
                       </span>
                       <span style={{ marginLeft: "40px" }}>
-                        <a href="tel:+998335093874">
+                        <a href={this.state.ManzilGet.phone}>
                           <FaPhoneAlt
                             style={{ color: "#4587EB", fontSize: "18px" }}
                           />
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.ManzilGet.telegram}>
                           <FaTelegramPlane
                             style={{ color: "#4587EB", fontSize: "23px" }}
                           />
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.ManzilGet.instagram}>
                           <FaInstagram
                             style={{ color: "#4587EB", fontSize: "23px" }}
                           />
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.ManzilGet.facebook}>
                           <FaFacebook
                             style={{ color: "#4587EB", fontSize: "23px" }}
                           />
@@ -209,7 +227,11 @@ export default class Location extends Component {
                   className={this.state.nav ? styles.nav1_active : styles.nav1}
                 >
                   <div className={this.state.nav ? styles.logo1 : styles.logo}>
-                    {this.state.nav ? <img src={rasm5} /> : <img src={rasm5} />}
+                    {this.state.nav ? (
+                      <img src={url + this.state.ManzilGet.logo} />
+                    ) : (
+                      <img src={url + this.state.ManzilGet.logo} />
+                    )}
                     <div
                       className={
                         this.state.nav ? styles.openNav1 : styles.openNav
@@ -375,14 +397,14 @@ export default class Location extends Component {
                           </Menu.Item>
                           <Menu.Item>
                             <span>
-                              <a href="tel:+998335093874">
+                              <a href={this.state.ManzilGet.phone}>
                                 <FaPhoneAlt
                                   style={{ color: "white", fontSize: "18px" }}
                                 />
                               </a>
                             </span>
                             <span>
-                              <a href="http://t.me/Karshiyeva_N">
+                              <a href={this.state.ManzilGet.telegram}>
                                 <FaTelegramPlane
                                   style={{
                                     color: "white",
@@ -406,15 +428,18 @@ export default class Location extends Component {
                 </div>
               </div>
             </div>
-            <div style={{backgroundColor:"#FEF9EF"}}>
-              <Container className={styles.ContainerME}>
+            <div style={{ backgroundColor: "#FEF9EF" }}>
+              <Container
+                key={this.state.ManzilGet.id}
+                className={styles.ContainerME}
+              >
                 <div className={styles.CardGroupLocation}>
                   <div className={styles.CardGroupItem}>
                     <p>
                       <MdPlace />
                     </p>
                     <p>Bizning Manzil</p>
-                    <p>Toshkent Sh, Shayhontohur T, Qoraqamish 1/2, 13-uy</p>
+                    <p>{this.state.ManzilGet.address}</p>
                   </div>
                   <div className={styles.CardGroupItem}>
                     <p>
@@ -422,8 +447,8 @@ export default class Location extends Component {
                     </p>
                     <p>Telefon Raqam</p>
                     <p>
-                      +998(99)-777-77-77 <br />
-                      +998(97)-111-11-11
+                      {this.state.ManzilGet.phone} <br />
+                      {this.state.ManzilGet.phone}
                     </p>
                   </div>
                   <div className={styles.CardGroupItem}>
@@ -431,13 +456,13 @@ export default class Location extends Component {
                       <FaFax />
                     </p>
                     <p>Fax:</p>
-                    <p>+998(71)-666-66-66</p>
+                    <p>{this.state.ManzilGet.phone}</p>
                   </div>
                   <div className={styles.CardGroupItem}>
                     <p>
                       <FaNetworkWired />
                     </p>
-                    <a href="murodillaxayitov@gmail.com">
+                    <a href={this.state.ManzilGet.email}>
                       <GoMail
                         style={{
                           color: "black",
@@ -447,7 +472,7 @@ export default class Location extends Component {
                       />
                       Mail
                     </a>
-                    <a href="https://t.me/KhayitovM1">
+                    <a href={this.state.ManzilGet.telegram}>
                       <FaTelegramPlane
                         style={{
                           color: "black",
@@ -457,7 +482,7 @@ export default class Location extends Component {
                       />
                       Telegram
                     </a>
-                    <a href="https://www.facebook.com/murodilla.xayitov">
+                    <a href={this.state.ManzilGet.facebook}>
                       <FaFacebook
                         style={{
                           color: "black",
@@ -467,7 +492,7 @@ export default class Location extends Component {
                       />
                       Facebook
                     </a>
-                    <a href="https://www.instagram.com/murod_officially">
+                    <a href={this.state.ManzilGet.instagram}>
                       <FaInstagram
                         style={{
                           color: "black",
@@ -526,20 +551,22 @@ export default class Location extends Component {
                     </Form>
                   </div>
                   <div className={styles.LocationInfo}>
-                    <YMaps style={{width:'100%',height:'100%'}}>
-                        <Map
-                          defaultState={{
-                            center: [41.299258, 69.206181],
-                            zoom: 6,
-                          }}
-                          width="100%"
-                          height="100%"
-                        >
-                          <Placemark geometry={[41.299258, 69.206181]} />
-                          <FullscreenControl options={{ float: "right" }} />
-                          <GeolocationControl options={{ float: "left" }} />
-                          <ZoomControl options={{ float: "right" }} />
-                        </Map>
+                    <YMaps style={{ width: "100%", height: "100%" }}>
+                      <Map
+                        defaultState={{
+                          center: [43.25690123934591, 64.88245105519029],
+                          zoom: 6,
+                        }}
+                        width="100%"
+                        height="100%"
+                      >
+                        <Placemark
+                          geometry={[43.25690123934591, 64.88245105519029]}
+                        />
+                        <FullscreenControl options={{ float: "right" }} />
+                        <GeolocationControl options={{ float: "left" }} />
+                        <ZoomControl options={{ float: "right" }} />
+                      </Map>
                     </YMaps>
                   </div>
                 </div>
@@ -551,20 +578,3 @@ export default class Location extends Component {
     );
   }
 }
-<YMaps>
-  <div>
-    <Map
-      defaultState={{
-        center: [41.299258, 69.206181],
-        zoom: 6,
-      }}
-      width="680px"
-      height="575px"
-    >
-      <Placemark geometry={[41.299258, 69.206181]} />
-      <FullscreenControl options={{ float: "right" }} />
-      <GeolocationControl options={{ float: "left" }} />
-      <ZoomControl options={{ float: "right" }} />
-    </Map>
-  </div>
-</YMaps>;

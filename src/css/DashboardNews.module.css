@@ -4,6 +4,169 @@
 }
 
 .card {
-    height: 440px;
+    height: 500px;
     cursor: pointer;
+}
+.img {
+    width: 100%;
+    height: 50%;
+}
+
+.MBDforFooter p:nth-child(2) span {
+    font-size: 14px;
+}
+
+.MBDforFooter {
+    height: 18%;
+    padding: 2%;
+
+}
+
+.ButtonInfoForText {
+
+    transform: translate(0, -50%) scale(1);
+    width: 75px;
+    height: auto;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 13px;
+    margin-top: 10%;
+    color: #ffffff;
+    background: hsl(52, 99%, 62%);
+    border-radius: 5px;
+    box-shadow: 0 0 1px hsl(52, 99%, 62%), 0 0 5px hsl(52, 99%, 62%);
+    transition: .8s;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.ButtonInfoForText:hover {
+    transform: translate(0, -50%) scale(1);
+    animation: pulse .1s linear infinite;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.ButtonBatafsil {
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.body {
+    border: 1px solid red;
+}
+
+.title {
+    width: 60%;
+    padding: 4%;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.AnimationUnderTadbir1 {
+    height: 3px;
+    width: 100%;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #729dc5, #dfd2b9, #FF865E, #FEE440);
+    background-size: 400% 400%;
+    animation: AnimationUnderTadbir1 2s ease infinite;
+}
+
+@keyframes AnimationUnderTadbir1 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.AnimationUnderTadbir2 {
+    height: 3px;
+    width: 60%;
+    margin: auto;
+    margin-top: 5px;
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+    background: linear-gradient(-45deg, #FEE440, #FF865E, #dfd2b9, #729dc5);
+    background-size: 400% 400%;
+    animation: AnimationUnderTadbir2 2s ease infinite;
+}
+
+@keyframes AnimationUnderTadbir2 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media(max-width:990px) {
+    .MBDforFooter p:nth-child(2) span {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:767px) {
+    .MBDforFooter p:nth-child(2) {
+        font-size: 11px;
+        border: 1px solid green;
+
+    }
+
+    .title {
+        padding: 8%;
+        width: 100%;
+    }
+}
+
+@media(max-width:500px) {
+    .MBDforFooter p:nth-child(2) {
+        font-size: 13px;
+        border: 1px solid green;
+
+    }
+
+    .MBDforTitle {
+        font-weight: bold;
+    }
+}
+
+@media(max-width:370px) {
+    .MBDforFooter p:nth-child(2) {
+        font-size: 12px;
+        border: 1px solid green;
+    }
+
+    .MBDforText {
+        font-size: 12px;
+    }
+
+    .MBDforTitle {
+        font-weight: bolder;
+        font-size: 15px;
+    }
+
+
+
+}
+
+@media(max-width:350px) {
+    .MBDforFooter p:nth-child(2) {
+        font-size: 11px;
+        border: 1px solid green;
+
+    }
 }

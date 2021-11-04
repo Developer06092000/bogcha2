@@ -19,21 +19,17 @@ import {
 import { AiOutlineClose } from "react-icons/ai";
 import { Menu } from "antd";
 import "antd/dist/antd.css";
+import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 export default function Login() {
   let history = useHistory();
   const [loader, setLoader] = useState(true);
   const [nav, setNav] = useState(false);
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
-
   const [In, setIn] = React.useState(false);
   const [item, setLog] = React.useState(true);
-  const [password, setPassword] = React.useState("");
-  const [username, setUsername] = React.useState("");
-  const [signpassword, setSignPassword] = React.useState("");
-  const [signusername, setSignUsername] = React.useState("");
-  const [signmail, setSignMail] = React.useState("");
-  const [signnumber, setsignnumber] = React.useState("");
+  const [getLogin, setGetLogin] = useState([]);
 
   const Ruyhat = () => {
     setIn(false);
@@ -48,44 +44,16 @@ export default function Login() {
   const Enter = () => {
     setLog(false);
   };
-
-  const handleChangUser = (event) => {
-    setUsername(event.target.value);
-  };
-  const handleChangePass = (event) => {
-    setPassword(event.target.value);
-  };
-  const handleChangeSignUser = (event) => {
-    setSignUsername(event.target.value);
-  };
-  const handleChangeSignMail = (event) => {
-    setSignMail(event.target.value);
-  };
-  const handleChangeSignPass = (event) => {
-    setSignPassword(event.target.value);
-  };
-  const handleChangeSignNum = (event) => {
-    setsignnumber(event.target.value);
-  };
-
-  const handleSubmit = (event) => {
-    event.preventDefault(event);
-    //Send FullInformation person about
-    console.log(
-      "username=",
-      username,
-      "; password=",
-      password,
-      "; mail=",
-      signmail,
-      "; number=",
-      signnumber,
-      "; parol=",
-      signpassword,
-      "; newname=",
-      signusername
-    );
-  };
+  useEffect(() => {
+    getBogcha()
+    .then((res) => {
+      setGetLogin(res.data);
+      
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  },[]);
   const change = () => {
     if (window.scrollY >= 200) {
       setNav(true);
@@ -134,7 +102,7 @@ export default function Login() {
           <div className={styles.one}>
             <div className={nav ? styles.nav1_active : styles.nav1}>
               <div className={nav ? styles.logo1 : styles.logo}>
-                {nav ? <img src={rasm5} /> : <img src={rasm5} />}
+                {nav ? <img src={url+getLogin.logo} /> : <img src={url+getLogin.logo} />}
                 <div className={styles.navbar}>
                   <span>
                     <Link to="/dashboard/uz">
@@ -386,119 +354,7 @@ export default function Login() {
             </div>
           </div>
           <Container fluid className={styles.bodyl}>
-            {/* ----------------------------------- */}
-            {/* <div className="Registratsiya">
-              {item ? (
-                <div className="login">
-                  <h3 className="header">Kirish</h3>
-                  <form onSubmit={handleSubmit}>
-                    <label className="inputPerson" controlId="formBasicEmail">
-                      <input
-                        className="inputtext"
-                        name="Email"
-                        type="text"
-                        value={username}
-                        placeholder="Emailni Kiriting"
-                        onChange={handleChangUser}
-                        required
-                      />
-                    </label>
-                    <label
-                      className="inputPerson"
-                      controlId="formBasicPassword"
-                    >
-                      <input
-                        className="inputpass"
-                        name="Password"
-                        type="password"
-                        value={password}
-                        placeholder="Passwordni Kiriting"
-                        onChange={handleChangePass}
-                        required
-                      />
-                    </label>
-
-                    <input
-                      className="LogInPriceLog"
-                      type="submit"
-                      onClick={login}
-                      value="Kirish"
-                    />
-                  </form>
-
-                  <div className="footerTitleLog">
-                    <p>Ruyxatdan o'tmadingizmi? </p>
-                    <p>
-                      {" "}
-                      <strong onClick={Enter} className="linkLog">
-                        SignUp
-                      </strong>
-                    </p>
-                  </div>
-                </div>
-              ) : (
-                <div className="signup">
-                  <h1 className="header">Ruyxatdan O'tish!</h1>
-                  <form onSubmit={handleSubmit}>
-                    <label className="inputPersonSign">
-                      <input
-                        type="text"
-                        value={signusername}
-                        placeholder="Full Name"
-                        onChange={handleChangeSignUser}
-                        required
-                      />
-                    </label>
-                    <label className="inputPersonSign">
-                      <input
-                        type="email"
-                        value={signmail}
-                        placeholder="Email"
-                        onChange={handleChangeSignMail}
-                        required
-                      />
-                    </label>
-                    <label className="inputPersonSign">
-                      <input
-                        type="password"
-                        value={signpassword}
-                        placeholder="Password"
-                        onChange={handleChangeSignPass}
-                        required
-                      />
-                    </label>
-                    <label className="inputPersonSign">
-                      <input
-                        type="text"
-                        value={signnumber}
-                        placeholder="Number"
-                        onChange={handleChangeSignNum}
-                        required
-                      />
-                    </label>
-
-                    <input
-                      className="LogInPriceSign"
-                      type="submit"
-                      value="Kirish"
-                    />
-                  </form>
-                  <div className="footerTitleSign">
-                    <p>Ruyxatdan o'tkanmisiz ? </p>
-                    <p>
-                      {" "}
-                      <strong onClick={Registr} className="linkLog">
-                        Log in
-                      </strong>
-                    </p>
-                  </div>
-                </div>
-              )}
-            </div> */}
-
-            {/* ----------------------------------- */}
-
-             <Row>
+            <Row>
               <Col lg={12} className={styles.text}>
                 <h1>Kirish</h1>
                 <div className={styles.BodyTextItem}></div>
@@ -533,14 +389,13 @@ export default function Login() {
                       onClick={login}
                       type="submit"
                       className={styles.LoginButtonItem}
-                    
                     >
                       Kirish
                     </Button>
                   </Form>
                 </div>
               </Col>
-            </Row> 
+            </Row>
           </Container>
           <Footer />
         </div>

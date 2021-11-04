@@ -8,18 +8,32 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import img1 from "../img/r1.jpg";
 import styles from "../css/about_us.module.css";
-import star from "../img/star.png"
-import delivery from "../img/delivery.png"
-import frame from "../img/frame.png"
+import star from "../img/star.png";
+import delivery from "../img/delivery.png";
+import frame from "../img/frame.png";
 import img4 from "../img/r4.jpeg";
 import img5 from "../img/r5.jpeg";
 import PuffLoader from "react-spinners/PuffLoader";
-
+import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 export default class Bosqich1 extends Component {
   state = {
     loader: true,
+    Bosqich1Get: [],
+  };
+  GetBosqichOne = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          Bosqich1Get: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   componentDidMount() {
+    this.GetBosqichOne();
     setInterval(() => {
       this.setState({
         loader: false,
@@ -106,55 +120,32 @@ export default class Bosqich1 extends Component {
               </div>
             </div>
             <div className={style.BodyGroup1Bosqich}>
-
-            <h1>1-BOSQICH</h1>
-            <div className={style.AnimationUnderNews1}></div>
-            <div className={style.AnimationUnderNews2}></div>
-            <br />
-            
-
-            <Container>
-              <div className={style.notepad}>
-                <div className={style.top}></div>
-                <div className={style.paper} contenteditable="true">
-                  BUSY BEES
-                  <br />
-                  <br />
-                  <p>
-                    Our littlest Flamingo students are known as the Busy Bees.
-                    This is a sweet, tender environment where every student is
-                    loved, nurtured, and supported. Beginning in the morning,
-                    students start the day by eating breakfast family-style. Our
-                    little ones cannot wait to explore their classroom, climb on
-                    the tunnel climber, and giggle with their friends. Mornings
-                    are spent singing nursery rhymes, painting, singing, and
-                    dancing. Puppets come out to play with eager students.
-                  </p>
-                  JOYFUL
-                  <br />
-              
-                  <p >
-                    Our littlest Flamingo students are known as the Busy Bees.
-                    This is a sweet, tender environment where every student is
-                    loved, nurtured, and supported. Beginning in the morning,
-                    students start the day by eating breakfast family-style. Our
-                    little ones cannot wait to explore their classroom, climb on
-                    the tunnel climber, and giggle with their friends. Mornings
-                    are spent singing nursery rhymes, painting, singing, and
-                    dancing. Puppets come out to play with eager students.
-                  </p>
-                </div>
+              <div className={style.BodyGroup1BosqichItem}>
+                <h1>1-BOSQICH</h1>
+                <div className={style.AnimationUnderNews1}></div>
+                <div className={style.AnimationUnderNews2}></div>
               </div>
-            </Container>
+              <Container>
+                <div className={style.LevelGroup}>
+                  <div className={style.LevelItemImg}>
+                    <img src={url + this.state.Bosqich1Get.program1_img} />
+                  </div>
+                  <div className={style.LevelItemText}>
+                    <p>
+                      <h1>1-Bosqich</h1>{" "}
+                      <div className={style.AnimationUnderNews1}></div>
+                    </p>
+
+                    <p>{this.state.Bosqich1Get.program1}</p>
+                  </div>
+                </div>
+              </Container>
             </div>
-            <br />
-            <br />
 
             <Footer />
           </div>
         )}{" "}
       </div>
     );
-
   }
 }

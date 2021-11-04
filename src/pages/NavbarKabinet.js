@@ -19,12 +19,27 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import { AiOutlineClose } from "react-icons/ai";
+import {getBogcha} from '../host/Config'
+import {url } from '../host/Host'
 export default class NavbarKabinet extends Component {
   state = {
+    NavbarCabinetGet:[],
     nav: false,
     open: false,
     close: false,
   };
+
+  GetNavbarCabinet=()=>{
+    getBogcha()
+    .then((res)=>{
+      this.setState({
+        NavbarCabinetGet:res.data
+      })
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }
   change = () => {
     if (window.scrollY >= 200) {
       this.setState({
@@ -47,6 +62,7 @@ export default class NavbarKabinet extends Component {
     });
   };
   componentDidMount() {
+    this.GetNavbarCabinet()
     window.addEventListener("scroll", this.change);
   }
   handleClick = (e) => {
@@ -169,14 +185,14 @@ export default class NavbarKabinet extends Component {
                                 </Menu.Item> */}
                   <Menu.Item>
                     <span>
-                      <a href="tel:+998335093874">
+                      <a href={this.state.NavbarCabinetGet.phone}>
                         <FaPhoneAlt
                           style={{ color: "white", fontSize: "18px" }}
                         />
                       </a>
                     </span>
                     <span>
-                      <a href="http://t.me/Karshiyeva_N">
+                      <a href={this.state.NavbarCabinetGet.telegram}>
                         <FaTelegramPlane
                           style={{
                             color: "white",

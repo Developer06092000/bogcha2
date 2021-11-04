@@ -53,6 +53,7 @@ import OutlineRasm from "../img/bogcha2/Dashboard/circleOut.png";
 import { GiTeacher } from "react-icons/gi";
 import { FaPeopleArrows } from "react-icons/fa";
 import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 export default class Dashboard extends Component {
   state = {
     loader: true,
@@ -64,7 +65,6 @@ export default class Dashboard extends Component {
         this.setState({
           bogchaGEt: res.data,
         });
-        console.log("ThisMedia", res.data.xodim);
       })
       .catch((err) => console.log(err));
   };
@@ -287,26 +287,13 @@ export default class Dashboard extends Component {
                 <Container fluid>
                   <div className={styles.TourCardItem}>
                     <div className={styles.ImgItem1}>
-                      <img src={imgDegre1} />
+                      <img src={url + this.state.bogchaGEt.post_image1} />
                     </div>
                     <div className={styles.TextItem1}>
                       <div className={styles.TextItemHr}></div>
                       <h1>Mehribon va tarbiyalovchi muhit</h1>
-                      <p>
-                        Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                        o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                        muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi. Har
-                        bir talabaning o'ziga xos kuchli, zaif tomonlari va
-                        sovg'alari bizni katta va kichik yangi marralarni
-                        birgalikda nishonlash paytida qabul qilinadi va
-                        qo'llab-quvvatlanadi.
-                      </p>
-                      <p>
-                        Flamingo orolidagi ta'lim o'qituvchilar, ota-onalar va
-                        o'quvchilar mehribon va mehribon, ilmiy jihatdan boy
-                        muhitda hamkorlik qiladigan go'zal raqsga o'xshaydi. Har
-                        bir talabaning o'ziga xos kuchli.
-                      </p>
+                      <p>{this.state.bogchaGEt.post_text1}</p>
+
                       <br />
                       <span>
                         <Link
@@ -329,13 +316,7 @@ export default class Dashboard extends Component {
                       <div className={styles.TextItemHr}></div>
 
                       <p>
-                        Young children are born with an innate curiosity of the
-                        world around them. Flamingo nurtures this natural wonder
-                        and joy for learning. Our learning activities integrate
-                        wonder and curiosity on a daily basis. Searching for
-                        worms and building a house for a beetle are monumental
-                        moments in a child’s day! We nurture young perspectives
-                        to embrace and support inquiry and discovery.
+                      {this.state.bogchaGEt.post_text2}
                       </p>
                       <span>
                         <Link
@@ -348,7 +329,7 @@ export default class Dashboard extends Component {
                       </span>
                     </div>
                     <div className={styles.TourCardItem2Img}>
-                      <img src={imgDegre2} />
+                      <img src={url + this.state.bogchaGEt.post_image2} />
                     </div>
                   </div>
                 </Container>
@@ -364,20 +345,12 @@ export default class Dashboard extends Component {
 
                       <h1>G'ayrat. Nishon. Etakchilik</h1>
 
-                      <p>
-                        Young children are born with an innate curiosity of the
-                        world around them. Flamingo nurtures this natural wonder
-                        and joy for learning. Our learning activities integrate
-                        wonder and curiosity on a daily basis. Searching for
-                        worms and building a house for a beetle are monumental
-                        moments in a child’s day! We nurture young perspectives
-                        to embrace and support inquiry and discovery.
-                      </p>
+                      <p>{this.state.bogchaGEt.post_text3}</p>
                     </div>
                     <div className={styles.TourCardItem3Img}>
                       <div className={styles.TourCardItem3ImgItem}>
                         <div className={styles.TourCardItem3ImgItem1}>
-                          <img src={qabul} />
+                          <img src={url + this.state.bogchaGEt.post_image3} />
                         </div>
                         <div className={styles.TourCardItem3ImgItem2}>
                           <img src={qabul1} />
@@ -389,12 +362,12 @@ export default class Dashboard extends Component {
                         </div>
                         <div className={styles.TourCardItem3ImgItemB}>
                           <p>
-                            <b>Bizning Imkoniyatlar:</b>Our learning activities
-                            integrate wonder and curiosity on a daily basis.
-                            Searching for worms and building a house for a
-                            beetle are monumental moments in a child’s day! We
-                            nurture young perspectives to embrace and support
-                            inquiry and discovery.
+                            <b>Bizning Imkoniyatlar:</b>
+                            Hammamizga ma’lum, bir shaxsning miya tuzilishi
+                            boshqa insonnikiga o‘xshamaydi. Ammo ayrim
+                            vaqtlarda, turli xil insonlarning bosh miyasi bir
+                            xil funksiyani bajarishi mumkin. Shu tufayli bizda
+                            o‘xshash vaziyatlar vujudga keladi.
                           </p>
                           <span>
                             <Link
@@ -431,18 +404,15 @@ export default class Dashboard extends Component {
                     </div>
                     <div className={styles.TourCardItem4Body}>
                       <div className={styles.TourCardItem4Img}>
-                        <img src={ChildImg} />
+                        <img src={url + this.state.bogchaGEt.post_image4} />
                       </div>
                       <div className={styles.TourCardItem4Text}>
                         <p>
-                          <b>B.C</b> Flamingo orolidagi ta'lim o'qituvchilar,
-                          ota-onalar va o'quvchilar mehribon va mehribon, ilmiy
-                          jihatdan boy muhitda hamkorlik qiladigan go'zal raqsga
-                          o'xshaydi. Har bir talabaning o'ziga xos kuchli, zaif
-                          tomonlari va sovg'alari bizni katta va kichik yangi
-                          marralarni birgalikda nishonlash paytida qabul
-                          qilinadi va qo'llab-quvvatlanadi.{" "}
+                          <b>B.C </b>
+
+                          {this.state.bogchaGEt.post_text4}
                         </p>
+
                         <p>
                           <ul>
                             <li>
@@ -452,18 +422,7 @@ export default class Dashboard extends Component {
                               va mas'uliyatni ta'minlaydi
                             </li>
                             <li> Modullarni o'rgatadi va rag'batlantiradi</li>
-                            <li> Ijtimoiy mas'uliyatli xatti -harakatlar</li>
-                            <li>
-                              {" "}
-                              Muammolarni tinch yo'l bilan hal qilish va
-                              talabalarga bir -biriga yordam berishga harakat
-                              qilish
-                            </li>
-                            <li>
-                              {" "}
-                              Shafqatsizlik va himoyalanish va inson huquqlariga
-                              katta ahamiyat bering{" "}
-                            </li>
+                           
                           </ul>
                         </p>
                         <span>

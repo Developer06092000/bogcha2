@@ -11,12 +11,27 @@ import story2 from "../img/ourstorybanner.jpg";
 import PuffLoader from "react-spinners/PuffLoader";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { url } from "../host/Host";
+import { getBogcha } from "../host/Config";
 
 export default class Our_story extends Component {
   state = {
     loader: true,
+    OurStoryGet: [],
+  };
+  GetOurStory = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          OurStoryGet: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
   componentDidMount() {
+    this.GetOurStory();
     setInterval(() => {
       this.setState({
         loader: false,
@@ -106,18 +121,10 @@ export default class Our_story extends Component {
                     <div className={styles.AnimationUnderNews1}></div>
                     <div className={styles.AnimationUnderNews2}></div>
                   </div>
-                    <div className={styles.notepad}>
+                  <div className={styles.notepad}>
                     <div className={styles.top}></div>
-                    <div className={styles.paper} contenteditable="true"> 
-                      <p>
-                      Bu g'oya sifatida boshlandi ... yaxshi. Ko'p fikrlar bor
-                      edi, lekin bilasizmi ... bitta narsa ajralib chiqdi,
-                      chunki u umumiy belgiga ega edi va bu SEVGI edi. Axir
-                      sizga faqat SEVGI kerak. Agar sizning g'oyalaringiz va
-                      niyatlaringiz ichkaridan haydaladigan bo'lsa, siz
-                      uzoqlashasiz, qanchalik uzoqqa borasiz, hech kim bilmaydi
-                      ... nega bu muhim? Faqat siz qancha masofani bilasiz…
-                      </p>
+                    <div className={styles.paper} contenteditable="true">
+                      <p>{this.state.OurStoryGet.our_history}</p>
                     </div>
                   </div>
                   <br />

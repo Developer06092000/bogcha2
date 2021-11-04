@@ -23,12 +23,26 @@ import {
   SettingOutlined,
 } from "@ant-design/icons";
 import { AiOutlineClose } from "react-icons/ai";
+import {url} from '../host/Host'
+import {getBogcha} from '../host/Config'
 export default class Navbar extends Component {
   state = {
     nav: false,
     open: false,
     close: false,
+    GetNavbar:[]
   };
+  NavbarGet=()=>{
+    getBogcha()
+    .then((res)=>{
+      this.setState({
+        GetNavbar:res.data
+      })
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }
   change = () => {
     if (window.scrollY >= 200) {
       this.setState({
@@ -51,6 +65,7 @@ export default class Navbar extends Component {
     });
   };
   componentDidMount() {
+    this.NavbarGet()
     window.addEventListener("scroll", this.change);
   }
   handleClick = (e) => {
@@ -63,7 +78,7 @@ export default class Navbar extends Component {
         <div className={styles.one}>
           <div className={this.state.nav ? styles.nav1_active : styles.nav1}>
             <div className={this.state.nav ? styles.logo1 : styles.logo}>
-              {this.state.nav ? <img src={rasm5} /> : <img src={rasm1} />}
+              {this.state.nav ? <img src={url+this.state.GetNavbar.logo}  /> : <img src={url+this.state.GetNavbar.logo}  />}
               <div className={styles.navbar}>
                 <span>
                   <Link to="/dashboard/uz">
@@ -129,28 +144,28 @@ export default class Navbar extends Component {
                   <Link to="/tadbirlar/uz">Tadbirlar</Link>
                 </span>
                 <span style={{ marginLeft: "40px" }}>
-                  <a href="tel:+998335093874">
+                  <a href={this.state.GetNavbar.phone}>
                     <FaPhoneAlt
                       style={{ color: "#4587EB", fontSize: "18px" }}
                     />
                   </a>
                 </span>
                 <span>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.GetNavbar.telegram}>
                     <FaTelegramPlane
                       style={{ color: "#4587EB", fontSize: "23px" }}
                     />
                   </a>
                 </span>
                 <span>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.GetNavbar.instagram}>
                     <FaInstagram
                       style={{ color: "#4587EB", fontSize: "23px" }}
                     />
                   </a>
                 </span>
                 <span>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.GetNavbar.facebook}>
                     <FaFacebook
                       style={{ color: "#4587EB", fontSize: "23px" }}
                     />
@@ -171,7 +186,7 @@ export default class Navbar extends Component {
         <div className={styles.second}>
           <div className={this.state.nav ? styles.nav1_active : styles.nav1}>
             <div className={this.state.nav ? styles.logo1 : styles.logo}>
-              {this.state.nav ? <img src={rasm5} /> : <img src={rasm1} />}
+              {this.state.nav ? <img src={url+this.state.GetNavbar.logo} /> : <img src={url+this.state.GetNavbar.logo}  />}
               <div
                 className={this.state.nav ? styles.openNav1 : styles.openNav}
               >
@@ -312,14 +327,14 @@ export default class Navbar extends Component {
                     </Menu.Item> */}
                     <Menu.Item>
                       <span>
-                        <a href="tel:+998335093874">
+                        <a href={this.state.GetNavbar.phone}>
                           <FaPhoneAlt
                             style={{ color: "white", fontSize: "18px" }}
                           />
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.GetNavbar.telegram}>
                           <FaTelegramPlane
                             style={{
                               color: "white",
@@ -330,7 +345,7 @@ export default class Navbar extends Component {
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.GetNavbar.instagram}>
                           <FaInstagram
                             style={{
                               color: "white",
@@ -341,7 +356,7 @@ export default class Navbar extends Component {
                         </a>
                       </span>
                       <span>
-                        <a href="http://t.me/Karshiyeva_N">
+                        <a href={this.state.GetNavbar.facebook}>
                           <FaFacebook
                             style={{
                               color: "white",

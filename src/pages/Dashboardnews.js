@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import styles from "../css/news.module.css";
-import style from '../css/DashboardNews.module.css'
+import style from "../css/DashboardNews.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import PacmanLoader from "react-spinners/PacmanLoader";
 import news1 from "../img/kinder6.png";
@@ -11,7 +11,7 @@ import Footer from "./Footer";
 import "react-multi-carousel/lib/styles.css";
 import {
   MDBCard,
-  MDBCardTitle, 
+  MDBCardTitle,
   MDBCardText,
   MDBCardBody,
   MDBCardImage,
@@ -19,9 +19,32 @@ import {
   MDBCol,
   MDBCardFooter,
 } from "mdb-react-ui-kit";
+import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 import { Link } from "react-router-dom";
+import { FaCalendarAlt } from "react-icons/fa";
 
 export default class Dashboardnews extends Component {
+  state = {
+    DashboardNewsGet: [],
+  };
+
+  GetDashboardNews = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          DashboardNewsGet: res.data.yangilik,
+        });
+      })
+      .catch((err) => {
+        console.log("err", err);
+      });
+  };
+
+  componentDidMount() {
+    this.GetDashboardNews();
+  }
+
   render() {
     const responsive = {
       desktop: {
@@ -45,7 +68,7 @@ export default class Dashboardnews extends Component {
         <Container>
           <body>
             <div className={styles.body}>
-              <div data-aos="fade-up" className={styles.title}>
+              <div  className={styles.title}>
                 <h1>Yangiliklar</h1>
                 <div className={styles.AnimationUnderTadbir1}></div>
                 <div className={styles.AnimationUnderTadbir2}></div>
@@ -56,41 +79,52 @@ export default class Dashboardnews extends Component {
                 autoPlaySpeed={5000}
                 infinite={true}
               >
-                <div>
-                  <MDBCol style={{ margin: "10px" }}>
-                    <MDBCard className="h-100" className={style.card}>
-                      <MDBCardImage
-                        src={news1}
-                        className={styles.img}
-                        alt="..."
-                        position="top"
-                      />
-                      <MDBCardBody>
-                        <MDBCardTitle>
-                          Bog'chamizga Prezident tashrif buyirdi
-                        </MDBCardTitle>
-                        <MDBCardText>
-                          <p>
-                            <i
-                              style={{ color: "#FF865F" }}
-                              class="fas fa-calendar-alt"
-                            ></i>{" "}
-                            14/08/2020
-                          </p>
-                          <Link to="/yangilik/uz">
-                            <p
-                              className={styles.ButtonInfoForText}
-                              style={{ color: "white" }}
-                            >
-                              Batafsil
+                {this.state.DashboardNewsGet.map((news) => {
+                  return (
+                    <div key={news.id}>
+                      <MDBCol style={{ margin: "10px", height: "auto" }}>
+                        <MDBCard className="h-100" className={style.card}>
+                          <MDBCardImage
+                            src={url + news.image}
+                            className={style.img}
+                            alt="..."
+                            position="top"
+                          />
+                          <MDBCardBody>
+                            <MDBCardTitle className={style.MBDforTitle}>
+                              {news.title}
+                            </MDBCardTitle>
+                            <MDBCardText className={style.MBDforText}>
+                              {news.text}
+                            </MDBCardText>
+                            
+                          </MDBCardBody>
+                          <MDBCardFooter   className={style.MBDforFooter}>
+                            <p>
+                              <FaCalendarAlt
+                                style={{ fontSize: "17px", color: "#FF865F" }}
+                              />{" "}
+                              <span>{news.date}</span>
                             </p>
-                          </Link>
-                        </MDBCardText>
-                      </MDBCardBody>
-                    </MDBCard>
-                  </MDBCol>
-                </div>
-                <div>
+                            <p>
+                            <Link to="/yangilik/uz">
+                              <p
+                                className={style.ButtonInfoForText}
+                                style={{ color: "white" }}
+                              >
+                                Batafsil
+                              </p>
+                            </Link>
+                            </p>
+
+                          </MDBCardFooter>
+                        </MDBCard>
+                      </MDBCol>
+                    </div>
+                  );
+                })}
+
+                {/* <div>
                   <MDBCol style={{ margin: "10px" }}>
                     <MDBCard className="h-100" className={style.card}>
                       <MDBCardImage
@@ -157,7 +191,7 @@ export default class Dashboardnews extends Component {
                             >
                               Batafsil
                             </p>
-                          </Link>
+                          </Link> 
                         </MDBCardText>
                       </MDBCardBody>
                     </MDBCard>
@@ -196,7 +230,7 @@ export default class Dashboardnews extends Component {
                       </MDBCardBody>
                     </MDBCard>
                   </MDBCol>
-                </div>
+                </div> */}
               </Carousel>
               {/* <MDBRow className="row-cols-1 row-cols-md-3 g-4">
                 <MDBCol>

@@ -416,7 +416,6 @@ body {
 .TourCardItem {
   height: auto;
   padding: 3% 0px;
-
   display: flex;
   justify-content: center;
   }
@@ -430,14 +429,15 @@ body {
 
   .ImgItem1 {
     position: relative;
-    width: 27%;
+    width: 30%;
     height: 470px;
     padding: 0px auto;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .ImgItem1 img {
-  width: 100%;
+  width: 125%;
   height: 100%;
 }
 .ImgItem1 span {
@@ -445,11 +445,10 @@ body {
 }
 
 .TextItem1 {
-  width: 63%;
+  width: 60%;
   height: 470px;
-  padding: 5%;
-
-  background-color: #FEF9EF;
+  padding: 3%;
+  background-color: #EFF2F8;
 }
 
 .TextItemHr {
@@ -489,8 +488,8 @@ body {
 .TourCardItem2Text {
   width: 40%;
   height: 470px;
-  padding: 5% 4%;
-  background-color: #FEF9EF;
+  padding: 3% 4%;
+  background-color: #EFF2F8;
 }
 
 .TourCardItem2Text p {
@@ -524,6 +523,7 @@ body {
 
 .TourCardItem2Img img {
   position: relative;
+  height: 410px;
   width: 110%;
   margin-left: -10%;
 }
@@ -534,7 +534,9 @@ body {
   padding: 5% 5%;
   background-color: #A2D2FF;
 }
-
+.TourCardItem3Text h1 {
+  font-size: 20px !important;
+}
 .TourCardItem3Img {
   width: 65%;
   height: 470px;
@@ -561,23 +563,25 @@ body {
 }
 
 .TourCardItem3ImgItem2 img {
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
 .TourCardItem3ImgItem2 {
   width: 34%;
+  overflow: hidden;
   height: 100%;
 }
 
 .TourCardItem3ImgItemA {
   width: 34%;
+  overflow: hidden;
   height: 100%;
 
 }
 
 .TourCardItem3ImgItemA img {
-  width: 100%;
+  width: auto;
   height: 100%;
 
 }
@@ -586,7 +590,7 @@ body {
   width: 66%;
   height: 100%;
   padding: 4% 4%;
-  background-color: #FEF9EF;
+  background-color: #EFF2F8;
 
 }
 
@@ -596,7 +600,9 @@ body {
   line-height: 20px;
   margin-left: 2%;
 }
-
+.TourCardItem4 {
+  background-color: #EFF2F8;
+}
 .TourCardItem4Body {
   width: 100%;
   height: 380px;
@@ -610,6 +616,7 @@ body {
   font-weight: 400;
   padding: 0% 2%;
   margin-bottom: 2%;
+  text-align: start;
 
   position: relative;
   font-family: "Andale Mono",
@@ -644,7 +651,25 @@ body {
 }
 
 /* --------------Media--Mobile----------------- */
+@media(min-width:991px) and (max-width:1024px) {
+  .TourCardItem2Text h1 {
+    font-size: 22px !important;
+  }
 
+  .TourCardItem2Text {
+    padding: 1% 1%;
+
+  }
+
+  .TourCardItem3Text h1 {
+    width: 100%;
+    font-size: 20px !important;
+  }
+
+  .TourCardItem3Text {
+    padding: 2% 2%;
+  }
+  }
 @media(min-width:768px) and (max-width:990px) {
   .headerItem:nth-child(1) {
     padding: 3% 0%;
@@ -678,6 +703,56 @@ body {
   .TourCardItem4Text p:nth-child(1) {
     width: 95%;
   }
+  .ImgItem1 {
+    width: 40%;
+  }
+
+  .TextItem1 {
+    width: 60%;
+  }
+
+  .TourCardItem2Text {
+    padding: 1% 1%;
+  }
+
+  .TourCardItem2Text h1 {
+    font-size: 19px !important;
+  }
+
+
+  .TourCardItem3Text {
+    padding: 2% 2%;
+  }
+
+  .TourCardItem3Text h1 {
+    font-size: 18px !important;
+  }
+
+  .TourCardItem4Body {
+    padding: 1px 1px;
+  }
+
+  .TourCardItem4Img {
+    width: 40%;
+  }
+
+  .TourCardItem4Text {
+    width: 60%;
+    padding: 1% 1%;
+  }
+
+  .TourCardItem4Text p:nth-child(1) {
+    width: 100%;
+  }
+
+  .TourCardItem4Text p:nth-child(2) {
+    width: 100%;
+  }
+
+  .TourCardItem4Text p:nth-child(1) {
+    width: 100%;
+  }
+
 
 }
 
@@ -849,7 +924,7 @@ body {
   }
 
   .TourCardItem2Img {
-    width: 70%;
+    width: 80%;
     margin: auto;
     height: auto;
     padding: 0px;
@@ -867,6 +942,9 @@ body {
     margin: auto;
     height: auto;
     padding: 5% 4%;
+  }
+  .TourCardItem3Text h1 {
+    font-size: 22px !important;
   }
 
   .TourCardItem3Img {
@@ -909,6 +987,7 @@ body {
   .TourCardItem3ImgItemA {
     width: 100%;
     height: 100%;
+    display: none;
   }
 
   .TourCardItem3ImgItemB {
@@ -935,10 +1014,9 @@ body {
     }
 
     .TourCardItem4Img img {
-      width: 80%;
+      width: 100%;
       margin: auto;
       padding: 5% 0%;
-      margin-left: 10%;
       text-align: center;
     }
 
@@ -1034,7 +1112,12 @@ body {
       }
 
       .TourCardItem2Img {
-        width: 80%;
+        width: 87%;
+        height: 300px;
+        }
+
+        .TourCardItem2Img img {
+          height: 100%;
       }
 
       .TourCardItem3ImgItem1 {
@@ -1054,6 +1137,15 @@ body {
         width: 100%;
         height: 250px;
 
+      }
+      .ImgItem1 {
+        height: 300px;
+      }
+
+
+
+      .ImgItem1 img {
+        height: 100%;
       }
 
     }
