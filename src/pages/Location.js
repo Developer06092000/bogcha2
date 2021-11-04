@@ -239,7 +239,10 @@ export default class Location extends Component {
                     >
                       <FaBars
                         onClick={this.openNav}
-                        style={{ color: "#A2D2FF", fontSize: "30px" }}
+                        style={{
+                          color: "#A2D2FF",
+                          fontSize: "30px",
+                        }}
                       />
                     </div>
                     <div

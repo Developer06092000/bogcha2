@@ -19,8 +19,27 @@ import { Button } from "antd";
 import { IoIosCall } from "react-icons/io";
 import { HiMail } from "react-icons/hi";
 import { FaPlaceOfWorship, FaYoutube } from "react-icons/fa";
-
+import { getBogcha } from "../host/Config";
+import { url } from "../host/Host";
 export default class Footer extends Component {
+  state = {
+    FooterGet: [],
+  };
+
+  GetFooter = () => {
+    getBogcha()
+      .then((res) => {
+        this.setState({
+          FooterGet: res.data,
+        });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  };
+  componentDidMount() {
+    this.GetFooter();
+  }
   render() {
     return (
       <div className={style.FooterHeadMenu}>
@@ -30,7 +49,10 @@ export default class Footer extends Component {
               Biz sizga <b>qulaylik va imkoniyatlarni </b>yaratamiz
             </p>
             <p>
-              <Button id={style.ConnectButton}>
+              <Button
+                href={this.state.FooterGet.telegram}
+                id={style.ConnectButton}
+              >
                 <FaTelegramPlane className={style.ConnectTelgramIcon} />
                 Bog'lanish
               </Button>

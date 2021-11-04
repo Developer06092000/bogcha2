@@ -19,13 +19,26 @@ import { AiOutlineClose } from "react-icons/ai";
 import { Menu } from "antd";
 import "antd/dist/antd.css";
 import { Link } from "react-router-dom";
-
+import {getBogcha} from '../host/Config'
+import {url} from '../host/Host'
 export default class Dasturlar extends Component {
   state = {
     nav: false,
     open: false,
     close: false,
+    DasturlarGet:[]
   };
+  GetDasturlar=()=>{
+    getBogcha()
+    .then((res)=>{
+      this.setState({
+        DasturlarGet:res.data,
+      })
+    })
+    .catch((err)=>{
+      console.log(err);
+    })
+  }
   change = () => {
     if (window.scrollY >= 200) {
       this.setState({
@@ -48,6 +61,7 @@ export default class Dasturlar extends Component {
     });
   };
   componentDidMount() {
+    this.GetDasturlar()
     window.addEventListener("scroll", this.change);
   }
   handleClick = (e) => {
@@ -62,7 +76,7 @@ export default class Dasturlar extends Component {
           <div className={style.one}>
             <div className={this.state.nav ? style.nav1_active : style.nav1}>
               <div className={this.state.nav ? style.logo1 : style.logo}>
-                {this.state.nav ? <img src={rasm5} /> : <img src={rasm1} />}
+                {this.state.nav ? <img src={url+this.state.DasturlarGet.logo} /> : <img src={url+this.state.DasturlarGet.logo} />}
                 <div className={style.navbar}>
                   <span>
                     <Link to="/dashboard/uz">
@@ -130,14 +144,14 @@ export default class Dasturlar extends Component {
                     <Link to="/tadbirlar/uz">Tadbirlar</Link>
                   </span>
                   <span style={{ marginLeft: "40px" }}>
-                    <a href="tel:+998335093874">
+                    <a href={this.state.DasturlarGet.phone}>
                       <FaPhoneAlt
                         style={{ color: "#4587EB", fontSize: "18px" }}
                       />
                     </a>
                   </span>
                   <span>
-                    <a href="http://t.me/Karshiyeva_N">
+                    <a href={this.state.DasturlarGet.telegram}>
                       <FaTelegramPlane
                         style={{ color: "#4587EB", fontSize: "23px" }}
                       />
@@ -158,7 +172,7 @@ export default class Dasturlar extends Component {
           <div className={style.second}>
             <div className={this.state.nav ? style.nav1_active : style.nav1}>
               <div className={this.state.nav ? style.logo1 : style.logo}>
-                {this.state.nav ? <img src={rasm5} /> : <img src={rasm1} />}
+                {this.state.nav ? <img src={url+this.state.DasturlarGet.logo} /> : <img src={url+this.state.DasturlarGet.logo} />}
                 <div
                   className={this.state.nav ? style.openNav1 : style.openNav}
                 >
@@ -297,14 +311,14 @@ export default class Dasturlar extends Component {
                       </Menu.Item>
                       <Menu.Item>
                         <span>
-                          <a href="tel:+998335093874">
+                          <a href={this.state.DasturlarGet.phone}>
                             <FaPhoneAlt
                               style={{ color: "white", fontSize: "18px" }}
                             />
                           </a>
                         </span>
                         <span>
-                          <a href="http://t.me/Karshiyeva_N">
+                          <a href={this.state.DasturlarGet.telegram}>
                             <FaTelegramPlane
                               style={{
                                 color: "white",

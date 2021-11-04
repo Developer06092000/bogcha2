@@ -120,9 +120,9 @@
 
 
 #ConnectButton {
-    height: 45px;
+    height: auto;
     color: white;
-    padding: .8% 15px;
+    padding: 10px 15px;
     border: 1px solid #4587EB;
     background-color: #4587EB;
     margin-left: 5%;

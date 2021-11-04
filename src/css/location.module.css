@@ -63,7 +63,6 @@ body{
         text-align: center;
         background-color: white;
         line-height: 20px;
-        border: 1px solid white;
         cursor: pointer;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     }
@@ -418,6 +417,7 @@ body{
     }
     .openNav{
         display: block;
+        margin-top: -250px;
     }
     .openNav1{
         display: none;
@@ -554,9 +554,12 @@ body{
         }
         .nav1{
             background-color:white !important;
+            border: 1px solid green;
         }
         .nav1_active{
                 background-color: white !important;
+                border: 1px solid red;
+
         }
     .navbar{
         display: none;
@@ -650,6 +653,10 @@ body{
     }
     .logo img{
     width: 100px !important;
+    }
+
+    .logo {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     }
     }
 

@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 import { BsFillTriangleFill } from "react-icons/bs";
 import Footer from "./Footer";
 import { useHistory } from "react-router-dom";
+import axios from "axios";
 import {
   FaHome,
   FaPhoneAlt,
@@ -21,6 +22,7 @@ import { Menu } from "antd";
 import "antd/dist/antd.css";
 import { getBogcha } from "../host/Config";
 import { url } from "../host/Host";
+import { idBogcha } from "../host/Host";
 export default function Login() {
   let history = useHistory();
   const [loader, setLoader] = useState(true);
@@ -45,15 +47,15 @@ export default function Login() {
     setLog(false);
   };
   useEffect(() => {
-    getBogcha()
-    .then((res) => {
-      setGetLogin(res.data);
-      
-    })
-    .catch((err)=>{
-      console.log(err);
-    })
-  },[]);
+    axios
+      .get(`https://bogcha.herokuapp.com/kg-info/${idBogcha}`)
+      .then((res) => {
+        setGetLogin(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   const change = () => {
     if (window.scrollY >= 200) {
       setNav(true);
@@ -102,7 +104,11 @@ export default function Login() {
           <div className={styles.one}>
             <div className={nav ? styles.nav1_active : styles.nav1}>
               <div className={nav ? styles.logo1 : styles.logo}>
-                {nav ? <img src={url+getLogin.logo} /> : <img src={url+getLogin.logo} />}
+                {nav ? (
+                  <img src={getLogin.logo} />
+                ) : (
+                  <img src={url + getLogin.logo} />
+                )}
                 <div className={styles.navbar}>
                   <span>
                     <Link to="/dashboard/uz">
