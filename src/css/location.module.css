@@ -554,11 +554,9 @@ body{
         }
         .nav1{
             background-color:white !important;
-            border: 1px solid green;
         }
         .nav1_active{
                 background-color: white !important;
-                border: 1px solid red;
 
         }
     .navbar{

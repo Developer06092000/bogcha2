@@ -53,16 +53,10 @@
     align-items: flex-end;
 }
 
-
-.body {
-    border: 1px solid red;
-}
-
 .title {
     width: 60%;
     padding: 4%;
     margin: auto;
-    border: 1px solid black;
 }
 
 .AnimationUnderTadbir1 {
@@ -135,7 +129,6 @@
 @media(max-width:500px) {
     .MBDforFooter p:nth-child(2) {
         font-size: 13px;
-        border: 1px solid green;
 
     }
 
@@ -147,7 +140,6 @@
 @media(max-width:370px) {
     .MBDforFooter p:nth-child(2) {
         font-size: 12px;
-        border: 1px solid green;
     }
 
     .MBDforText {
@@ -166,7 +158,6 @@
 @media(max-width:350px) {
     .MBDforFooter p:nth-child(2) {
         font-size: 11px;
-        border: 1px solid green;
 
     }
 }
