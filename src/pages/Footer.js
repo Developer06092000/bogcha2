@@ -67,39 +67,38 @@ export default class Footer extends Component {
 
                 <p>
                   <IoIosCall className={style.iconsfroup} />
-                  Ishonch telefonlari: +998(71)-777-77-77
+                  Ishonch telefonlari: {this.state.FooterGet.phone}
                 </p>
                 <p>
                   <HiMail className={style.iconsfroup} />
-                  Elektron Manzil: kindergarten@gmail.com
+                  Elektron Manzil: {this.state.FooterGet.email}
                 </p>
                 <p>
                   <FaPlaceOfWorship className={style.iconsfroup} />
-                  <b>Manzil:</b>Toshkent shahar, Shayhontohur tumani, Qoraqamish
-                  2/3, 45-uy.
+                  <b>Manzil:</b>{this.state.FooterGet.address}
                 </p>
               </div>
               <div className={style.FooterMenuItem}>
                 <p>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.FooterGet.telegram}>
                     <FaTelegramPlane className={style.iconsfroup} />
                     Telegram
                   </a>
                 </p>
                 <p>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.FooterGet.instagram}>
                     <FaInstagram className={style.iconsfroup} />
                     Instagram
                   </a>
                 </p>
                 <p>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.FooterGet.telegram}>
                     <FaYoutube className={style.iconsfroup} />
                     You Tube
                   </a>
                 </p>
                 <p>
-                  <a href="http://t.me/Karshiyeva_N">
+                  <a href={this.state.FooterGet.facebook}>
                     <FaFacebook className={style.iconsfroup} />
                     Facebook
                   </a>
